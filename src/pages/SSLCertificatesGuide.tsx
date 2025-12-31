@@ -6,7 +6,7 @@ import { Calendar, Clock, User, ArrowRight, CheckCircle, XCircle, AlertTriangle,
 import { Link } from "react-router-dom";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
-import blogSsl from "@/assets/blog-ssl.webp";
+import blogSsl from "@/assets/highlighted-ssl-certificates.webp";
 
 const SSLCertificatesGuide = () => {
   const articleSchema = {

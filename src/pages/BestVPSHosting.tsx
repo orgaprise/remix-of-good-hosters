@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import Newsletter from '@/components/Newsletter';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import OptimizedImage from '@/components/OptimizedImage';
-import blogVps from '@/assets/blog-vps.webp';
+import blogVps from '@/assets/highlighted-vps-hosting.webp';
 import { 
   Server, 
   Cpu, 
