@@ -18,7 +18,7 @@ const internalLinks = {
 // Affiliate links - Replace with your actual referral URLs
 const affiliateLinks = {
   cloudways: "https://www.cloudways.com/?ref=YOUR_AFFILIATE_ID",
-  hostinger: "https://www.hostinger.com/?ref=YOUR_AFFILIATE_ID",
+  hostinger: "https://hostinger.com?REFERRALCODE=3OYABDESSJR3",
   siteground: "https://www.siteground.com/?ref=YOUR_AFFILIATE_ID",
   liquidweb: "https://www.liquidweb.com/?ref=YOUR_AFFILIATE_ID",
   a2hosting: "https://www.a2hosting.com/?ref=YOUR_AFFILIATE_ID",

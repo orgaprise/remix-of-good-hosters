@@ -46,7 +46,7 @@ const affiliateLinks = {
   vultr: "https://www.vultr.com/?ref=YOUR_AFFILIATE_ID",
   digitalocean: "https://www.digitalocean.com/?ref=YOUR_AFFILIATE_ID",
   linode: "https://www.linode.com/?ref=YOUR_AFFILIATE_ID",
-  hostinger: "https://www.hostinger.com/vps-hosting?ref=YOUR_AFFILIATE_ID",
+  hostinger: "https://hostinger.com?REFERRALCODE=3OYABDESSJR3",
   cloudways: "https://www.cloudways.com/?ref=YOUR_AFFILIATE_ID",
   kamatera: "https://www.kamatera.com/?ref=YOUR_AFFILIATE_ID",
 };

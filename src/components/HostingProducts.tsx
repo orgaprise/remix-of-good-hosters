@@ -15,7 +15,7 @@ const hostingProviders = [
     features: ["Free Domain", "Free SSL", "24/7 Support", "100GB SSD"],
     badge: "Best Value",
     badgeColor: "bg-accent text-accent-foreground",
-    affiliateUrl: "https://hostinger.com/?ref=goodhosters"
+    affiliateUrl: "https://hostinger.com?REFERRALCODE=3OYABDESSJR3"
   },
   {
     id: 2,
