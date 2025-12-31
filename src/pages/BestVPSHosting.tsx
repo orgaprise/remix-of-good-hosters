@@ -215,9 +215,10 @@ const BestVPSHosting = () => {
 
           {/* Hero Image */}
           <div className="max-w-4xl mx-auto mb-12">
-            <div className="rounded-2xl overflow-hidden h-64 lg:h-80">
+            <div className="rounded-2xl overflow-hidden">
               <OptimizedImage 
                 src={blogVps}
+                aspectRatio="16/9"
                 alt="Best VPS Hosting Providers 2026 - Complete comparison guide"
                 className="w-full h-full"
                 objectFit="cover"

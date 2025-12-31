@@ -222,9 +222,10 @@ const WebsiteSpeedOptimization = () => {
           </header>
 
           {/* Hero Image */}
-          <figure className="mb-12 rounded-2xl overflow-hidden h-64 lg:h-80">
+          <figure className="mb-12 rounded-2xl overflow-hidden">
             <OptimizedImage 
               src={blogSpeed}
+              aspectRatio="16/9"
               alt="Website Speed Optimization - Performance dashboard and optimization guide"
               className="w-full h-full"
               objectFit="cover"
