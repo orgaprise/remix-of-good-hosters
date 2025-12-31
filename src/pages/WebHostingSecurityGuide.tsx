@@ -227,7 +227,7 @@ const WebHostingSecurityGuide = () => {
           </header>
 
           {/* Hero Image */}
-          <div className="max-w-4xl mx-auto mb-12">
+          <figure className="max-w-4xl mx-auto mb-12">
             <div className="rounded-2xl overflow-hidden">
               <OptimizedImage 
                 src={blogSecurity}
@@ -238,7 +238,10 @@ const WebHostingSecurityGuide = () => {
                 priority
               />
             </div>
-          </div>
+            <figcaption className="text-center text-sm text-muted-foreground mt-3">
+              Essential security features every website owner needs to know
+            </figcaption>
+          </figure>
 
           {/* Table of Contents */}
           <nav className="max-w-4xl mx-auto mb-12 p-6 bg-muted/30 rounded-xl border border-border">

@@ -185,7 +185,7 @@ const ProfessionalEmailHosting = () => {
         </section>
 
         {/* Hero Image */}
-        <div className="container mx-auto px-4 max-w-4xl -mt-6 mb-8">
+        <figure className="container mx-auto px-4 max-w-4xl -mt-6 mb-8">
           <div className="rounded-2xl overflow-hidden">
             <OptimizedImage 
               src={blogEmail}
@@ -196,7 +196,10 @@ const ProfessionalEmailHosting = () => {
               priority
             />
           </div>
-        </div>
+          <figcaption className="text-center text-sm text-muted-foreground mt-3">
+            Complete guide to professional email hosting for your business
+          </figcaption>
+        </figure>
 
         {/* Article Content */}
         <article className="container mx-auto px-4 max-w-4xl py-12">

@@ -227,15 +227,20 @@ const DomainRegistrationGuide = () => {
           </header>
 
           {/* Hero Image */}
-          <figure className="mb-12 rounded-2xl overflow-hidden">
-            <OptimizedImage 
-              src={blogDomains}
-              aspectRatio="16/9"
-              alt="Domain Registration Guide - Complete guide to choosing and registering domain names"
-              className="w-full h-full"
-              objectFit="cover"
-              priority
-            />
+          <figure className="mb-12">
+            <div className="rounded-2xl overflow-hidden">
+              <OptimizedImage 
+                src={blogDomains}
+                aspectRatio="16/9"
+                alt="Domain Registration Guide - Complete guide to choosing and registering domain names"
+                className="w-full h-full"
+                objectFit="cover"
+                priority
+              />
+            </div>
+            <figcaption className="text-center text-sm text-muted-foreground mt-3">
+              Everything you need to know about choosing and registering domain names
+            </figcaption>
           </figure>
 
           {/* Article Content */}
