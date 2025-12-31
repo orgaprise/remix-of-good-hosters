@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import OptimizedImage from "./OptimizedImage";
 import blogHostingComparison from "@/assets/blog-hosting-comparison.webp";
 import blogCloudHosting from "@/assets/blog-cloud-hosting.webp";
-import blogSecurity from "@/assets/blog-security.webp";
 
 const blogPosts = [
   {
@@ -20,24 +19,13 @@ const blogPosts = [
   {
     id: 2,
     title: "Cloud vs Shared Hosting: Which is Right?",
-    excerpt: "Understanding the key differences can save you money.",
+    excerpt: "Understanding the key differences can save you money and improve performance.",
     category: "Guides",
     date: "Dec 25, 2026",
     readTime: "6 min",
     image: blogCloudHosting,
     featured: false,
     slug: "/cloud-vs-shared-hosting"
-  },
-  {
-    id: 3,
-    title: "Essential Security Features for Hosting",
-    excerpt: "Don't compromise on security for your business.",
-    category: "Security",
-    date: "Dec 22, 2026",
-    readTime: "5 min",
-    image: blogSecurity,
-    featured: false,
-    slug: "/web-hosting-security-guide"
   }
 ];
 
@@ -85,13 +73,13 @@ const HeroBlogCards = () => {
         </article>
       </Link>
 
-      {/* Two Smaller Cards - Right (Lazy loaded) */}
-      <div className="flex flex-col gap-6 lg:col-span-2">
+      {/* Single Card - Right (Lazy loaded) */}
+      <div className="flex flex-col lg:col-span-2">
         {sidePosts.map((post) => (
           <Link key={post.id} to={post.slug}>
-            <article className="group flex flex-col bg-card rounded-2xl overflow-hidden border border-border shadow-lg card-hover cursor-pointer h-[200px] lg:h-[208px]">
+            <article className="group flex flex-col bg-card rounded-2xl overflow-hidden border border-border shadow-lg card-hover cursor-pointer h-full min-h-[400px] lg:min-h-[440px]">
               {/* Image */}
-              <figure className="relative h-24 flex-shrink-0 overflow-hidden">
+              <figure className="relative h-48 lg:h-56 flex-shrink-0 overflow-hidden">
                 <OptimizedImage
                   src={post.image}
                   alt={`${post.title} - ${post.category} article thumbnail`}
@@ -99,35 +87,35 @@ const HeroBlogCards = () => {
                   objectFit="cover"
                 />
                 <figcaption className="sr-only">{post.title}</figcaption>
-                <div className="absolute top-2 left-2 z-10">
-                  <span className="px-2 py-1 bg-accent text-accent-foreground text-xs font-semibold rounded-full">
+                <div className="absolute top-3 left-3 z-10">
+                  <span className="px-3 py-1.5 bg-accent text-accent-foreground text-sm font-semibold rounded-full">
                     {post.category}
                   </span>
                 </div>
               </figure>
 
               {/* Content */}
-              <div className="flex-1 p-3 lg:p-4 flex flex-col justify-between">
+              <div className="flex-1 p-5 lg:p-6 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-display text-base font-bold text-foreground mb-1 line-clamp-2 group-hover:text-accent transition-colors duration-200">
+                  <h3 className="font-display text-xl lg:text-2xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors duration-200">
                     {post.title}
                   </h3>
-                  <p className="text-muted-foreground text-xs line-clamp-2">
+                  <p className="text-muted-foreground text-sm lg:text-base line-clamp-3">
                     {post.excerpt}
                   </p>
                 </div>
-                <footer className="flex items-center justify-between text-xs text-muted-foreground mt-2">
-                  <div className="flex items-center gap-3">
-                    <div className="flex items-center gap-1">
-                      <Calendar className="w-3 h-3" aria-hidden="true" />
+                <footer className="flex items-center justify-between text-sm text-muted-foreground mt-4">
+                  <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-1.5">
+                      <Calendar className="w-4 h-4" aria-hidden="true" />
                       <time dateTime="2026-12-25">{post.date}</time>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <Clock className="w-3 h-3" aria-hidden="true" />
+                    <div className="flex items-center gap-1.5">
+                      <Clock className="w-4 h-4" aria-hidden="true" />
                       <span>{post.readTime}</span>
                     </div>
                   </div>
-                  <ArrowRight className="w-4 h-4 text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200" aria-hidden="true" />
+                  <ArrowRight className="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-200" aria-hidden="true" />
                 </footer>
               </div>
             </article>
