@@ -6,7 +6,7 @@ import { Calendar, Clock, User, ArrowRight, CheckCircle, AlertTriangle, Zap, Gau
 import { Link } from "react-router-dom";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
-import blogSpeed from "@/assets/blog-speed.webp";
+import blogSpeed from "@/assets/highlighted-speed-optimization.webp";
 
 const WebsiteSpeedOptimization = () => {
   const articleSchema = {

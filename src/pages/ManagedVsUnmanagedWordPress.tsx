@@ -6,7 +6,7 @@ import { Calendar, Clock, User, ArrowRight, CheckCircle, XCircle, AlertTriangle,
 import { Link } from "react-router-dom";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
-import blogWordpress from "@/assets/blog-wordpress.webp";
+import blogWordpress from "@/assets/highlighted-wordpress-hosting.webp";
 
 const ManagedVsUnmanagedWordPress = () => {
   const articleSchema = {
