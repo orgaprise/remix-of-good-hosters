@@ -185,7 +185,7 @@ const WebsiteBackupStrategies = () => {
         </section>
 
         {/* Hero Image */}
-        <div className="container mx-auto px-4 max-w-4xl -mt-6 mb-8">
+        <figure className="container mx-auto px-4 max-w-4xl -mt-6 mb-8">
           <div className="rounded-2xl overflow-hidden">
             <OptimizedImage 
               src={blogBackup}
@@ -196,7 +196,10 @@ const WebsiteBackupStrategies = () => {
               priority
             />
           </div>
-        </div>
+          <figcaption className="text-center text-sm text-muted-foreground mt-3">
+            Essential backup strategies to protect your website data
+          </figcaption>
+        </figure>
 
         {/* Article Content */}
         <article className="container mx-auto px-4 max-w-4xl py-12">

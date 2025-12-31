@@ -214,7 +214,7 @@ const BestVPSHosting = () => {
           </header>
 
           {/* Hero Image */}
-          <div className="max-w-4xl mx-auto mb-12">
+          <figure className="max-w-4xl mx-auto mb-12">
             <div className="rounded-2xl overflow-hidden">
               <OptimizedImage 
                 src={blogVps}
@@ -225,7 +225,10 @@ const BestVPSHosting = () => {
                 priority
               />
             </div>
-          </div>
+            <figcaption className="text-center text-sm text-muted-foreground mt-3">
+              Expert comparison of the best VPS hosting providers for 2026
+            </figcaption>
+          </figure>
 
           {/* Table of Contents */}
           <nav className="max-w-4xl mx-auto mb-12 p-6 bg-muted/30 rounded-xl border border-border">

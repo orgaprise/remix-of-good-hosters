@@ -224,15 +224,20 @@ const ManagedVsUnmanagedWordPress = () => {
           </header>
 
           {/* Hero Image */}
-          <figure className="mb-12 rounded-2xl overflow-hidden">
-            <OptimizedImage 
-              src={blogWordpress}
-              aspectRatio="16/9"
-              alt="WordPress Hosting - Managed vs Unmanaged comparison guide"
-              className="w-full h-full"
-              objectFit="cover"
-              priority
-            />
+          <figure className="mb-12">
+            <div className="rounded-2xl overflow-hidden">
+              <OptimizedImage 
+                src={blogWordpress}
+                aspectRatio="16/9"
+                alt="WordPress Hosting - Managed vs Unmanaged comparison guide"
+                className="w-full h-full"
+                objectFit="cover"
+                priority
+              />
+            </div>
+            <figcaption className="text-center text-sm text-muted-foreground mt-3">
+              Managed vs unmanaged WordPress hosting: which is right for you?
+            </figcaption>
           </figure>
 
           {/* Article Content */}

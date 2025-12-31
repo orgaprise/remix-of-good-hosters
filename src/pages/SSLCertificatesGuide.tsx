@@ -227,15 +227,20 @@ const SSLCertificatesGuide = () => {
           </header>
 
           {/* Hero Image */}
-          <figure className="mb-12 rounded-2xl overflow-hidden">
-            <OptimizedImage 
-              src={blogSsl}
-              aspectRatio="16/9"
-              alt="SSL Certificates Guide - HTTPS security and encryption explained"
-              className="w-full h-full"
-              objectFit="cover"
-              priority
-            />
+          <figure className="mb-12">
+            <div className="rounded-2xl overflow-hidden">
+              <OptimizedImage 
+                src={blogSsl}
+                aspectRatio="16/9"
+                alt="SSL Certificates Guide - HTTPS security and encryption explained"
+                className="w-full h-full"
+                objectFit="cover"
+                priority
+              />
+            </div>
+            <figcaption className="text-center text-sm text-muted-foreground mt-3">
+              Understanding SSL certificates and HTTPS security for your website
+            </figcaption>
           </figure>
 
           {/* Article Content */}
