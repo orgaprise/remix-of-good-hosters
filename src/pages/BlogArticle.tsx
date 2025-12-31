@@ -5,6 +5,7 @@ import Newsletter from '@/components/Newsletter';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import OptimizedImage from '@/components/OptimizedImage';
 import blogHostingComparison from '@/assets/blog-hosting-comparison.webp';
+import hostingMarketEvolution from '@/assets/hosting-market-evolution.webp';
 import { Star, Check, X, Trophy, Zap, Shield, Clock, DollarSign, Server, Headphones, ExternalLink, ArrowRight, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -211,13 +212,24 @@ const BlogArticle = () => {
                 </p>
               </div>
 
-              {/* Infographic placeholder */}
-              <div className="my-8 not-prose">
-                <ImagePlaceholder 
-                  title="Infographic: Hosting Market Evolution 2020-2026 (800x500)"
-                  aspectRatio="video"
-                />
-              </div>
+              {/* Infographic: Hosting Market Evolution */}
+              <figure className="my-8 not-prose">
+                <figcaption className="text-center text-base font-semibold text-foreground mb-3">
+                  Infographic: Hosting Market Evolution 2020-2026
+                </figcaption>
+                <div className="rounded-lg overflow-hidden border border-border">
+                  <OptimizedImage 
+                    src={hostingMarketEvolution}
+                    aspectRatio="16/10"
+                    alt="Global Web Hosting Services Market 2020-2026 showing market growth from $61 billion to $181 billion"
+                    className="w-full h-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3 italic">
+                  Source: Fortune Business Insights, Web Hosting Services Market Size, Share & Industry Analysis (Report ID: FBI100863).
+                </figcaption>
+              </figure>
             </section>
 
             {/* Quick Picks Section */}
