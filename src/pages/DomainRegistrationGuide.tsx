@@ -227,9 +227,10 @@ const DomainRegistrationGuide = () => {
           </header>
 
           {/* Hero Image */}
-          <figure className="mb-12 rounded-2xl overflow-hidden h-64 lg:h-80">
+          <figure className="mb-12 rounded-2xl overflow-hidden">
             <OptimizedImage 
               src={blogDomains}
+              aspectRatio="16/9"
               alt="Domain Registration Guide - Complete guide to choosing and registering domain names"
               className="w-full h-full"
               objectFit="cover"

@@ -224,9 +224,10 @@ const ManagedVsUnmanagedWordPress = () => {
           </header>
 
           {/* Hero Image */}
-          <figure className="mb-12 rounded-2xl overflow-hidden h-64 lg:h-80">
+          <figure className="mb-12 rounded-2xl overflow-hidden">
             <OptimizedImage 
               src={blogWordpress}
+              aspectRatio="16/9"
               alt="WordPress Hosting - Managed vs Unmanaged comparison guide"
               className="w-full h-full"
               objectFit="cover"

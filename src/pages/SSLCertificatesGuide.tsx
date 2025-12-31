@@ -227,9 +227,10 @@ const SSLCertificatesGuide = () => {
           </header>
 
           {/* Hero Image */}
-          <figure className="mb-12 rounded-2xl overflow-hidden h-64 lg:h-80">
+          <figure className="mb-12 rounded-2xl overflow-hidden">
             <OptimizedImage 
               src={blogSsl}
+              aspectRatio="16/9"
               alt="SSL Certificates Guide - HTTPS security and encryption explained"
               className="w-full h-full"
               objectFit="cover"

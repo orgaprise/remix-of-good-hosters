@@ -186,9 +186,10 @@ const ProfessionalEmailHosting = () => {
 
         {/* Hero Image */}
         <div className="container mx-auto px-4 max-w-4xl -mt-6 mb-8">
-          <div className="rounded-2xl overflow-hidden h-64 lg:h-80">
+          <div className="rounded-2xl overflow-hidden">
             <OptimizedImage 
               src={blogEmail}
+              aspectRatio="16/9"
               alt="Professional Email Hosting - Business communication and custom domain email guide"
               className="w-full h-full"
               objectFit="cover"
