@@ -18,21 +18,21 @@ const ProfessionalEmailHosting = () => {
     "description": "Complete guide to professional email hosting for businesses. Compare Google Workspace vs Microsoft 365, learn setup steps, and choose the best email hosting provider for 2026.",
     "author": {
       "@type": "Organization",
-      "name": "HostingBerg"
+      "name": "GoodHosters"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HostingBerg",
+      "name": "GoodHosters",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://hostingberg.com/logo.png"
+        "url": "https://goodhosters.com/android-chrome-512x512.png"
       }
     },
     "datePublished": "2026-01-15",
     "dateModified": "2026-01-15",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://hostingberg.com/professional-email-hosting"
+      "@id": "https://goodhosters.com/professional-email-hosting"
     }
   };
 
@@ -117,13 +117,13 @@ const ProfessionalEmailHosting = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://hostingberg.com"
+        "item": "https://goodhosters.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Professional Email Hosting",
-        "item": "https://hostingberg.com/professional-email-hosting"
+        "item": "https://goodhosters.com/professional-email-hosting"
       }
     ]
   };
@@ -131,14 +131,17 @@ const ProfessionalEmailHosting = () => {
   return (
     <>
       <Helmet>
-        <title>Professional Email Hosting: Setup Your Business Email Today | HostingBerg</title>
+        <title>Professional Email Hosting: Setup Your Business Email Today | GoodHosters</title>
         <meta name="description" content="Complete guide to professional email hosting for businesses. Compare Google Workspace vs Microsoft 365, learn setup steps, and choose the best email hosting provider for 2026." />
         <meta name="keywords" content="professional email hosting, business email hosting, custom email domain, email hosting for small business, Google Workspace, Microsoft 365" />
-        <link rel="canonical" href="https://hostingberg.com/professional-email-hosting" />
+        <link rel="canonical" href="https://goodhosters.com/professional-email-hosting" />
         <meta property="og:title" content="Professional Email Hosting: Setup Your Business Email Today" />
         <meta property="og:description" content="Complete guide to professional email hosting for businesses. Compare providers, learn setup steps, and get your business email running today." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://hostingberg.com/professional-email-hosting" />
+        <meta property="og:url" content="https://goodhosters.com/professional-email-hosting" />
+        <meta property="og:image" content="https://goodhosters.com/android-chrome-512x512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://goodhosters.com/android-chrome-512x512.png" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
