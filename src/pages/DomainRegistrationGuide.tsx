@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
 import blogDomains from "@/assets/blog-domains.webp";
+import domainExtensionsComparison from "@/assets/domain-extensions-comparison.webp";
+import domainRegistrationFlowchart from "@/assets/domain-registration-flowchart.webp";
 
 const DomainRegistrationGuide = () => {
   const articleSchema = {
@@ -511,12 +513,19 @@ const DomainRegistrationGuide = () => {
                 </div>
               </div>
 
-              <div className="mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: Domain Extensions Comparison - .com vs .org vs .io (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="mb-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={domainExtensionsComparison}
+                    alt="Domain extensions comparison showing .com for businesses, .org for non-profits, and .io for tech startups"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Domain extensions comparison: .com vs .org vs .io and their ideal use cases
+                </figcaption>
+              </figure>
             </section>
 
             {/* Best Domain Registrars */}
@@ -814,12 +823,19 @@ const DomainRegistrationGuide = () => {
                 </ol>
               </div>
 
-              <div className="mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: Domain Registration Process Flowchart (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="mb-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={domainRegistrationFlowchart}
+                    alt="Domain registration process flowchart showing steps: Check Availability, Select Domain, Add to Cart, Checkout, Complete Registration"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Domain registration process: From availability check to complete registration
+                </figcaption>
+              </figure>
             </section>
 
             {/* Domain Transfer */}
