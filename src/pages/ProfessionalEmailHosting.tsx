@@ -143,7 +143,7 @@ const ProfessionalEmailHosting = () => {
         <meta property="og:description" content="Compare business email providers. Setup guides, pricing, and expert recommendations for your company." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/professional-email-hosting" />
-        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:image" content="https://goodhosters.com/og-images/og-professional-email-hosting.png" />
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2026-01-15" />
         <meta property="article:modified_time" content="2026-01-15" />
@@ -155,7 +155,7 @@ const ProfessionalEmailHosting = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Professional Email Hosting: Complete 2026 Guide" />
         <meta name="twitter:description" content="Compare Google Workspace vs Microsoft 365. Setup your business email the right way." />
-        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
+        <meta name="twitter:image" content="https://goodhosters.com/og-images/og-professional-email-hosting.png" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

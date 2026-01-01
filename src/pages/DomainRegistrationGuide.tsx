@@ -164,7 +164,7 @@ const DomainRegistrationGuide = () => {
         <meta property="og:description" content="Expert guide to domain registration. Compare registrars, pricing, and learn to secure your perfect domain." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/domain-registration-guide" />
-        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:image" content="https://goodhosters.com/og-images/og-domain-registration-guide.png" />
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-20" />
         <meta property="article:modified_time" content="2025-12-30" />
@@ -176,7 +176,7 @@ const DomainRegistrationGuide = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Domain Registration Guide 2026" />
         <meta name="twitter:description" content="Everything about domain registration: choosing names, comparing registrars, and avoiding common mistakes." />
-        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
+        <meta name="twitter:image" content="https://goodhosters.com/og-images/og-domain-registration-guide.png" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>

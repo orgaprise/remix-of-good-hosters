@@ -165,7 +165,7 @@ const SSLCertificatesGuide = () => {
         <meta property="og:description" content="Complete guide to SSL certificates and HTTPS. Learn certificate types, free options, SEO benefits, and step-by-step installation." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/ssl-certificates-guide" />
-        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:image" content="https://goodhosters.com/og-images/og-ssl-certificates-guide.png" />
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-22" />
         <meta property="article:modified_time" content="2025-12-30" />
@@ -177,7 +177,7 @@ const SSLCertificatesGuide = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="SSL Certificates & HTTPS: The Complete 2026 Guide" />
         <meta name="twitter:description" content="Everything about SSL certificates: types, installation, free options, and why HTTPS is essential for SEO." />
-        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
+        <meta name="twitter:image" content="https://goodhosters.com/og-images/og-ssl-certificates-guide.png" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>

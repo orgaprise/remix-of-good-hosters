@@ -135,7 +135,7 @@ const CloudVsSharedHosting = () => {
         <meta property="og:description" content="Expert comparison of cloud and shared hosting. Performance benchmarks, pricing, and recommendations for your website." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/cloud-vs-shared-hosting" />
-        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:image" content="https://goodhosters.com/og-images/og-cloud-vs-shared-hosting.png" />
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-28" />
         <meta property="article:modified_time" content="2025-12-30" />
@@ -147,7 +147,7 @@ const CloudVsSharedHosting = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Cloud vs Shared Hosting: 2026 Comparison" />
         <meta name="twitter:description" content="Performance benchmarks, pricing, and expert advice on cloud vs shared hosting." />
-        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
+        <meta name="twitter:image" content="https://goodhosters.com/og-images/og-cloud-vs-shared-hosting.png" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(comparisonSchema)}</script>

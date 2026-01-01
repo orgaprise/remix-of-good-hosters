@@ -169,7 +169,7 @@ const WebHostingSecurityGuide = () => {
         <meta property="og:description" content="Expert guide to web hosting security. SSL, DDoS protection, WAF, malware scanning, and more." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/web-hosting-security-guide" />
-        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:image" content="https://goodhosters.com/og-images/og-web-hosting-security-guide.png" />
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-28" />
         <meta property="article:modified_time" content="2025-12-30" />
@@ -181,7 +181,7 @@ const WebHostingSecurityGuide = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Web Hosting Security: Essential Features Guide" />
         <meta name="twitter:description" content="Complete guide to securing your website through your hosting provider." />
-        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
+        <meta name="twitter:image" content="https://goodhosters.com/og-images/og-web-hosting-security-guide.png" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>

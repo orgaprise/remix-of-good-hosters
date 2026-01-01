@@ -144,7 +144,7 @@ const WebsiteBackupStrategies = () => {
         <meta property="og:description" content="Complete guide to website backup strategies. Learn the 3-2-1 rule, automated backups, and disaster recovery to protect your business." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/website-backup-strategies" />
-        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:image" content="https://goodhosters.com/og-images/og-website-backup-strategies.png" />
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2026-01-15" />
         <meta property="article:modified_time" content="2026-01-15" />
@@ -156,7 +156,7 @@ const WebsiteBackupStrategies = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Website Backup Strategies: The Complete 2026 Guide" />
         <meta name="twitter:description" content="Protect your business with proven backup strategies. Learn the 3-2-1 rule and disaster recovery best practices." />
-        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
+        <meta name="twitter:image" content="https://goodhosters.com/og-images/og-website-backup-strategies.png" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

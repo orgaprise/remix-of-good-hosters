@@ -157,7 +157,7 @@ const BestVPSHosting = () => {
         <meta property="og:description" content="Compare top VPS providers with benchmarks, pricing, and recommendations for WordPress, developers, and businesses." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/best-vps-hosting-2026" />
-        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:image" content="https://goodhosters.com/og-images/og-best-vps-hosting.png" />
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-28" />
         <meta property="article:modified_time" content="2025-12-30" />
@@ -169,7 +169,7 @@ const BestVPSHosting = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Best VPS Hosting 2026: Expert Comparison" />
         <meta name="twitter:description" content="Compare VPS providers with benchmarks and recommendations. Find the perfect VPS for your needs." />
-        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
+        <meta name="twitter:image" content="https://goodhosters.com/og-images/og-best-vps-hosting.png" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(comparisonSchema)}</script>

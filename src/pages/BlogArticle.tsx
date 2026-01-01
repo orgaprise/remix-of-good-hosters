@@ -107,6 +107,7 @@ const BlogArticle = () => {
         <meta property="og:description" content="Expert comparison of the best web hosting providers in 2026. Find the perfect host for your website." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/best-web-hosting-2026" />
+        <meta property="og:image" content="https://goodhosters.com/og-images/og-best-web-hosting-2026.png" />
         <meta property="article:published_time" content="2025-12-28" />
         <meta property="article:modified_time" content="2025-12-30" />
         <meta property="article:author" content="Mallory Keegan" />
@@ -114,6 +115,7 @@ const BlogArticle = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Top 10 Web Hosting Providers for 2026" />
         <meta name="twitter:description" content="Complete expert comparison of web hosting services for 2026." />
+        <meta name="twitter:image" content="https://goodhosters.com/og-images/og-best-web-hosting-2026.png" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
