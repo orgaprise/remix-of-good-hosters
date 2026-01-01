@@ -40,6 +40,8 @@ const subjects = [
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [honeypot, setHoneypot] = useState("");
+  const [formLoadTime] = useState(() => Date.now());
   const { toast } = useToast();
 
   const {
@@ -53,6 +55,24 @@ const Contact = () => {
   });
 
   const onSubmit = async (data: ContactFormData) => {
+    // Bot detection: honeypot field should be empty
+    if (honeypot) {
+      // Silently reject - don't give bots feedback
+      setIsSubmitted(true);
+      return;
+    }
+
+    // Bot detection: form submitted too quickly (less than 3 seconds)
+    const timeSpent = Date.now() - formLoadTime;
+    if (timeSpent < 3000) {
+      toast({
+        title: "Please slow down",
+        description: "Please take a moment to fill out the form properly.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     setIsSubmitting(true);
     
     // Simulate form submission
@@ -208,6 +228,20 @@ const Contact = () => {
                           <p className="text-destructive text-sm">{errors.email.message}</p>
                         )}
                       </div>
+                    </div>
+
+                    {/* Honeypot field - hidden from humans, bots will fill it */}
+                    <div className="absolute -left-[9999px] opacity-0 pointer-events-none" aria-hidden="true">
+                      <Label htmlFor="website">Website</Label>
+                      <Input
+                        id="website"
+                        name="website"
+                        type="text"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={honeypot}
+                        onChange={(e) => setHoneypot(e.target.value)}
+                      />
                     </div>
 
                     <div className="space-y-2">
