@@ -30,10 +30,10 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Youtube, href: "#", label: "YouTube" },
-  { icon: Github, href: "#", label: "GitHub" },
+  { icon: Twitter, href: "https://twitter.com/goodhosters", label: "Twitter" },
+  { icon: Linkedin, href: "https://linkedin.com/company/goodhosters", label: "LinkedIn" },
+  { icon: Youtube, href: "https://youtube.com/@goodhosters", label: "YouTube" },
+  { icon: Github, href: "https://github.com/goodhosters", label: "GitHub" },
 ];
 
 const Footer = () => {

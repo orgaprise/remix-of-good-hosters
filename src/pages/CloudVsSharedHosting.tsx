@@ -198,7 +198,7 @@ const CloudVsSharedHosting = () => {
                 className="w-12 h-12 rounded-full object-cover"
               />
               <div>
-                <p className="font-semibold text-foreground" itemProp="author">Mallory Keegan</p>
+                <Link to="/authors/mallory-keegan" className="font-semibold text-foreground hover:text-accent transition-colors" itemProp="author">Mallory Keegan</Link>
                 <p className="text-sm text-muted-foreground">Web hosting enthusiast who tests providers and breaks down features, pricing, and real world speed</p>
               </div>
             </div>

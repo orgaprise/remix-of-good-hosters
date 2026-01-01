@@ -11,6 +11,7 @@ interface OptimizedImageProps {
   aspectRatio?: string;
   objectFit?: "cover" | "contain" | "fill" | "none";
   onLoad?: () => void;
+  sizes?: string; // Responsive sizes hint
 }
 
 /**
@@ -109,8 +110,8 @@ const OptimizedImage = ({
         <img
           src={src}
           alt={alt}
-          width={width}
-          height={height}
+          width={width || 800}
+          height={height || 600}
           loading={priority ? "eager" : "lazy"}
           decoding={priority ? "sync" : "async"}
           fetchPriority={priority ? "high" : "auto"}
