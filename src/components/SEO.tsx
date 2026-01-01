@@ -20,7 +20,7 @@ const SEO = ({
   title,
   description,
   canonicalUrl,
-  ogImage = "https://goodhosters.com/android-chrome-512x512.png",
+  ogImage = "https://goodhosters.com/og-image.png",
   breadcrumbs,
   children,
 }: SEOProps) => {
