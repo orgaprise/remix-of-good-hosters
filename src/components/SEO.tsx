@@ -10,6 +10,7 @@ interface SEOProps {
   description: string;
   canonicalUrl?: string;
   ogImage?: string;
+  ogUrl?: string;
   breadcrumbs?: BreadcrumbItem[];
   children?: React.ReactNode;
 }
@@ -21,10 +22,12 @@ const SEO = ({
   description,
   canonicalUrl,
   ogImage = "https://goodhosters.com/og-image.png",
+  ogUrl,
   breadcrumbs,
   children,
 }: SEOProps) => {
   const fullCanonicalUrl = canonicalUrl || BASE_URL;
+  const fullOgUrl = ogUrl || fullCanonicalUrl;
 
   const breadcrumbSchema = breadcrumbs
     ? {
@@ -46,6 +49,7 @@ const SEO = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
+      <meta property="og:url" content={fullOgUrl} />
       <meta property="og:image" content={ogImage} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
