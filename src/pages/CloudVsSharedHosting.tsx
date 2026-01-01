@@ -195,13 +195,12 @@ const CloudVsSharedHosting = () => {
 
           {/* Hero Image */}
           <figure className="max-w-4xl mx-auto mb-12">
-            <div className="rounded-2xl overflow-hidden">
+            <div className="rounded-2xl overflow-hidden bg-muted/30">
               <OptimizedImage 
                 src={blogCloudHosting}
-                aspectRatio="16/9"
                 alt="Cloud vs Shared Hosting - Complete comparison guide"
-                className="w-full h-full"
-                objectFit="cover"
+                className="w-full"
+                objectFit="contain"
                 priority
               />
             </div>
