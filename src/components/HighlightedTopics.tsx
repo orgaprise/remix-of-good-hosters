@@ -12,6 +12,7 @@ const highlightedPosts = [
     description: "Compare features, performance, and pricing to find the perfect VPS solution for your needs.",
     category: "VPS",
     image: highlightedVps,
+    imageAlt: "VPS hosting server dashboard showing CPU usage, memory allocation, and performance metrics for virtual private server comparison",
     slug: "/best-vps-hosting-2026"
   },
   {
@@ -20,6 +21,7 @@ const highlightedPosts = [
     description: "Understand the key differences and decide which option suits your website best.",
     category: "WordPress",
     image: highlightedWordpress,
+    imageAlt: "WordPress hosting comparison infographic displaying managed vs unmanaged hosting features, security, and support differences",
     slug: "/managed-vs-unmanaged-wordpress-hosting"
   },
   {
@@ -28,6 +30,7 @@ const highlightedPosts = [
     description: "Boost your site performance with proven techniques that improve loading times.",
     category: "Performance",
     image: highlightedSpeed,
+    imageAlt: "Website speed optimization dashboard showing page load times, Core Web Vitals scores, and performance improvement techniques",
     slug: "/website-speed-optimization-guide"
   },
   {
@@ -36,6 +39,7 @@ const highlightedPosts = [
     description: "Learn how SSL protects your visitors and improves your search engine rankings.",
     category: "Security",
     image: highlightedSsl,
+    imageAlt: "SSL certificate padlock icon with HTTPS browser bar demonstrating secure website encryption and trust indicators",
     slug: "/ssl-certificates-guide"
   }
 ];
@@ -69,7 +73,7 @@ const HighlightedTopics = () => {
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={post.image}
-                    alt={post.title}
+                    alt={post.imageAlt}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />

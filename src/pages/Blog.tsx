@@ -30,6 +30,7 @@ const allArticles = [
     dateISO: "2026-12-28",
     readTime: "12 min read",
     image: blogHostingComparison,
+    imageAlt: "Web hosting providers comparison chart showing ratings, pricing, features, and performance benchmarks for top 10 hosts in 2026",
     slug: "/best-web-hosting-2026",
     featured: true
   },
@@ -43,6 +44,7 @@ const allArticles = [
     dateISO: "2026-12-25",
     readTime: "10 min read",
     image: blogCloudHosting,
+    imageAlt: "Cloud hosting vs shared hosting architecture diagram comparing scalability, resource allocation, and server infrastructure",
     slug: "/cloud-vs-shared-hosting",
     featured: false
   },
@@ -56,6 +58,7 @@ const allArticles = [
     dateISO: "2026-12-22",
     readTime: "11 min read",
     image: blogSecurity,
+    imageAlt: "Web hosting security layers diagram showing firewall protection, malware scanning, DDoS mitigation, and SSL encryption",
     slug: "/web-hosting-security-guide",
     featured: false
   },
@@ -69,6 +72,7 @@ const allArticles = [
     dateISO: "2026-12-20",
     readTime: "9 min read",
     image: blogVps,
+    imageAlt: "VPS hosting server dashboard showing CPU usage, memory allocation, and performance metrics for virtual private server comparison",
     slug: "/best-vps-hosting-2026",
     featured: false
   },
@@ -82,6 +86,7 @@ const allArticles = [
     dateISO: "2026-12-18",
     readTime: "8 min read",
     image: blogWordpress,
+    imageAlt: "WordPress hosting comparison infographic displaying managed vs unmanaged hosting features, security, and support differences",
     slug: "/managed-vs-unmanaged-wordpress-hosting",
     featured: false
   },
@@ -95,6 +100,7 @@ const allArticles = [
     dateISO: "2026-12-15",
     readTime: "10 min read",
     image: blogSpeed,
+    imageAlt: "Website speed optimization dashboard showing page load times, Core Web Vitals scores, and performance improvement techniques",
     slug: "/website-speed-optimization-guide",
     featured: false
   },
@@ -108,6 +114,7 @@ const allArticles = [
     dateISO: "2026-12-12",
     readTime: "7 min read",
     image: blogSsl,
+    imageAlt: "SSL certificate padlock icon with HTTPS browser bar demonstrating secure website encryption and trust indicators",
     slug: "/ssl-certificates-guide",
     featured: false
   },
@@ -121,6 +128,7 @@ const allArticles = [
     dateISO: "2026-12-10",
     readTime: "8 min read",
     image: blogDomains,
+    imageAlt: "Domain registration process flowchart showing TLD selection, availability check, registrar comparison, and DNS configuration steps",
     slug: "/domain-registration-guide",
     featured: false
   },
@@ -134,6 +142,7 @@ const allArticles = [
     dateISO: "2026-12-08",
     readTime: "9 min read",
     image: blogBackup,
+    imageAlt: "Website backup strategy diagram illustrating 3-2-1 backup rule with local storage, cloud backup, and offsite disaster recovery options",
     slug: "/website-backup-strategies",
     featured: false
   },
@@ -147,6 +156,7 @@ const allArticles = [
     dateISO: "2026-12-05",
     readTime: "10 min read",
     image: blogEmail,
+    imageAlt: "Professional business email setup interface showing custom domain configuration, mailbox management, and security settings",
     slug: "/professional-email-hosting",
     featured: false
   }
@@ -300,7 +310,7 @@ const Blog = () => {
                     <div className="relative h-64 lg:h-[400px] overflow-hidden">
                       <OptimizedImage
                         src={featuredArticle.image}
-                        alt={featuredArticle.title}
+                        alt={featuredArticle.imageAlt}
                         className="w-full h-full transition-transform duration-700 group-hover:scale-105"
                         objectFit="cover"
                         priority
@@ -372,7 +382,7 @@ const Blog = () => {
                       <div className="relative h-48 overflow-hidden">
                         <OptimizedImage
                           src={article.image}
-                          alt={article.title}
+                          alt={article.imageAlt}
                           className="w-full h-full transition-transform duration-500 group-hover:scale-110"
                           objectFit="cover"
                         />
