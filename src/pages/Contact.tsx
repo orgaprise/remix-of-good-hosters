@@ -73,7 +73,7 @@ const Contact = () => {
     "@type": "ContactPage",
     "name": "Contact GoodHosters",
     "description": "Get in touch with our web hosting experts for recommendations, partnerships, or general inquiries.",
-    "url": "https://yourdomain.com/contact",
+    "url": "https://goodhosters.com/contact",
     "mainEntity": {
       "@type": "Organization",
       "name": "GoodHosters",
@@ -96,13 +96,13 @@ const Contact = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://yourdomain.com"
+        "item": "https://goodhosters.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Contact",
-        "item": "https://yourdomain.com/contact"
+        "item": "https://goodhosters.com/contact"
       }
     ]
   };
@@ -113,11 +113,13 @@ const Contact = () => {
         <title>Contact Us - Get Expert Hosting Advice | GoodHosters</title>
         <meta name="description" content="Have questions about web hosting? Contact our experts for personalized recommendations, partnership inquiries, or general support. We respond within 24 hours." />
         <meta name="keywords" content="contact hosting experts, web hosting help, hosting recommendations, hosting support" />
-        <link rel="canonical" href="https://yourdomain.com/contact" />
+        <link rel="canonical" href="https://goodhosters.com/contact" />
         <meta property="og:title" content="Contact Us - GoodHosters" />
         <meta property="og:description" content="Get in touch with our web hosting experts for personalized recommendations and support." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/contact" />
+        <meta property="og:url" content="https://goodhosters.com/contact" />
+        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Contact Us - GoodHosters" />
         <meta name="twitter:description" content="Get in touch with our web hosting experts." />
