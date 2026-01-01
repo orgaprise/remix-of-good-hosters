@@ -348,13 +348,12 @@ const CloudVsSharedHosting = () => {
 
               {/* Architecture Diagram */}
               <figure className="my-8 not-prose">
-                <div className="rounded-xl overflow-hidden">
+                <div className="rounded-xl overflow-hidden bg-muted/30">
                   <OptimizedImage 
                     src={cloudVsSharedArchitecture}
                     alt="Shared vs Cloud Hosting Architecture diagram showing the difference between single server shared hosting and distributed cloud hosting infrastructure"
-                    aspectRatio="16/9"
                     className="w-full"
-                    objectFit="cover"
+                    objectFit="contain"
                   />
                 </div>
                 <figcaption className="text-sm text-muted-foreground text-center mt-3">
@@ -407,13 +406,12 @@ const CloudVsSharedHosting = () => {
                   
                   {/* Performance Chart */}
                   <figure className="mt-6">
-                    <div className="rounded-xl overflow-hidden">
+                    <div className="rounded-xl overflow-hidden bg-muted/30">
                       <OptimizedImage 
                         src={cloudVsSharedResponseTime}
                         alt="Response Time Under Increasing Load chart comparing Cloud Hosting vs Shared Hosting performance"
-                        aspectRatio="16/9"
                         className="w-full"
-                        objectFit="cover"
+                        objectFit="contain"
                       />
                     </div>
                     <figcaption className="text-sm text-muted-foreground text-center mt-3">
