@@ -1034,23 +1034,6 @@ const BlogArticle = () => {
             </div>
           </div>
 
-          {/* Author Bio */}
-          <div className="max-w-4xl mx-auto mt-12 p-6 bg-muted/30 rounded-xl border border-border">
-            <div className="flex items-start gap-4">
-              <img 
-                src={authorMalloryKeegan} 
-                alt="Mallory Keegan - Web hosting expert and technical writer specializing in hosting reviews and guides" 
-                className="w-16 h-16 rounded-full object-cover shrink-0"
-              />
-              <div>
-                <p className="font-semibold text-foreground text-lg">Mallory Keegan</p>
-                <p className="text-muted-foreground text-sm mb-3">Web Hosting Reviewer</p>
-                <p className="text-muted-foreground text-sm">
-                  Web hosting enthusiast who tests providers and breaks down features, pricing, and real world speed.
-                </p>
-              </div>
-            </div>
-          </div>
         </article>
 
         <Newsletter />
