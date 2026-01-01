@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -48,7 +48,7 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
-type Step = 'purpose' | 'type' | 'platform' | 'features' | 'traffic' | 'growth' | 'security' | 'support' | 'experience' | 'location' | 'budget' | 'timeline' | 'email' | 'result';
+type Step = 'purpose' | 'type' | 'platform' | 'features' | 'traffic' | 'growth' | 'security' | 'support' | 'experience' | 'location' | 'budget' | 'timeline' | 'email' | 'analyzing' | 'result';
 
 interface Answers {
   purpose: string;
@@ -238,7 +238,7 @@ const questions = {
   },
 };
 
-const stepOrder: Step[] = ['purpose', 'type', 'platform', 'features', 'traffic', 'growth', 'security', 'support', 'experience', 'location', 'budget', 'timeline', 'email', 'result'];
+const stepOrder: Step[] = ['purpose', 'type', 'platform', 'features', 'traffic', 'growth', 'security', 'support', 'experience', 'location', 'budget', 'timeline', 'email', 'analyzing', 'result'];
 
 // Expert tips for the left panel
 const expertTips = [
@@ -495,6 +495,34 @@ const AdvicePanel = ({ currentStep, currentTip }: { currentStep: Step; currentTi
   );
 };
 
+// Analyzing step animation component
+const AnalyzingStep = ({ text, delay }: { text: string; delay: number }) => {
+  const [visible, setVisible] = useState(false);
+  const [completed, setCompleted] = useState(false);
+
+  useEffect(() => {
+    const showTimer = setTimeout(() => setVisible(true), delay);
+    const completeTimer = setTimeout(() => setCompleted(true), delay + 800);
+    return () => {
+      clearTimeout(showTimer);
+      clearTimeout(completeTimer);
+    };
+  }, [delay]);
+
+  if (!visible) return null;
+
+  return (
+    <div className={`flex items-center gap-3 transition-all duration-500 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'}`}>
+      <div className={`w-5 h-5 rounded-full flex items-center justify-center transition-all duration-300 ${completed ? 'bg-accent' : 'bg-muted animate-pulse'}`}>
+        {completed && <CheckCircle className="w-4 h-4 text-accent-foreground" />}
+      </div>
+      <span className={`text-sm transition-colors duration-300 ${completed ? 'text-foreground' : 'text-muted-foreground'}`}>
+        {text}
+      </span>
+    </div>
+  );
+};
+
 const HostingFinder = () => {
   const [step, setStep] = useState<Step>('purpose');
   const [answers, setAnswers] = useState<Answers>({
@@ -619,9 +647,9 @@ const HostingFinder = () => {
       
       toast({
         title: "Thank you!",
-        description: "Your personalized recommendation is ready.",
+        description: "Our AI is analyzing your requirements...",
       });
-      setStep('result');
+      setStep('analyzing');
     } catch (error) {
       if (error instanceof z.ZodError) {
         setEmailError(error.errors[0].message);
@@ -630,8 +658,18 @@ const HostingFinder = () => {
   };
 
   const skipEmail = () => {
-    setStep('result');
+    setStep('analyzing');
   };
+
+  // Effect to transition from analyzing to result after 5 seconds
+  useEffect(() => {
+    if (step === 'analyzing') {
+      const timer = setTimeout(() => {
+        setStep('result');
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [step]);
 
   const resetSurvey = () => {
     setAnswers({
@@ -651,6 +689,64 @@ const HostingFinder = () => {
     });
     setStep('purpose');
   };
+
+  // Analyzing screen - cool AI animation
+  if (step === 'analyzing') {
+    return (
+      <>
+        <SEO 
+          title="Analyzing Your Requirements | Good Hosters"
+          description="Our AI is analyzing your requirements to find the perfect hosting provider."
+        />
+        <TopBar />
+        <Header />
+        <main className="min-h-screen bg-gradient-to-br from-secondary via-background to-accent/5 flex items-center justify-center">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
+            <div className="text-center">
+              {/* Animated AI Brain */}
+              <div className="relative w-32 h-32 mx-auto mb-8">
+                {/* Outer rotating ring */}
+                <div className="absolute inset-0 rounded-full border-4 border-accent/20 animate-[spin_3s_linear_infinite]" />
+                <div className="absolute inset-2 rounded-full border-4 border-transparent border-t-accent animate-[spin_2s_linear_infinite_reverse]" />
+                <div className="absolute inset-4 rounded-full border-4 border-transparent border-b-brand-coral animate-[spin_2.5s_linear_infinite]" />
+                
+                {/* Center icon */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-brand-coral flex items-center justify-center animate-pulse">
+                    <Cpu className="w-8 h-8 text-accent-foreground" />
+                  </div>
+                </div>
+                
+                {/* Floating particles */}
+                <div className="absolute -top-2 left-1/2 w-2 h-2 bg-accent rounded-full animate-[bounce_1s_ease-in-out_infinite]" />
+                <div className="absolute top-1/2 -right-2 w-2 h-2 bg-brand-coral rounded-full animate-[bounce_1.2s_ease-in-out_infinite_0.2s]" />
+                <div className="absolute -bottom-2 left-1/2 w-2 h-2 bg-accent rounded-full animate-[bounce_1.4s_ease-in-out_infinite_0.4s]" />
+                <div className="absolute top-1/2 -left-2 w-2 h-2 bg-brand-coral rounded-full animate-[bounce_1.1s_ease-in-out_infinite_0.1s]" />
+              </div>
+
+              <h1 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4 animate-fade-in">
+                Analyzing Your Requirements
+              </h1>
+              
+              {/* Animated progress steps */}
+              <div className="space-y-3 max-w-md mx-auto mb-8">
+                <AnalyzingStep text="Processing your preferences..." delay={0} />
+                <AnalyzingStep text="Comparing 50+ hosting providers..." delay={1000} />
+                <AnalyzingStep text="Evaluating performance metrics..." delay={2000} />
+                <AnalyzingStep text="Calculating best value match..." delay={3000} />
+                <AnalyzingStep text="Finalizing recommendation..." delay={4000} />
+              </div>
+
+              <p className="text-muted-foreground text-sm animate-pulse">
+                Please wait while our AI finds your perfect hosting match...
+              </p>
+            </div>
+          </div>
+        </main>
+        <Footer />
+      </>
+    );
+  }
 
   // Result screen - full width
   if (step === 'result') {
