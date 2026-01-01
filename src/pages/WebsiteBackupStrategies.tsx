@@ -338,39 +338,6 @@ const WebsiteBackupStrategies = () => {
                 the foundation of any solid website backup strategy.
               </p>
 
-              <div className="bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 rounded-xl p-8 mb-8">
-                <h3 className="text-xl font-bold text-foreground mb-6 text-center">The 3-2-1 Backup Rule</h3>
-                <div className="grid md:grid-cols-3 gap-6">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-3xl font-bold text-primary">3</span>
-                    </div>
-                    <h4 className="font-semibold text-foreground mb-2">Three Copies</h4>
-                    <p className="text-muted-foreground text-sm">
-                      Keep at least 3 copies of your data at all times
-                    </p>
-                  </div>
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-3xl font-bold text-primary">2</span>
-                    </div>
-                    <h4 className="font-semibold text-foreground mb-2">Two Media Types</h4>
-                    <p className="text-muted-foreground text-sm">
-                      Store backups on 2 different types of storage media
-                    </p>
-                  </div>
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-3xl font-bold text-primary">1</span>
-                    </div>
-                    <h4 className="font-semibold text-foreground mb-2">One Offsite</h4>
-                    <p className="text-muted-foreground text-sm">
-                      Keep 1 backup copy in an offsite location
-                    </p>
-                  </div>
-                </div>
-              </div>
-
               {/* 3-2-1 Rule Image */}
               <figure className="my-8">
                 <div className="rounded-xl overflow-hidden">
