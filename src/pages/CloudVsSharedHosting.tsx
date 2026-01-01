@@ -180,7 +180,7 @@ const CloudVsSharedHosting = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-              After hosting over 200 websites on both cloud and shared infrastructure, here's the honest truth about when each makes sense—and when you're just burning money.
+              After hosting over 200 websites on both cloud and shared infrastructure, here's the honest truth about when each makes sense, and when you're just burning money.
             </p>
 
             <div className="flex items-center gap-4 pb-6 border-b border-border">

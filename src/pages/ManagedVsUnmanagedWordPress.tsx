@@ -207,7 +207,7 @@ const ManagedVsUnmanagedWordPress = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Choosing between managed and unmanaged WordPress hosting is one of the most important decisions you'll make for your website. This guide breaks down everything you need to know—no jargon, no fluff, just practical advice that helps you pick the right option.
+              Choosing between managed and unmanaged WordPress hosting is one of the most important decisions you'll make for your website. This guide breaks down everything you need to know: no jargon, no fluff, just practical advice that helps you pick the right option.
             </p>
 
             <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground pb-8 border-b border-border">
