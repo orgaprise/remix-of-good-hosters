@@ -5,6 +5,9 @@ import Footer from "@/components/Footer";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
 import blogBackup from "@/assets/blog-backup.webp";
+import backup321Rule from "@/assets/backup-321-rule.webp";
+import backupCloudStorage from "@/assets/backup-cloud-storage.webp";
+import backupDisasterRecovery from "@/assets/backup-disaster-recovery.webp";
 import { ArrowLeft, CheckCircle, AlertTriangle, Shield, Clock, Database, Cloud, Server, HardDrive, RefreshCw, Calendar, Zap } from "lucide-react";
 
 const WebsiteBackupStrategies = () => {
@@ -369,12 +372,19 @@ const WebsiteBackupStrategies = () => {
               </div>
 
               {/* 3-2-1 Rule Image */}
-              <div className="my-8">
-                <ImagePlaceholder 
-                  title="The 3-2-1 backup rule diagram - 3 copies, 2 media types, 1 offsite"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="my-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={backup321Rule}
+                    alt="The 3-2-1 backup rule diagram showing 3 copies of data, 2 different media types, and 1 offsite backup for disaster recovery"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  The 3-2-1 backup rule: 3 copies, 2 media types, 1 offsite location
+                </figcaption>
+              </figure>
 
               <p className="text-muted-foreground mb-6">
                 Why is this rule so important? Because different types of failures require different protections:
@@ -553,12 +563,19 @@ const WebsiteBackupStrategies = () => {
               </div>
 
               {/* Cloud Storage Image */}
-              <div className="my-8">
-                <ImagePlaceholder 
-                  title="Cloud backup solutions - laptop syncing with cloud servers"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="my-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={backupCloudStorage}
+                    alt="Cloud backup solutions showing laptop syncing files with cloud servers for offsite data protection"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Cloud backup solutions: Seamless syncing between local devices and cloud servers
+                </figcaption>
+              </figure>
 
               <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-6 mb-8">
                 <div className="flex items-start gap-4">
@@ -802,12 +819,19 @@ const WebsiteBackupStrategies = () => {
               <h3 className="text-xl font-semibold text-foreground mb-4">Common Disaster Scenarios and Responses</h3>
 
               {/* Disaster Recovery Image */}
-              <div className="my-8">
-                <ImagePlaceholder 
-                  title="Website disaster recovery - from warning to successful restoration"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="my-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={backupDisasterRecovery}
+                    alt="Website disaster recovery process from warning alerts to successful restoration showing various error states and recovery progress"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Disaster recovery: From website errors to successful restoration
+                </figcaption>
+              </figure>
 
               <div className="space-y-4 mb-8">
                 <div className="bg-card border-l-4 border-amber-500 p-6">
