@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
   Search,
-  BarChart3,
+  ClipboardCheck,
   Shield,
   Zap,
   HeadphonesIcon,
@@ -37,7 +37,7 @@ const services = [
     color: "from-accent to-accent/70"
   },
   {
-    icon: BarChart3,
+    icon: ClipboardCheck,
     title: "Expert Reviews",
     description: "In-depth, unbiased reviews of top web hosting providers based on real-world testing, helping you make informed decisions.",
     features: [
