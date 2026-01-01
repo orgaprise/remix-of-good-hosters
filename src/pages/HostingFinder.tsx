@@ -857,7 +857,7 @@ const HostingFinder = () => {
 
                 {answers.email && (
                   <p className="text-sm text-muted-foreground text-center mt-6">
-                    We've sent detailed recommendations to <span className="font-medium">{answers.email}</span>
+                    Our team will review your requirements and send a detailed report to <span className="font-medium">{answers.email}</span> within the next few hours.
                   </p>
                 )}
               </div>
