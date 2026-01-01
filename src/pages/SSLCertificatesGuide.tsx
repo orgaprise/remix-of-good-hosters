@@ -12,6 +12,15 @@ import sslCertificateTypes from "@/assets/ssl-certificate-types.webp";
 import sslInstallationFlowchart from "@/assets/ssl-installation-flowchart.webp";
 import authorMalloryKeegan from "@/assets/author-mallory-keegan.webp";
 
+// Internal article links for cross-linking
+const internalLinks = {
+  securityGuide: "/web-hosting-security-guide",
+  bestHosting2026: "/best-web-hosting-2026",
+  domainRegistration: "/domain-registration-guide",
+  speedOptimization: "/website-speed-optimization-guide",
+  backupStrategies: "/website-backup-strategies",
+};
+
 const SSLCertificatesGuide = () => {
   const articleSchema = {
     "@context": "https://schema.org",

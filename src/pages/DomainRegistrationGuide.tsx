@@ -11,6 +11,15 @@ import domainExtensionsComparison from "@/assets/domain-extensions-comparison.we
 import domainRegistrationFlowchart from "@/assets/domain-registration-flowchart.webp";
 import authorMalloryKeegan from "@/assets/author-mallory-keegan.webp";
 
+// Internal article links for cross-linking
+const internalLinks = {
+  bestHosting2026: "/best-web-hosting-2026",
+  emailHosting: "/professional-email-hosting",
+  sslCertificates: "/ssl-certificates-guide",
+  securityGuide: "/web-hosting-security-guide",
+  cloudVsShared: "/cloud-vs-shared-hosting",
+};
+
 const DomainRegistrationGuide = () => {
   const articleSchema = {
     "@context": "https://schema.org",

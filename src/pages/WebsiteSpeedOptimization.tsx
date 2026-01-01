@@ -11,6 +11,15 @@ import imageOptimizationWorkflow from "@/assets/image-optimization-workflow.webp
 import cachingArchitecture from "@/assets/caching-architecture.webp";
 import authorMalloryKeegan from "@/assets/author-mallory-keegan.webp";
 
+// Internal article links for cross-linking
+const internalLinks = {
+  bestHosting2026: "/best-web-hosting-2026",
+  cloudVsShared: "/cloud-vs-shared-hosting",
+  vpsHosting: "/best-vps-hosting-2026",
+  wordpressHosting: "/managed-vs-unmanaged-wordpress-hosting",
+  sslCertificates: "/ssl-certificates-guide",
+};
+
 const WebsiteSpeedOptimization = () => {
   const articleSchema = {
     "@context": "https://schema.org",
