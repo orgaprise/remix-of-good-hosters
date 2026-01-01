@@ -553,12 +553,70 @@ const HostingFinder = () => {
     }
   };
 
-  const handleEmailSubmit = (e: React.FormEvent) => {
+  const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setEmailError('');
 
     try {
       emailSchema.parse(answers.email);
+      
+      // Send lead data to Web3Forms
+      try {
+        const purposeLabel = questions.purpose.options.find(o => o.value === answers.purpose)?.label || answers.purpose;
+        const typeLabel = questions.type.options.find(o => o.value === answers.type)?.label || answers.type;
+        const platformLabel = questions.platform.options.find(o => o.value === answers.platform)?.label || answers.platform;
+        const trafficLabel = questions.traffic.options.find(o => o.value === answers.traffic)?.label || answers.traffic;
+        const growthLabel = questions.growth.options.find(o => o.value === answers.growth)?.label || answers.growth;
+        const securityLabel = questions.security.options.find(o => o.value === answers.security)?.label || answers.security;
+        const supportLabel = questions.support.options.find(o => o.value === answers.support)?.label || answers.support;
+        const experienceLabel = questions.experience.options.find(o => o.value === answers.experience)?.label || answers.experience;
+        const locationLabel = questions.location.options.find(o => o.value === answers.location)?.label || answers.location;
+        const budgetLabel = questions.budget.options.find(o => o.value === answers.budget)?.label || answers.budget;
+        const timelineLabel = questions.timeline.options.find(o => o.value === answers.timeline)?.label || answers.timeline;
+        const featuresLabels = answers.features.map(f => questions.features.options.find(o => o.value === f)?.label || f).join(', ');
+        
+        const recommendation = getRecommendation(answers);
+
+        await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            access_key: "fa4da082-16ea-4558-b633-87262c53f99c",
+            subject: `New Hosting Finder Lead - GoodHosters`,
+            from_name: "GoodHosters Hosting Finder",
+            replyto: answers.email,
+            // Lead Information
+            "1. Lead Information": "",
+            Email: answers.email,
+            "2. Website Requirements": "",
+            Purpose: purposeLabel,
+            "Content Type": typeLabel,
+            Platform: platformLabel,
+            "Required Features": featuresLabels || "None selected",
+            "3. Traffic & Growth": "",
+            "Expected Traffic": trafficLabel,
+            "Growth Expectation": growthLabel,
+            "4. Technical Requirements": "",
+            "Security Level": securityLabel,
+            "Support Needed": supportLabel,
+            "Technical Experience": experienceLabel,
+            "Target Location": locationLabel,
+            "5. Budget & Timeline": "",
+            Budget: budgetLabel,
+            Timeline: timelineLabel,
+            "6. Our Recommendation": "",
+            "Recommended Host": recommendation.name,
+            "Recommendation Reason": recommendation.description,
+          }),
+        });
+      } catch (error) {
+        console.error("Failed to send lead notification:", error);
+        // Don't block the user flow if email fails
+      }
+      
       toast({
         title: "Thank you!",
         description: "Your personalized recommendation is ready.",
