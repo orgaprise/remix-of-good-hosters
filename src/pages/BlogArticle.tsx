@@ -6,6 +6,12 @@ import ImagePlaceholder from '@/components/ImagePlaceholder';
 import OptimizedImage from '@/components/OptimizedImage';
 import blogHostingComparison from '@/assets/blog-hosting-comparison.webp';
 import hostingMarketEvolution from '@/assets/hosting-market-evolution.webp';
+import performanceBenchmark from '@/assets/performance-benchmark-ttfb.webp';
+import cloudwaysDashboard from '@/assets/cloudways-dashboard.webp';
+import hostingerDashboard from '@/assets/hostinger-dashboard.webp';
+import sitegroundDashboard from '@/assets/siteground-dashboard.webp';
+import hostingDecisionTree from '@/assets/hosting-decision-tree.webp';
+import testingLabServer from '@/assets/testing-lab-server.webp';
 import { Star, Check, X, Trophy, Zap, Shield, Clock, DollarSign, Server, Headphones, ExternalLink, ArrowRight, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -297,12 +303,20 @@ const BlogArticle = () => {
               </p>
 
               {/* Testing setup image */}
-              <div className="my-8 not-prose">
-                <ImagePlaceholder 
-                  title="Photo: Our Testing Lab / Server Setup (800x450)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="my-8 not-prose">
+                <div className="rounded-lg overflow-hidden border border-border">
+                  <OptimizedImage 
+                    src={testingLabServer}
+                    aspectRatio="16/9"
+                    alt="Our testing lab server setup for benchmarking web hosting providers"
+                    className="w-full h-full"
+                    objectFit="cover"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Our testing lab setup for benchmarking hosting providers
+                </figcaption>
+              </figure>
             </section>
 
             {/* Detailed Reviews */}
@@ -326,10 +340,13 @@ const BlogArticle = () => {
                 </div>
 
                 {/* Cloudways screenshot */}
-                <div className="mb-4">
-                  <ImagePlaceholder 
-                    title="Screenshot: Cloudways Dashboard / Control Panel (800x400)"
-                    aspectRatio="video"
+                <div className="mb-4 rounded-lg overflow-hidden border border-border">
+                  <OptimizedImage 
+                    src={cloudwaysDashboard}
+                    aspectRatio="16/9"
+                    alt="Cloudways dashboard showing security overview and server management features"
+                    className="w-full h-full"
+                    objectFit="cover"
                   />
                 </div>
 
@@ -397,10 +414,13 @@ const BlogArticle = () => {
                 </div>
 
                 {/* Hostinger screenshot */}
-                <div className="mb-4">
-                  <ImagePlaceholder 
-                    title="Screenshot: Hostinger hPanel Dashboard (800x400)"
-                    aspectRatio="video"
+                <div className="mb-4 rounded-lg overflow-hidden border border-border">
+                  <OptimizedImage 
+                    src={hostingerDashboard}
+                    aspectRatio="16/9"
+                    alt="Hostinger hPanel dashboard showing website management and PageSpeed insights"
+                    className="w-full h-full"
+                    objectFit="cover"
                   />
                 </div>
 
@@ -468,10 +488,13 @@ const BlogArticle = () => {
                 </div>
 
                 {/* SiteGround screenshot */}
-                <div className="mb-4">
-                  <ImagePlaceholder 
-                    title="Screenshot: SiteGround Site Tools Interface (800x400)"
-                    aspectRatio="video"
+                <div className="mb-4 rounded-lg overflow-hidden border border-border">
+                  <OptimizedImage 
+                    src={sitegroundDashboard}
+                    aspectRatio="16/9"
+                    alt="SiteGround Site Tools interface showing website details and available extras"
+                    className="w-full h-full"
+                    objectFit="cover"
                   />
                 </div>
 
@@ -768,13 +791,24 @@ const BlogArticle = () => {
                 *TTFB measured from US-East data centers. Prices reflect promotional rates for longest term commitments.
               </p>
 
-              {/* Performance chart placeholder */}
-              <div className="mt-8">
-                <ImagePlaceholder 
-                  title="Chart: Performance Benchmark Results - TTFB by Provider (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              {/* Performance chart */}
+              <figure className="mt-8">
+                <figcaption className="text-center text-base font-semibold text-foreground mb-3">
+                  Performance Benchmark Results — TTFB by Provider
+                </figcaption>
+                <div className="rounded-lg overflow-hidden border border-border bg-white">
+                  <OptimizedImage 
+                    src={performanceBenchmark}
+                    aspectRatio="16/9"
+                    alt="Performance benchmark chart showing TTFB (Time to First Byte) results by hosting provider - Liquid Web fastest at 165ms, Bluehost slowest at 285ms"
+                    className="w-full h-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3 italic">
+                  Lower TTFB is better. Results from US-East data centers.
+                </figcaption>
+              </figure>
             </section>
 
             {/* Choosing Guide */}
@@ -785,13 +819,21 @@ const BlogArticle = () => {
                 After reviewing dozens of best hosting services in 2026, I've noticed that people often choose based on price alone—and regret it later. Here's a framework that actually works:
               </p>
 
-              {/* Decision flowchart placeholder */}
-              <div className="my-8 not-prose">
-                <ImagePlaceholder 
-                  title="Flowchart: How to Choose Your Web Host Decision Tree (800x500)"
-                  aspectRatio="video"
-                />
-              </div>
+              {/* Decision flowchart */}
+              <figure className="my-8 not-prose">
+                <div className="rounded-lg overflow-hidden border border-border">
+                  <OptimizedImage 
+                    src={hostingDecisionTree}
+                    aspectRatio="16/10"
+                    alt="Decision tree flowchart showing how to choose a web host based on site needs, traffic, and requirements"
+                    className="w-full h-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Use this decision tree to find the right hosting type for your needs
+                </figcaption>
+              </figure>
 
               <div className="my-8 not-prose space-y-4">
                 <div className="p-5 bg-muted/50 rounded-lg border-l-4 border-blue-500">
