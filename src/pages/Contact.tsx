@@ -87,11 +87,17 @@ const Contact = () => {
         },
         body: JSON.stringify({
           access_key: "fa4da082-16ea-4558-b633-87262c53f99c",
-          name: data.name,
-          email: data.email,
-          subject: `[GoodHosters] ${subjectLabel}`,
-          message: data.message,
-          from_name: "GoodHosters Contact Form",
+          subject: `New Contact: ${subjectLabel} - GoodHosters`,
+          from_name: "GoodHosters Website",
+          replyto: data.email,
+          // Organized sections for professional formatting
+          "1. Contact Information": "",
+          Name: data.name,
+          Email: data.email,
+          "2. Inquiry Details": "",
+          Subject: subjectLabel,
+          "3. Message": "",
+          Message: data.message,
         }),
       });
 
