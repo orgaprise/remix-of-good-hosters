@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
 import blogWordpress from "@/assets/highlighted-wordpress-hosting.webp";
+import wordpressFeatureComparison from "@/assets/wordpress-feature-comparison.webp";
+import wordpressHostingFlowchart from "@/assets/wordpress-hosting-flowchart.webp";
+import wordpressSecurityLayers from "@/assets/wordpress-security-layers.webp";
 
 const ManagedVsUnmanagedWordPress = () => {
   const articleSchema = {
@@ -456,12 +459,19 @@ const ManagedVsUnmanagedWordPress = () => {
                 </div>
               </div>
 
-              <div className="mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: Managed vs Unmanaged WordPress Feature Comparison (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="mb-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={wordpressFeatureComparison}
+                    alt="Managed vs Unmanaged WordPress feature comparison showing automatic updates, daily backups, security monitoring, and expert support differences"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Feature comparison: Managed vs Unmanaged WordPress hosting
+                </figcaption>
+              </figure>
             </section>
 
             {/* Performance Deep Dive */}
@@ -580,12 +590,19 @@ const ManagedVsUnmanagedWordPress = () => {
                 For a deeper dive into what security features to look for, check out our <Link to="/web-hosting-security-guide" className="text-accent hover:underline font-medium">essential web hosting security guide</Link>.
               </p>
 
-              <div className="mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: WordPress Security Layers - Managed vs Unmanaged (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="mb-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={wordpressSecurityLayers}
+                    alt="WordPress security layers comparison showing WAF, intrusion detection, daily backups, 24/7 monitoring, and SSL encryption differences between managed and unmanaged hosting"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Security layers: Managed hosting provides comprehensive protection vs basic unmanaged security
+                </figcaption>
+              </figure>
             </section>
 
             {/* Is Managed WordPress Hosting Worth It */}
@@ -786,12 +803,19 @@ const ManagedVsUnmanagedWordPress = () => {
                 For VPS alternatives that give you more control while still being beginner-friendly, see our <Link to="/best-vps-hosting-2026" className="text-accent hover:underline font-medium">complete VPS hosting comparison</Link>.
               </p>
 
-              <div className="mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: WordPress Hosting Decision Flowchart (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="mb-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={wordpressHostingFlowchart}
+                    alt="WordPress hosting decision flowchart helping users choose between shared hosting, VPS hosting, managed VPS hosting, and dedicated hosting based on performance needs and technical expertise"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Decision flowchart: Which WordPress hosting type is right for you?
+                </figcaption>
+              </figure>
             </section>
 
             {/* Best Unmanaged WordPress Hosting */}
