@@ -4,6 +4,10 @@
 # Sitemap location
 Sitemap: https://goodhosters.com/sitemap.xml
 
+# ===========================================
+# LEGITIMATE SEARCH ENGINES
+# ===========================================
+
 # Google
 User-agent: Googlebot
 Allow: /
@@ -39,7 +43,14 @@ User-agent: Baiduspider
 Allow: /
 Crawl-delay: 2
 
-# Social Media Crawlers
+# Apple
+User-agent: Applebot
+Allow: /
+
+# ===========================================
+# SOCIAL MEDIA CRAWLERS
+# ===========================================
+
 User-agent: Twitterbot
 Allow: /
 
@@ -61,7 +72,13 @@ Allow: /
 User-agent: TelegramBot
 Allow: /
 
-# AI Crawlers (for AI search engines)
+User-agent: Discordbot
+Allow: /
+
+# ===========================================
+# AI CRAWLERS (Allowed for AI search visibility)
+# ===========================================
+
 User-agent: GPTBot
 Allow: /
 
@@ -74,15 +91,125 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Applebot
+User-agent: Anthropic-AI
 Allow: /
 
-# Default rule for all other bots
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+# ===========================================
+# BLOCKED BOTS (Scrapers, spam, malicious)
+# ===========================================
+
+# SEO spam bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: serpstatbot
+Disallow: /
+
+# Content scrapers
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+User-agent: ZoominfoBot
+Disallow: /
+
+# Email harvesters
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: WebEmailExtrac
+Disallow: /
+
+# Aggressive crawlers
+User-agent: HTTrack
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+# Known malicious bots
+User-agent: Nutch
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: magpie-crawler
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+User-agent: Riddler
+Disallow: /
+
+User-agent: rogerbot
+Disallow: /
+
+# ===========================================
+# DEFAULT RULES FOR ALL OTHER BOTS
+# ===========================================
+
 User-agent: *
 Allow: /
-Crawl-delay: 2
-
-# Disallow patterns (none currently, but ready for future use)
-# Disallow: /api/
-# Disallow: /admin/
-# Disallow: /private/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /node_modules/
+Crawl-delay: 3
