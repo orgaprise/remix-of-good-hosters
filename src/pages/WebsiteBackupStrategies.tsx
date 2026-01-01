@@ -16,23 +16,24 @@ const WebsiteBackupStrategies = () => {
     "@type": "Article",
     "headline": "Website Backup Strategies: Protect Your Business Data",
     "description": "Learn essential website backup strategies to protect your business data. Covers automated backups, cloud solutions, disaster recovery, and best practices for 2026.",
+    "image": "https://goodhosters.com/images/website-backup-strategies.webp",
     "author": {
       "@type": "Organization",
-      "name": "HostingBerg"
+      "name": "Good Hosters"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HostingBerg",
+      "name": "Good Hosters",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://hostingberg.com/logo.png"
+        "url": "https://goodhosters.com/logo.png"
       }
     },
     "datePublished": "2026-01-15",
     "dateModified": "2026-01-15",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://hostingberg.com/website-backup-strategies"
+      "@id": "https://goodhosters.com/website-backup-strategies"
     }
   };
 
@@ -117,13 +118,13 @@ const WebsiteBackupStrategies = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://hostingberg.com"
+        "item": "https://goodhosters.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Website Backup Strategies",
-        "item": "https://hostingberg.com/website-backup-strategies"
+        "item": "https://goodhosters.com/website-backup-strategies"
       }
     ]
   };
@@ -131,14 +132,14 @@ const WebsiteBackupStrategies = () => {
   return (
     <>
       <Helmet>
-        <title>Website Backup Strategies: Protect Your Business Data | HostingBerg</title>
+        <title>Website Backup Strategies: Protect Your Business Data | Good Hosters</title>
         <meta name="description" content="Learn essential website backup strategies to protect your business data. Covers automated backups, cloud solutions, disaster recovery, and best practices for 2026." />
         <meta name="keywords" content="website backup strategies, website backup solutions, business website backup, automated website backups, cloud backup for websites, website disaster recovery" />
-        <link rel="canonical" href="https://hostingberg.com/website-backup-strategies" />
+        <link rel="canonical" href="https://goodhosters.com/website-backup-strategies" />
         <meta property="og:title" content="Website Backup Strategies: Protect Your Business Data" />
         <meta property="og:description" content="Learn essential website backup strategies to protect your business data. Covers automated backups, cloud solutions, and disaster recovery." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://hostingberg.com/website-backup-strategies" />
+        <meta property="og:url" content="https://goodhosters.com/website-backup-strategies" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

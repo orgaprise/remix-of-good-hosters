@@ -51,26 +51,26 @@ const CloudVsSharedHosting = () => {
     "@type": "Article",
     "headline": "Cloud vs Shared Hosting: Which Is Right for Your Website in 2026?",
     "description": "Comprehensive comparison of cloud hosting vs shared hosting. Learn the key differences, performance benchmarks, pricing analysis, and find out which hosting type suits your needs.",
-    "image": "https://hostingadvice.com/images/cloud-vs-shared-hosting.webp",
+    "image": "https://goodhosters.com/images/cloud-vs-shared-hosting.webp",
     "author": {
       "@type": "Person",
       "name": "Alex Mitchell",
       "jobTitle": "Senior Tech Reviewer",
-      "url": "https://hostingadvice.com/authors/alex-mitchell"
+      "url": "https://goodhosters.com/authors/alex-mitchell"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HostingAdvice",
+      "name": "Good Hosters",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://hostingadvice.com/logo.png"
+        "url": "https://goodhosters.com/logo.png"
       }
     },
     "datePublished": "2025-12-28",
     "dateModified": "2025-12-30",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://hostingadvice.com/cloud-vs-shared-hosting"
+      "@id": "https://goodhosters.com/cloud-vs-shared-hosting"
     }
   };
 
@@ -128,11 +128,11 @@ const CloudVsSharedHosting = () => {
         <title>Cloud vs Shared Hosting: Which Is Right for You? (2026 Guide)</title>
         <meta name="description" content="Cloud hosting vs shared hosting compared: performance, pricing, scalability, and use cases. Expert analysis to help you choose the right hosting type for your website." />
         <meta name="keywords" content="cloud vs shared hosting, cloud hosting vs shared hosting, difference between cloud and shared hosting, shared hosting vs cloud hosting performance, is cloud hosting better than shared hosting" />
-        <link rel="canonical" href="https://hostingadvice.com/cloud-vs-shared-hosting" />
+        <link rel="canonical" href="https://goodhosters.com/cloud-vs-shared-hosting" />
         <meta property="og:title" content="Cloud vs Shared Hosting: Complete Comparison Guide 2026" />
         <meta property="og:description" content="Expert breakdown of cloud hosting vs shared hosting. Find out which hosting type is right for your website." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://hostingadvice.com/cloud-vs-shared-hosting" />
+        <meta property="og:url" content="https://goodhosters.com/cloud-vs-shared-hosting" />
         <meta property="article:published_time" content="2025-12-28" />
         <meta property="article:modified_time" content="2025-12-30" />
         <meta property="article:author" content="Alex Mitchell" />
