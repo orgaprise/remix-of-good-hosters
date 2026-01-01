@@ -2,13 +2,14 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
-import { Calendar, Clock, User, ArrowRight, CheckCircle, XCircle, AlertTriangle, Globe, Shield, DollarSign, Search, FileText, Lock, RefreshCw, Zap, Settings } from "lucide-react";
+import { Calendar, Clock, ArrowRight, CheckCircle, XCircle, AlertTriangle, Globe, Shield, DollarSign, Search, FileText, Lock, RefreshCw, Zap, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
 import blogDomains from "@/assets/blog-domains.webp";
 import domainExtensionsComparison from "@/assets/domain-extensions-comparison.webp";
 import domainRegistrationFlowchart from "@/assets/domain-registration-flowchart.webp";
+import authorMalloryKeegan from "@/assets/author-mallory-keegan.webp";
 
 const DomainRegistrationGuide = () => {
   const articleSchema = {
@@ -220,18 +221,15 @@ const DomainRegistrationGuide = () => {
               Your domain name is your digital real estate. Get it right, and it'll serve your business for decades. Get it wrong, and you're stuck with a forgettable address that confuses customers. This guide covers everything from choosing the perfect name to avoiding the registrar tricks that cost you money.
             </p>
 
-            <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground pb-8 border-b border-border">
-              <div className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                <span>Mallory Keegan</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                <time dateTime="2025-12-20">December 20, 2025</time>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                <span>14 min read</span>
+            <div className="flex items-center gap-4 pb-6 border-b border-border">
+              <img 
+                src={authorMalloryKeegan} 
+                alt="Mallory Keegan" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-semibold text-foreground" itemProp="author">Mallory Keegan</p>
+                <p className="text-sm text-muted-foreground">Web hosting enthusiast who tests providers and breaks down features, pricing, and real world speed</p>
               </div>
             </div>
           </header>

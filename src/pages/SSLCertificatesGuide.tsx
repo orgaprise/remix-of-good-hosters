@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
-import { Calendar, Clock, User, ArrowRight, CheckCircle, XCircle, AlertTriangle, Shield, Lock, Globe, TrendingUp, Users, CreditCard, FileCheck, Server } from "lucide-react";
+import { Calendar, Clock, ArrowRight, CheckCircle, XCircle, AlertTriangle, Shield, Lock, Globe, TrendingUp, Users, CreditCard, FileCheck, Server } from "lucide-react";
 import { Link } from "react-router-dom";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
@@ -10,6 +10,7 @@ import blogSsl from "@/assets/highlighted-ssl-certificates.webp";
 import httpVsHttps from "@/assets/http-vs-https-comparison.webp";
 import sslCertificateTypes from "@/assets/ssl-certificate-types.webp";
 import sslInstallationFlowchart from "@/assets/ssl-installation-flowchart.webp";
+import authorMalloryKeegan from "@/assets/author-mallory-keegan.webp";
 
 const SSLCertificatesGuide = () => {
   const articleSchema = {
@@ -221,18 +222,15 @@ const SSLCertificatesGuide = () => {
               That little padlock in your browser's address bar? It's more important than most people realize. This guide explains what SSL certificates actually do, why every website needs HTTPS, and how to get it set up properly—even if you've never touched a server.
             </p>
 
-            <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground pb-8 border-b border-border">
-              <div className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                <span>Mallory Keegan</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                <time dateTime="2025-12-22">December 22, 2025</time>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                <span>13 min read</span>
+            <div className="flex items-center gap-4 pb-6 border-b border-border">
+              <img 
+                src={authorMalloryKeegan} 
+                alt="Mallory Keegan" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-semibold text-foreground" itemProp="author">Mallory Keegan</p>
+                <p className="text-sm text-muted-foreground">Web hosting enthusiast who tests providers and breaks down features, pricing, and real world speed</p>
               </div>
             </div>
           </header>

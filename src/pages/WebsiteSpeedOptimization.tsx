@@ -2,13 +2,14 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
-import { Calendar, Clock, User, ArrowRight, CheckCircle, AlertTriangle, Zap, Gauge, Image, Database, Globe, Server, FileCode, Timer, TrendingUp, Target } from "lucide-react";
+import { Calendar, Clock, ArrowRight, CheckCircle, AlertTriangle, Zap, Gauge, Image, Database, Globe, Server, FileCode, Timer, TrendingUp, Target } from "lucide-react";
 import { Link } from "react-router-dom";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
 import blogSpeed from "@/assets/highlighted-speed-optimization.webp";
 import imageOptimizationWorkflow from "@/assets/image-optimization-workflow.webp";
 import cachingArchitecture from "@/assets/caching-architecture.webp";
+import authorMalloryKeegan from "@/assets/author-mallory-keegan.webp";
 
 const WebsiteSpeedOptimization = () => {
   const articleSchema = {
@@ -215,18 +216,15 @@ const WebsiteSpeedOptimization = () => {
               Speed isn't a nice-to-have anymore—it's survival. This guide covers everything from quick wins that take 10 minutes to advanced optimizations that'll put you ahead of 95% of websites. No fluff, just actionable techniques that actually work.
             </p>
 
-            <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground pb-8 border-b border-border">
-              <div className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                <span>Mallory Keegan</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                <time dateTime="2025-12-24">December 24, 2025</time>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                <span>16 min read</span>
+            <div className="flex items-center gap-4 pb-6 border-b border-border">
+              <img 
+                src={authorMalloryKeegan} 
+                alt="Mallory Keegan" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-semibold text-foreground" itemProp="author">Mallory Keegan</p>
+                <p className="text-sm text-muted-foreground">Web hosting enthusiast who tests providers and breaks down features, pricing, and real world speed</p>
               </div>
             </div>
           </header>
