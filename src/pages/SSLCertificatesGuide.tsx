@@ -311,7 +311,7 @@ const SSLCertificatesGuide = () => {
                   <div>
                     <h4 className="font-bold text-foreground mb-2">SSL vs TLS: What's the Difference?</h4>
                     <p className="text-muted-foreground">
-                      Technically, SSL (Secure Sockets Layer) is outdated. Modern websites use TLS (Transport Layer Security), which is more secure. However, everyone still says "SSL certificate" even though TLS is the actual protocol. The terms are used interchangeably—don't let anyone confuse you with the distinction.
+                      Technically, SSL (Secure Sockets Layer) is outdated. Modern websites use TLS (Transport Layer Security), which is more secure. However, everyone still says "SSL certificate" even though TLS is the actual protocol. The terms are used interchangeably. Don't let anyone confuse you with the distinction.
                     </p>
                   </div>
                 </div>
@@ -820,7 +820,7 @@ const SSLCertificatesGuide = () => {
                   <div>
                     <h4 className="font-bold text-foreground mb-2">Don't Forget the Redirects</h4>
                     <p className="text-muted-foreground">
-                      Installing an SSL certificate isn't enough—you must also redirect HTTP to HTTPS. Otherwise, visitors can still access the insecure version. Use 301 (permanent) redirects and update any hardcoded HTTP URLs in your content.
+                      Installing an SSL certificate isn't enough. You must also redirect HTTP to HTTPS. Otherwise, visitors can still access the insecure version. Use 301 (permanent) redirects and update any hardcoded HTTP URLs in your content.
                     </p>
                   </div>
                 </div>

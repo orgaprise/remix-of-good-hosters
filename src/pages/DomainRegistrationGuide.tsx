@@ -254,7 +254,7 @@ const DomainRegistrationGuide = () => {
               </p>
               
               <p className="text-lg leading-relaxed mb-6">
-                This domain registration guide covers the entire process—from brainstorming that perfect name to actually owning it. I'll share the registrars that won't nickel-and-dime you, the extensions worth considering, and the mistakes I see people make constantly.
+                This domain registration guide covers the entire process: from brainstorming that perfect name to actually owning it. I'll share the registrars that won't nickel-and-dime you, the extensions worth considering, and the mistakes I see people make constantly.
               </p>
 
               <p className="text-lg leading-relaxed mb-6">
@@ -270,7 +270,7 @@ const DomainRegistrationGuide = () => {
               </h2>
 
               <p className="text-lg leading-relaxed mb-6">
-                When you register a domain, you're essentially leasing the right to use that address for a specific period (usually 1-10 years). You don't technically "own" it forever—you're renting from ICANN, the organization that coordinates the internet's naming system.
+                When you register a domain, you're essentially leasing the right to use that address for a specific period (usually 1-10 years). You don't technically "own" it forever. You're renting from ICANN, the organization that coordinates the internet's naming system.
               </p>
 
               <p className="text-lg leading-relaxed mb-6">
@@ -347,7 +347,7 @@ const DomainRegistrationGuide = () => {
                     <li>• Make it easy to spell and pronounce</li>
                     <li>• Use your brand name when possible</li>
                     <li>• Choose .com if available</li>
-                    <li>• Think about voice search—can someone say it?</li>
+                    <li>• Think about voice search: can someone say it?</li>
                     <li>• Check social media availability too</li>
                   </ul>
                 </div>
@@ -370,7 +370,7 @@ const DomainRegistrationGuide = () => {
               <h3 className="font-display text-xl font-bold text-foreground mb-4">Finding Available Domains</h3>
 
               <p className="text-lg leading-relaxed mb-6">
-                Your first choice will probably be taken. That's reality in 2026—there are over 350 million registered domains. Here's my process for finding available options:
+                Your first choice will probably be taken. That's reality in 2026: there are over 350 million registered domains. Here's my process for finding available options:
               </p>
 
               <div className="bg-muted/50 rounded-xl p-6 mb-6">
@@ -507,7 +507,7 @@ const DomainRegistrationGuide = () => {
                   <div>
                     <h4 className="font-bold text-foreground mb-2">My Honest Take on Extensions</h4>
                     <p className="text-muted-foreground">
-                      <strong>.com is still king.</strong> Everyone defaults to typing .com. If your .io or .co domain becomes successful, you'll probably end up buying the .com anyway to prevent confusion. That said, the alternative extensions work fine if .com is genuinely unavailable—just know the trade-off.
+                      <strong>.com is still king.</strong> Everyone defaults to typing .com. If your .io or .co domain becomes successful, you'll probably end up buying the .com anyway to prevent confusion. That said, the alternative extensions work fine if .com is genuinely unavailable. Just know the trade-off.
                     </p>
                   </div>
                 </div>
@@ -580,7 +580,7 @@ const DomainRegistrationGuide = () => {
                     <div><strong>Transfer:</strong> Often discounted</div>
                   </div>
                   <p className="text-muted-foreground">
-                    Don't let the silly name fool you—Porkbun is legitimately excellent. Competitive pricing, free WHOIS privacy, free SSL certificates, and a refreshingly simple interface. Great for beginners and pros alike.
+                    Don't let the silly name fool you. Porkbun is legitimately excellent. Competitive pricing, free WHOIS privacy, free SSL certificates, and a refreshingly simple interface. Great for beginners and pros alike.
                   </p>
                 </div>
 
@@ -627,15 +627,15 @@ const DomainRegistrationGuide = () => {
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <XCircle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
-                    <span><strong>GoDaddy</strong>—Cheap first year, expensive renewals, aggressive upselling, charges extra for privacy</span>
+                    <span><strong>GoDaddy</strong>: Cheap first year, expensive renewals, aggressive upselling, charges extra for privacy</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <XCircle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
-                    <span><strong>Network Solutions</strong>—Overpriced across the board, confusing interface</span>
+                    <span><strong>Network Solutions</strong>: Overpriced across the board, confusing interface</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <XCircle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
-                    <span><strong>Register.com</strong>—High renewal prices, charges for basic features</span>
+                    <span><strong>Register.com</strong>: High renewal prices, charges for basic features</span>
                   </li>
                 </ul>
               </div>
@@ -754,7 +754,7 @@ const DomainRegistrationGuide = () => {
               </div>
 
               <p className="text-lg leading-relaxed mb-6">
-                <strong>My recommendation:</strong> Always enable privacy protection. It should be free at any reputable registrar in 2026. If a registrar charges for it, that's a red flag—switch to someone else.
+                <strong>My recommendation:</strong> Always enable privacy protection. It should be free at any reputable registrar in 2026. If a registrar charges for it, that's a red flag. Switch to someone else.
               </p>
             </section>
 
@@ -782,7 +782,7 @@ const DomainRegistrationGuide = () => {
                     <span className="w-8 h-8 rounded-full bg-accent text-accent-foreground font-bold flex items-center justify-center flex-shrink-0">2</span>
                     <div>
                       <h4 className="font-bold text-foreground mb-1">Select registration length</h4>
-                      <p className="text-muted-foreground">Choose 1-10 years. I usually recommend 2-3 years for important domains—long enough to avoid yearly hassle, short enough to stay flexible.</p>
+                      <p className="text-muted-foreground">Choose 1-10 years. I usually recommend 2-3 years for important domains. Long enough to avoid yearly hassle, short enough to stay flexible.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
@@ -854,19 +854,19 @@ const DomainRegistrationGuide = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span><strong>Domain must be 60+ days old</strong>—ICANN prevents transfers within 60 days of registration or previous transfer</span>
+                    <span><strong>Domain must be 60+ days old</strong> (ICANN prevents transfers within 60 days of registration or previous transfer)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span><strong>Domain must be unlocked</strong>—disable the transfer lock in your current registrar's settings</span>
+                    <span><strong>Domain must be unlocked</strong>: Disable the transfer lock in your current registrar's settings</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span><strong>Get the authorization code (EPP code)</strong>—your current registrar provides this</span>
+                    <span><strong>Get the authorization code (EPP code)</strong>: Your current registrar provides this</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span><strong>Valid email on file</strong>—you'll receive confirmation emails</span>
+                    <span><strong>Valid email on file</strong>: You'll receive confirmation emails</span>
                   </li>
                 </ul>
               </div>
