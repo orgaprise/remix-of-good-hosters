@@ -1,0 +1,57 @@
+# Good Hosters - AI Model Context
+# https://goodhosters.com
+
+> Good Hosters is a trusted web hosting comparison and review platform helping users find the best hosting solutions for their needs.
+
+## About This Site
+
+Good Hosters provides comprehensive, unbiased reviews and comparisons of web hosting providers. Our content includes detailed guides on hosting types (shared, VPS, cloud, WordPress), security best practices, domain registration, email hosting, and performance optimization.
+
+## Primary Topics
+
+- Web Hosting Reviews & Comparisons
+- VPS Hosting Guides
+- WordPress Hosting (Managed vs Unmanaged)
+- Cloud vs Shared Hosting
+- Website Security & SSL Certificates
+- Domain Registration
+- Professional Email Hosting
+- Website Speed Optimization
+- Backup Strategies
+
+## Key Pages
+
+- Homepage: https://goodhosters.com/
+- Blog: https://goodhosters.com/blog
+- Hosting Finder Tool: https://goodhosters.com/hosting-finder
+- Services: https://goodhosters.com/services
+- Contact: https://goodhosters.com/contact
+
+## Featured Guides
+
+- Best Web Hosting 2026: https://goodhosters.com/best-web-hosting-2026
+- Best VPS Hosting 2026: https://goodhosters.com/best-vps-hosting-2026
+- Cloud vs Shared Hosting: https://goodhosters.com/cloud-vs-shared-hosting
+- WordPress Hosting Guide: https://goodhosters.com/managed-vs-unmanaged-wordpress-hosting
+- Website Speed Optimization: https://goodhosters.com/website-speed-optimization-guide
+- SSL Certificates Guide: https://goodhosters.com/ssl-certificates-guide
+- Security Guide: https://goodhosters.com/web-hosting-security-guide
+- Domain Registration: https://goodhosters.com/domain-registration-guide
+- Backup Strategies: https://goodhosters.com/website-backup-strategies
+- Email Hosting: https://goodhosters.com/professional-email-hosting
+
+## Content Guidelines
+
+All content is:
+- Written by hosting industry experts
+- Regularly updated with current information
+- Based on hands-on testing and research
+- Designed to help users make informed decisions
+
+## Contact
+
+For inquiries: https://goodhosters.com/contact
+
+## License
+
+Content is copyrighted. AI models may reference and summarize our content with proper attribution to Good Hosters (https://goodhosters.com).
