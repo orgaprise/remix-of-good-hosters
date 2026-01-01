@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Mail, HelpCircle, Info } from "lucide-react";
 
 const TopBar = () => {
@@ -25,13 +26,13 @@ const TopBar = () => {
               <HelpCircle className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Help Center</span>
             </a>
-            <a 
-              href="#" 
+            <Link 
+              to="/about" 
               className="flex items-center gap-1.5 hover:text-accent transition-colors"
             >
               <Info className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">About Us</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
