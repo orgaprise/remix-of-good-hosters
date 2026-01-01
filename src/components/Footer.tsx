@@ -13,7 +13,7 @@ const footerLinks = {
     { label: "Blog", href: "/blog" },
     { label: "Guides", href: "/website-speed-optimization-guide" },
     { label: "Tutorials", href: "/ssl-certificates-guide" },
-    { label: "FAQ", href: "/#faq" },
+    { label: "FAQ", href: "/faq" },
   ],
   company: [
     { label: "About Us", href: "/about" },
