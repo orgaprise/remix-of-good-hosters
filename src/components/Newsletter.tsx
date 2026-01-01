@@ -6,19 +6,55 @@ import { useToast } from "@/hooks/use-toast";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      setIsSubmitted(true);
-      toast({
-        title: "Successfully subscribed!",
-        description: "You'll receive our latest hosting insights in your inbox.",
+    if (!email) return;
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "fa4da082-16ea-4558-b633-87262c53f99c",
+          subject: "New Newsletter Subscriber - GoodHosters",
+          from_name: "GoodHosters Newsletter",
+          replyto: email,
+          "Subscriber Email": email,
+          "Subscribed At": new Date().toLocaleString(),
+        }),
       });
-      setEmail("");
-      setTimeout(() => setIsSubmitted(false), 3000);
+
+      const result = await response.json();
+
+      if (result.success) {
+        setIsSubmitted(true);
+        toast({
+          title: "Successfully subscribed!",
+          description: "You'll receive our latest hosting insights in your inbox.",
+        });
+        setEmail("");
+        setTimeout(() => setIsSubmitted(false), 3000);
+      } else {
+        throw new Error(result.message);
+      }
+    } catch (error) {
+      console.error("Newsletter subscription error:", error);
+      toast({
+        title: "Subscription failed",
+        description: "Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -79,13 +115,18 @@ const Newsletter = () => {
                     type="submit" 
                     variant="accent" 
                     size="lg"
-                    disabled={isSubmitted}
+                    disabled={isSubmitting || isSubmitted}
                     className="w-full"
                   >
                     {isSubmitted ? (
                       <>
                         <CheckCircle className="w-5 h-5" />
                         Subscribed!
+                      </>
+                    ) : isSubmitting ? (
+                      <>
+                        <span className="animate-spin mr-2">⏳</span>
+                        Subscribing...
                       </>
                     ) : (
                       <>
