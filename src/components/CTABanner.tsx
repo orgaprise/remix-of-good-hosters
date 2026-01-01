@@ -1,11 +1,8 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 
-interface CTABannerProps {
-  onFindHostClick?: () => void;
-}
-
-const CTABanner = ({ onFindHostClick }: CTABannerProps) => {
+const CTABanner = () => {
   return (
     <section className="py-16 lg:py-24 relative overflow-hidden">
       {/* Background gradient */}
@@ -46,10 +43,12 @@ const CTABanner = ({ onFindHostClick }: CTABannerProps) => {
             variant="secondary"
             size="lg"
             className="rounded-full px-8 py-6 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 group"
-            onClick={onFindHostClick}
+            asChild
           >
-            Pick Your Hosting Plan
-            <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+            <Link to="/hosting-finder">
+              Pick Your Hosting Plan
+              <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
           </Button>
 
           {/* Trust indicators */}

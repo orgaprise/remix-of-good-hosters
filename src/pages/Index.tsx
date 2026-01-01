@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import SEO from "@/components/SEO";
 import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
@@ -14,7 +12,6 @@ import FAQ from "@/components/FAQ";
 import BlogSection from "@/components/BlogSection";
 import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
-import HostingSurvey from "@/components/HostingSurvey";
 import CookieConsent from "@/components/CookieConsent";
 
 // FAQ data for schema
@@ -64,7 +61,7 @@ const reviewStats = {
 };
 
 const Index = () => {
-  const [showSurvey, setShowSurvey] = useState(false);
+  // Breadcrumbs for homepage
 
   // Breadcrumbs for homepage
   const breadcrumbs = [
@@ -314,32 +311,22 @@ const Index = () => {
       </a>
 
       <TopBar />
-      <Header onFindHostClick={() => setShowSurvey(true)} />
+      <Header />
       
       <main id="main-content" role="main">
-        <Hero onFindHostClick={() => setShowSurvey(true)} />
+        <Hero />
         <LogoSlider />
         <HostingProducts />
         <Services />
         <HighlightedTopics />
         <Testimonials />
-        <CTABanner onFindHostClick={() => setShowSurvey(true)} />
+        <CTABanner />
         <FAQ />
         <BlogSection />
         <Newsletter />
       </main>
 
       <Footer />
-
-      {/* Survey Modal */}
-      <Dialog open={showSurvey} onOpenChange={setShowSurvey}>
-        <DialogContent className="sm:max-w-lg">
-          <DialogHeader>
-            <DialogTitle className="font-display text-xl">Find Your Perfect Host</DialogTitle>
-          </DialogHeader>
-          <HostingSurvey onComplete={() => setShowSurvey(false)} />
-        </DialogContent>
-      </Dialog>
 
       {/* Cookie Consent */}
       <CookieConsent />

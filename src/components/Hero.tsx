@@ -3,11 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Zap, Award, Sparkles, CheckCircle, Users, Star } from "lucide-react";
 import HeroBlogCards from "./HeroBlogCards";
 
-interface HeroProps {
-  onFindHostClick?: () => void;
-}
-
-const Hero = ({ onFindHostClick }: HeroProps) => {
+const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-secondary via-background to-accent/5">
       {/* Background Pattern */}

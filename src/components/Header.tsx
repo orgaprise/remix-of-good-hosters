@@ -4,11 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, ArrowRight } from "lucide-react";
 import logoIcon from "@/assets/logo-icon.webp";
 
-interface HeaderProps {
-  onFindHostClick?: () => void;
-}
-
-const Header = ({ onFindHostClick }: HeaderProps) => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -75,10 +71,12 @@ const Header = ({ onFindHostClick }: HeaderProps) => {
               variant="accent" 
               size="default" 
               className="rounded-full px-6 shadow-lg hover:shadow-glow transition-all duration-300 group"
-              onClick={onFindHostClick}
+              asChild
             >
-              Pick Your Hosting Plan
-              <ArrowRight className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
+              <Link to="/hosting-finder">
+                Pick Your Hosting Plan
+                <ArrowRight className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
             </Button>
           </div>
 
@@ -106,9 +104,11 @@ const Header = ({ onFindHostClick }: HeaderProps) => {
                 </Link>
               ))}
               <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-border/50">
-                <Button variant="accent" className="rounded-full group" onClick={onFindHostClick}>
-                  Pick Your Hosting Plan
-                  <ArrowRight className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
+                <Button variant="accent" className="rounded-full group" asChild>
+                  <Link to="/hosting-finder" onClick={() => setIsMenuOpen(false)}>
+                    Pick Your Hosting Plan
+                    <ArrowRight className="w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
+                  </Link>
                 </Button>
               </div>
             </nav>
