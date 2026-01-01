@@ -189,10 +189,9 @@ const WebsiteBackupStrategies = () => {
           <div className="rounded-2xl overflow-hidden">
             <OptimizedImage 
               src={blogBackup}
-              aspectRatio="16/9"
               alt="Website Backup Strategies - Cloud storage, servers, and data protection guide"
-              className="w-full h-full"
-              objectFit="cover"
+              className="w-full"
+              objectFit="contain"
               priority
             />
           </div>

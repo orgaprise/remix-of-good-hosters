@@ -231,10 +231,9 @@ const SSLCertificatesGuide = () => {
             <div className="rounded-2xl overflow-hidden">
               <OptimizedImage 
                 src={blogSsl}
-                aspectRatio="16/9"
                 alt="SSL Certificates Guide - HTTPS security and encryption explained"
-                className="w-full h-full"
-                objectFit="cover"
+                className="w-full"
+                objectFit="contain"
                 priority
               />
             </div>

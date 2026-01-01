@@ -228,10 +228,9 @@ const ManagedVsUnmanagedWordPress = () => {
             <div className="rounded-2xl overflow-hidden">
               <OptimizedImage 
                 src={blogWordpress}
-                aspectRatio="16/9"
                 alt="WordPress Hosting - Managed vs Unmanaged comparison guide"
-                className="w-full h-full"
-                objectFit="cover"
+                className="w-full"
+                objectFit="contain"
                 priority
               />
             </div>

@@ -226,10 +226,9 @@ const WebsiteSpeedOptimization = () => {
             <div className="rounded-2xl overflow-hidden">
               <OptimizedImage 
                 src={blogSpeed}
-                aspectRatio="16/9"
                 alt="Website Speed Optimization - Performance dashboard and optimization guide"
-                className="w-full h-full"
-                objectFit="cover"
+                className="w-full"
+                objectFit="contain"
                 priority
               />
             </div>

@@ -231,10 +231,9 @@ const DomainRegistrationGuide = () => {
             <div className="rounded-2xl overflow-hidden">
               <OptimizedImage 
                 src={blogDomains}
-                aspectRatio="16/9"
                 alt="Domain Registration Guide - Complete guide to choosing and registering domain names"
-                className="w-full h-full"
-                objectFit="cover"
+                className="w-full"
+                objectFit="contain"
                 priority
               />
             </div>

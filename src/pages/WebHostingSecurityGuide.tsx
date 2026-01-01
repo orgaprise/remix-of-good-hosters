@@ -231,10 +231,9 @@ const WebHostingSecurityGuide = () => {
             <div className="rounded-2xl overflow-hidden">
               <OptimizedImage 
                 src={blogSecurity}
-                aspectRatio="16/9"
                 alt="Web Hosting Security Guide - Essential security features for websites"
-                className="w-full h-full"
-                objectFit="cover"
+                className="w-full"
+                objectFit="contain"
                 priority
               />
             </div>
