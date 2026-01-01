@@ -5,6 +5,9 @@ import Footer from "@/components/Footer";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
 import blogEmail from "@/assets/blog-email.webp";
+import emailFreeVsProfessional from "@/assets/email-free-vs-professional.webp";
+import emailSetupProcess from "@/assets/email-setup-process.webp";
+import emailMigrationProcess from "@/assets/email-migration-process.webp";
 import { ArrowLeft, CheckCircle, AlertTriangle, Mail, Shield, Globe, Server, Users, Building2, Zap, Lock, Settings, ArrowRight } from "lucide-react";
 
 const ProfessionalEmailHosting = () => {
@@ -371,12 +374,19 @@ const ProfessionalEmailHosting = () => {
               </div>
 
               {/* Comparison Image */}
-              <div className="my-8">
-                <ImagePlaceholder 
-                  title="Comparison diagram: Free email vs professional business email hosting features"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="my-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={emailFreeVsProfessional}
+                    alt="Comparison diagram: Free email vs professional business email hosting features"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Free email vs professional business email hosting comparison
+                </figcaption>
+              </figure>
 
               <p className="text-muted-foreground">
                 The bottom line: free email is designed for personal use. <strong>Professional email 
@@ -583,12 +593,19 @@ const ProfessionalEmailHosting = () => {
               </p>
 
               {/* Setup Image */}
-              <div className="my-8">
-                <ImagePlaceholder 
-                  title="Step-by-step business email setup process diagram"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="my-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={emailSetupProcess}
+                    alt="Step-by-step business email setup process diagram"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Step-by-step guide to setting up your business email
+                </figcaption>
+              </figure>
 
               <div className="bg-card border border-border rounded-xl p-6 mb-8">
                 <h3 className="text-xl font-semibold text-foreground mb-6">Complete Setup Walkthrough</h3>
@@ -821,12 +838,19 @@ const ProfessionalEmailHosting = () => {
               </p>
 
               {/* Migration Image */}
-              <div className="my-8">
-                <ImagePlaceholder 
-                  title="Email migration process - safely moving business emails to new provider"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="my-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={emailMigrationProcess}
+                    alt="Email migration process - safely moving business emails to new provider"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Safely transfer your business emails to a new provider
+                </figcaption>
+              </figure>
 
               <div className="space-y-4 mb-8">
                 <div className="bg-card border border-border rounded-xl p-6">
