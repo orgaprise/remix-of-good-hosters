@@ -46,7 +46,7 @@ const services = [
       "Feature comparisons",
       "Pricing analysis"
     ],
-    color: "from-violet-light to-violet-light/70"
+    color: "from-brand-coral to-brand-salmon"
   },
   {
     icon: RefreshCcw,
