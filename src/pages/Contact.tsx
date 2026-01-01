@@ -75,17 +75,48 @@ const Contact = () => {
 
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    reset();
-    
-    toast({
-      title: "Message sent successfully!",
-      description: "We'll get back to you within 24-48 hours.",
-    });
+    try {
+      // Get subject label for better readability
+      const subjectLabel = subjects.find(s => s.value === data.subject)?.label || data.subject;
+      
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // Replace with your Web3Forms access key
+          name: data.name,
+          email: data.email,
+          subject: `[GoodHosters] ${subjectLabel}`,
+          message: data.message,
+          from_name: "GoodHosters Contact Form",
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setIsSubmitted(true);
+        reset();
+        toast({
+          title: "Message sent successfully!",
+          description: "We'll get back to you within 24-48 hours.",
+        });
+      } else {
+        throw new Error(result.message || "Failed to send message");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or email us directly at contact@goodhosters.com",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactSchema_ld = {
