@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
-import { Calendar, Clock, User, ArrowRight, CheckCircle, XCircle, AlertTriangle, Zap, Shield, DollarSign, Settings, Users, Server, Wrench } from "lucide-react";
+import { Calendar, Clock, ArrowRight, CheckCircle, XCircle, AlertTriangle, Zap, Shield, DollarSign, Settings, Users, Server, Wrench } from "lucide-react";
 import { Link } from "react-router-dom";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
@@ -10,6 +10,7 @@ import blogWordpress from "@/assets/highlighted-wordpress-hosting.webp";
 import wordpressFeatureComparison from "@/assets/wordpress-feature-comparison.webp";
 import wordpressHostingFlowchart from "@/assets/wordpress-hosting-flowchart.webp";
 import wordpressSecurityLayers from "@/assets/wordpress-security-layers.webp";
+import authorMalloryKeegan from "@/assets/author-mallory-keegan.webp";
 
 const ManagedVsUnmanagedWordPress = () => {
   const articleSchema = {
@@ -218,18 +219,15 @@ const ManagedVsUnmanagedWordPress = () => {
               Choosing between managed and unmanaged WordPress hosting is one of the most important decisions you'll make for your website. This guide breaks down everything you need to know: no jargon, no fluff, just practical advice that helps you pick the right option.
             </p>
 
-            <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground pb-8 border-b border-border">
-              <div className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                <span>Mallory Keegan</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                <time dateTime="2025-12-26">December 26, 2025</time>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                <span>14 min read</span>
+            <div className="flex items-center gap-4 pb-6 border-b border-border">
+              <img 
+                src={authorMalloryKeegan} 
+                alt="Mallory Keegan" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-semibold text-foreground" itemProp="author">Mallory Keegan</p>
+                <p className="text-sm text-muted-foreground">Web hosting enthusiast who tests providers and breaks down features, pricing, and real world speed</p>
               </div>
             </div>
           </header>
@@ -239,19 +237,33 @@ const ManagedVsUnmanagedWordPress = () => {
             <div className="rounded-2xl overflow-hidden">
               <OptimizedImage 
                 src={blogWordpress}
-                alt="WordPress Hosting - Managed vs Unmanaged comparison guide"
+                alt="Managed vs Unmanaged WordPress Hosting Comparison Guide"
                 className="w-full"
                 objectFit="contain"
                 priority
               />
             </div>
             <figcaption className="text-center text-sm text-muted-foreground mt-3">
-              Managed vs unmanaged WordPress hosting: which is right for you?
+              Complete comparison of managed vs unmanaged WordPress hosting
             </figcaption>
           </figure>
 
+          {/* Table of Contents */}
+          <nav className="mb-12 p-6 bg-muted/30 rounded-xl border border-border">
+            <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
+              <span>📑</span> Quick Navigation
+            </h2>
+            <ul className="grid md:grid-cols-2 gap-2 text-sm">
+              <li><a href="#what-is-managed" className="text-primary hover:underline">→ What Is Managed WordPress Hosting</a></li>
+              <li><a href="#what-is-unmanaged" className="text-primary hover:underline">→ Unmanaged WordPress Explained</a></li>
+              <li><a href="#head-to-head" className="text-primary hover:underline">→ Head-to-Head Comparison</a></li>
+              <li><a href="#recommendations" className="text-primary hover:underline">→ Provider Recommendations</a></li>
+              <li><a href="#faq" className="text-primary hover:underline">→ FAQ</a></li>
+            </ul>
+          </nav>
+
           {/* Article Content */}
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none dark:prose-invert">
             
             {/* Introduction */}
             <section className="mb-12">

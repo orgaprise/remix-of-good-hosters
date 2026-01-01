@@ -8,6 +8,7 @@ import blogEmail from "@/assets/blog-email.webp";
 import emailFreeVsProfessional from "@/assets/email-free-vs-professional.webp";
 import emailSetupProcess from "@/assets/email-setup-process.webp";
 import emailMigrationProcess from "@/assets/email-migration-process.webp";
+import authorMalloryKeegan from "@/assets/author-mallory-keegan.webp";
 import { ArrowLeft, CheckCircle, AlertTriangle, Mail, Shield, Globe, Server, Users, Building2, Zap, Lock, Settings, ArrowRight } from "lucide-react";
 
 const ProfessionalEmailHosting = () => {
@@ -196,10 +197,22 @@ const ProfessionalEmailHosting = () => {
               Professional Email Hosting: Setup Your Business Email Today
             </h1>
             
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
               Stop using free email for business. Learn how to set up professional email hosting 
               with your own domain, compare top providers, and build credibility with every message you send.
             </p>
+
+            <div className="flex items-center gap-4 pb-6 border-b border-border">
+              <img 
+                src={authorMalloryKeegan} 
+                alt="Mallory Keegan" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-semibold text-foreground" itemProp="author">Mallory Keegan</p>
+                <p className="text-sm text-muted-foreground">Web hosting enthusiast who tests providers and breaks down features, pricing, and real world speed</p>
+              </div>
+            </div>
           </div>
         </section>
 

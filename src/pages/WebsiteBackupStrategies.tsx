@@ -8,6 +8,7 @@ import blogBackup from "@/assets/blog-backup.webp";
 import backup321Rule from "@/assets/backup-321-rule.webp";
 import backupCloudStorage from "@/assets/backup-cloud-storage.webp";
 import backupDisasterRecovery from "@/assets/backup-disaster-recovery.webp";
+import authorMalloryKeegan from "@/assets/author-mallory-keegan.webp";
 import { ArrowLeft, CheckCircle, AlertTriangle, Shield, Clock, Database, Cloud, Server, HardDrive, RefreshCw, Calendar, Zap } from "lucide-react";
 
 const WebsiteBackupStrategies = () => {
@@ -197,10 +198,22 @@ const WebsiteBackupStrategies = () => {
               Website Backup Strategies: Protect Your Business Data
             </h1>
             
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
               A complete guide to website backup solutions, automated backups, and disaster recovery 
               strategies that keep your business running—even when everything goes wrong.
             </p>
+
+            <div className="flex items-center gap-4 pb-6 border-b border-border">
+              <img 
+                src={authorMalloryKeegan} 
+                alt="Mallory Keegan" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-semibold text-foreground" itemProp="author">Mallory Keegan</p>
+                <p className="text-sm text-muted-foreground">Web hosting enthusiast who tests providers and breaks down features, pricing, and real world speed</p>
+              </div>
+            </div>
           </div>
         </section>
 
