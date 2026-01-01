@@ -148,21 +148,28 @@ const WebsiteSpeedOptimization = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Website Speed Optimization: The Ultimate 2026 Guide | GoodHosters</title>
-        <meta name="description" content="Master website speed optimization with our complete guide. Learn to improve Core Web Vitals, optimize images, implement caching, and achieve sub-2-second load times." />
-        <meta name="keywords" content="website speed optimization, how to speed up a website, Core Web Vitals optimization, improve website loading speed, page speed optimization tips" />
+        <title>Website Speed Optimization: Complete 2026 Guide | GoodHosters</title>
+        <meta name="description" content="Master website speed optimization with our 2026 guide. Improve Core Web Vitals (LCP, INP, CLS), optimize images, implement caching, use CDNs, and achieve sub-2-second load times." />
+        <meta name="keywords" content="website speed optimization, Core Web Vitals optimization, improve page speed, LCP optimization, image optimization, caching strategies, CDN setup, WordPress speed, website performance 2026" />
         <link rel="canonical" href="https://goodhosters.com/website-speed-optimization-guide" />
-        <meta property="og:title" content="The Ultimate Guide to Website Speed Optimization (2026)" />
-        <meta property="og:description" content="Comprehensive guide to making your website lightning fast. Proven techniques for Core Web Vitals, caching, CDN, and more." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta property="og:title" content="Website Speed Optimization: The Ultimate 2026 Guide" />
+        <meta property="og:description" content="Complete guide to website speed. Core Web Vitals, image optimization, caching, and CDN setup." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/website-speed-optimization-guide" />
+        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-24" />
         <meta property="article:modified_time" content="2025-12-30" />
         <meta property="article:author" content="Marcus Chen" />
         <meta property="article:section" content="Performance" />
+        <meta property="article:tag" content="page speed" />
+        <meta property="article:tag" content="Core Web Vitals" />
+        <meta property="article:tag" content="performance" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Website Speed Optimization: Complete Guide" />
-        <meta name="twitter:description" content="Everything you need to achieve blazing fast load times and perfect Core Web Vitals scores." />
+        <meta name="twitter:description" content="Achieve blazing fast load times and perfect Core Web Vitals scores." />
+        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>

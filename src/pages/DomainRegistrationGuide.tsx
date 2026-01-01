@@ -153,21 +153,28 @@ const DomainRegistrationGuide = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Domain Registration Guide 2026: How to Register a Domain Name | GoodHosters</title>
-        <meta name="description" content="Complete domain registration guide for 2026. Learn how to choose a domain name, compare registrars, understand pricing, and register your domain the right way." />
-        <meta name="keywords" content="domain registration guide 2026, how to register a domain name, best domain registrar 2026, domain name registration, domain privacy protection" />
+        <title>Domain Registration Guide 2026: Choose & Register the Perfect Domain | GoodHosters</title>
+        <meta name="description" content="Complete domain registration guide for 2026. Compare Cloudflare, Namecheap, Porkbun registrars. Learn domain pricing, WHOIS privacy, transfers, and how to choose the perfect domain name." />
+        <meta name="keywords" content="domain registration guide, how to register domain name, best domain registrar 2026, Cloudflare domains, Namecheap, domain pricing, WHOIS privacy, domain transfer, .com vs .io" />
         <link rel="canonical" href="https://goodhosters.com/domain-registration-guide" />
-        <meta property="og:title" content="Domain Registration Guide: Everything You Need to Know in 2026" />
-        <meta property="og:description" content="Expert guide to domain registration. Compare registrars, understand pricing, and learn how to secure your perfect domain name." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta property="og:title" content="Domain Registration Guide 2026: Complete Guide" />
+        <meta property="og:description" content="Expert guide to domain registration. Compare registrars, pricing, and learn to secure your perfect domain." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/domain-registration-guide" />
+        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-20" />
         <meta property="article:modified_time" content="2025-12-30" />
         <meta property="article:author" content="Alex Rivera" />
-        <meta property="article:section" content="Guides" />
+        <meta property="article:section" content="Domains" />
+        <meta property="article:tag" content="domains" />
+        <meta property="article:tag" content="registrar" />
+        <meta property="article:tag" content="Cloudflare" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Domain Registration Guide 2026" />
-        <meta name="twitter:description" content="Everything you need to know about registering a domain name in 2026." />
+        <meta name="twitter:description" content="Everything about domain registration: choosing names, comparing registrars, and avoiding common mistakes." />
+        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>

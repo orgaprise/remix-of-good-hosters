@@ -155,20 +155,27 @@ const SSLCertificatesGuide = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>SSL Certificates: Why HTTPS Matters for Your Business (2026 Guide) | GoodHosters</title>
-        <meta name="description" content="Learn why SSL certificates and HTTPS are essential for your website. Comprehensive guide covering SSL types, installation, SEO benefits, and how encryption protects your business." />
-        <meta name="keywords" content="SSL certificates, why HTTPS matters, SSL certificate for business website, HTTPS security, SSL encryption, Google HTTPS ranking factor, SSL certificate types" />
+        <meta name="description" content="Complete SSL certificate guide for 2026. Learn why HTTPS is essential for SEO and trust, compare certificate types (DV, OV, EV), get free SSL with Let's Encrypt, and secure your website today." />
+        <meta name="keywords" content="SSL certificates, why HTTPS matters, SSL certificate for business, HTTPS security, free SSL certificate, Let's Encrypt, SSL vs TLS, Google HTTPS ranking, SSL certificate types, website security" />
         <link rel="canonical" href="https://goodhosters.com/ssl-certificates-guide" />
-        <meta property="og:title" content="SSL Certificates: Why HTTPS Matters for Your Business" />
-        <meta property="og:description" content="Complete guide to SSL certificates, HTTPS security, and why every website needs encryption in 2026." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta property="og:title" content="SSL Certificates: Why HTTPS Matters for Your Business (2026)" />
+        <meta property="og:description" content="Complete guide to SSL certificates and HTTPS. Learn certificate types, free options, SEO benefits, and step-by-step installation." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/ssl-certificates-guide" />
+        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-22" />
         <meta property="article:modified_time" content="2025-12-30" />
         <meta property="article:author" content="David Park" />
         <meta property="article:section" content="Security" />
+        <meta property="article:tag" content="SSL" />
+        <meta property="article:tag" content="HTTPS" />
+        <meta property="article:tag" content="security" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="SSL Certificates & HTTPS: The Complete Business Guide" />
-        <meta name="twitter:description" content="Everything you need to know about SSL certificates, HTTPS, and website security." />
+        <meta name="twitter:title" content="SSL Certificates & HTTPS: The Complete 2026 Guide" />
+        <meta name="twitter:description" content="Everything about SSL certificates: types, installation, free options, and why HTTPS is essential for SEO." />
+        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
