@@ -41,26 +41,26 @@ const BlogArticle = () => {
     "@type": "Article",
     "headline": "Top 10 Web Hosting Providers for 2026: A Complete Comparison",
     "description": "Expert comparison of the best web hosting providers in 2026. In-depth reviews of performance, pricing, features, and support to help you choose the right host.",
-    "image": "https://hostingadvice.com/images/best-hosting-2026.webp",
+    "image": "https://goodhosters.com/images/best-hosting-2026.webp",
     "author": {
       "@type": "Person",
       "name": "Alex Mitchell",
       "jobTitle": "Senior Tech Reviewer",
-      "url": "https://hostingadvice.com/authors/alex-mitchell"
+      "url": "https://goodhosters.com/authors/alex-mitchell"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "HostingAdvice",
+      "name": "Good Hosters",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://hostingadvice.com/logo.png"
+        "url": "https://goodhosters.com/logo.png"
       }
     },
     "datePublished": "2025-12-28",
     "dateModified": "2025-12-30",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://hostingadvice.com/best-web-hosting-2026"
+      "@id": "https://goodhosters.com/best-web-hosting-2026"
     }
   };
 
@@ -101,11 +101,11 @@ const BlogArticle = () => {
         <title>Top 10 Web Hosting Providers for 2026: Complete Comparison Guide</title>
         <meta name="description" content="Expert comparison of the best web hosting providers in 2026. In-depth reviews covering performance, pricing, features, and support. Find your perfect hosting match." />
         <meta name="keywords" content="best web hosting providers 2026, top web hosting providers 2026, web hosting comparison 2026, best hosting services 2026" />
-        <link rel="canonical" href="https://hostingadvice.com/best-web-hosting-2026" />
+        <link rel="canonical" href="https://goodhosters.com/best-web-hosting-2026" />
         <meta property="og:title" content="Top 10 Web Hosting Providers for 2026: Complete Comparison" />
         <meta property="og:description" content="Expert comparison of the best web hosting providers in 2026. Find the perfect host for your website." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://hostingadvice.com/best-web-hosting-2026" />
+        <meta property="og:url" content="https://goodhosters.com/best-web-hosting-2026" />
         <meta property="article:published_time" content="2025-12-28" />
         <meta property="article:modified_time" content="2025-12-30" />
         <meta property="article:author" content="Alex Mitchell" />
