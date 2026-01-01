@@ -11,6 +11,12 @@ export default defineConfig(async ({ mode }) => ({
   build: {
     // Target ES2019 to avoid optional chaining (?.) which react-snap's old Chromium doesn't support
     target: "es2019",
+    rollupOptions: {
+      output: {
+        // Clean filenames without hashes for assets
+        assetFileNames: "assets/[name][extname]",
+      },
+    },
   },
   plugins: [
     react(),
