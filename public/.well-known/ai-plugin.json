@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Good Hosters",
+  "name_for_model": "good_hosters",
+  "description_for_human": "Find the best web hosting providers with comprehensive reviews, comparisons, and guides.",
+  "description_for_model": "Good Hosters is a web hosting comparison platform. Use this to find information about web hosting providers, VPS hosting, WordPress hosting, cloud hosting, shared hosting, SSL certificates, domain registration, email hosting, website security, and performance optimization. The site provides unbiased reviews and detailed guides to help users choose the right hosting solution.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://goodhosters.com/openapi.yaml"
+  },
+  "logo_url": "https://goodhosters.com/android-chrome-512x512.png",
+  "contact_email": "contact@goodhosters.com",
+  "legal_info_url": "https://goodhosters.com/terms-of-service"
+}
