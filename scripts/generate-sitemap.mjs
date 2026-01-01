@@ -10,36 +10,51 @@ const SITE_URL = 'https://goodhosters.com';
 const DIST_DIR = path.resolve(__dirname, '../dist');
 const PUBLIC_DIR = path.resolve(__dirname, '../public');
 
-// Define your routes with their priorities, change frequencies, and optional images
+// Define your routes with their priorities and change frequencies
+// NOTE: Keep this list aligned with src/App.tsx routes.
 const routes = [
-  { 
-    path: '/', 
-    priority: 1.0, 
+  // Main pages
+  {
+    path: '/',
+    priority: 1.0,
     changefreq: 'daily',
-    title: 'Best Web Hosting 2026: Expert Reviews & Comparison'
+    title: 'Best Web Hosting 2026: Expert Reviews & Comparison',
   },
-  // Hosting provider reviews (when added)
-  { path: '/reviews/hostinger', priority: 0.9, changefreq: 'weekly', title: 'Hostinger Review 2026' },
-  { path: '/reviews/bluehost', priority: 0.9, changefreq: 'weekly', title: 'Bluehost Review 2026' },
-  { path: '/reviews/siteground', priority: 0.9, changefreq: 'weekly', title: 'SiteGround Review 2026' },
-  { path: '/reviews/cloudways', priority: 0.9, changefreq: 'weekly', title: 'Cloudways Review 2026' },
-  { path: '/reviews/a2-hosting', priority: 0.9, changefreq: 'weekly', title: 'A2 Hosting Review 2026' },
-  { path: '/reviews/digitalocean', priority: 0.9, changefreq: 'weekly', title: 'DigitalOcean Review 2026' },
-  // Category pages
-  { path: '/hosting/shared', priority: 0.8, changefreq: 'weekly', title: 'Best Shared Hosting' },
-  { path: '/hosting/vps', priority: 0.8, changefreq: 'weekly', title: 'Best VPS Hosting' },
-  { path: '/hosting/cloud', priority: 0.8, changefreq: 'weekly', title: 'Best Cloud Hosting' },
-  { path: '/hosting/wordpress', priority: 0.8, changefreq: 'weekly', title: 'Best WordPress Hosting' },
-  // Blog articles
-  { path: '/blog/domain-registration-guide-2026', priority: 0.7, changefreq: 'monthly', title: 'Domain Registration Guide' },
-  { path: '/blog/website-backup-strategies', priority: 0.7, changefreq: 'monthly', title: 'Website Backup Strategies' },
-  { path: '/blog/professional-email-hosting', priority: 0.7, changefreq: 'monthly', title: 'Professional Email Hosting' },
-  { path: '/blog/hosting-comparison-2026', priority: 0.8, changefreq: 'weekly', title: 'Hosting Comparison 2026' },
-  { path: '/blog/cloud-vs-shared-hosting', priority: 0.7, changefreq: 'monthly', title: 'Cloud vs Shared Hosting' },
-  { path: '/blog/hosting-security-features', priority: 0.7, changefreq: 'monthly', title: 'Hosting Security Features' },
-  // Static pages
-  { path: '/about', priority: 0.6, changefreq: 'monthly', title: 'About Good Hosters' },
+  { path: '/hosting', priority: 0.9, changefreq: 'weekly', title: 'Best Web Hosting Services' },
+  { path: '/services', priority: 0.8, changefreq: 'monthly', title: 'Hosting Services' },
+  { path: '/blog', priority: 0.9, changefreq: 'daily', title: 'Web Hosting Blog' },
+  { path: '/hosting-finder', priority: 0.8, changefreq: 'monthly', title: 'Hosting Finder Tool' },
+  { path: '/about', priority: 0.7, changefreq: 'monthly', title: 'About Good Hosters' },
+  { path: '/help', priority: 0.7, changefreq: 'weekly', title: 'Help Center' },
   { path: '/contact', priority: 0.6, changefreq: 'monthly', title: 'Contact Us' },
+
+  // Articles (actual live routes)
+  { path: '/best-web-hosting-2026', priority: 0.8, changefreq: 'monthly', title: 'Best Web Hosting 2026' },
+  { path: '/cloud-vs-shared-hosting', priority: 0.8, changefreq: 'monthly', title: 'Cloud vs Shared Hosting' },
+  { path: '/web-hosting-security-guide', priority: 0.8, changefreq: 'monthly', title: 'Web Hosting Security Guide' },
+  { path: '/best-vps-hosting-2026', priority: 0.8, changefreq: 'monthly', title: 'Best VPS Hosting 2026' },
+  {
+    path: '/managed-vs-unmanaged-wordpress-hosting',
+    priority: 0.8,
+    changefreq: 'monthly',
+    title: 'Managed vs Unmanaged WordPress Hosting',
+  },
+  {
+    path: '/website-speed-optimization-guide',
+    priority: 0.8,
+    changefreq: 'monthly',
+    title: 'Website Speed Optimization Guide',
+  },
+  { path: '/ssl-certificates-guide', priority: 0.8, changefreq: 'monthly', title: 'SSL Certificates Guide' },
+  { path: '/domain-registration-guide', priority: 0.8, changefreq: 'monthly', title: 'Domain Registration Guide' },
+  { path: '/website-backup-strategies', priority: 0.8, changefreq: 'monthly', title: 'Website Backup Strategies' },
+  { path: '/professional-email-hosting', priority: 0.8, changefreq: 'monthly', title: 'Professional Email Hosting' },
+
+  // Author + FAQ
+  { path: '/authors/mallory-keegan', priority: 0.7, changefreq: 'monthly', title: 'Mallory Keegan' },
+  { path: '/faq', priority: 0.8, changefreq: 'monthly', title: 'Frequently Asked Questions' },
+
+  // Legal
   { path: '/privacy-policy', priority: 0.3, changefreq: 'yearly', title: 'Privacy Policy' },
   { path: '/terms-of-service', priority: 0.3, changefreq: 'yearly', title: 'Terms of Service' },
   { path: '/cookie-policy', priority: 0.3, changefreq: 'yearly', title: 'Cookie Policy' },
