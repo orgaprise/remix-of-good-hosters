@@ -18,6 +18,7 @@ import WebsiteBackupStrategies from "./pages/WebsiteBackupStrategies";
 import ProfessionalEmailHosting from "./pages/ProfessionalEmailHosting";
 import Contact from "./pages/Contact";
 import HostingFinder from "./pages/HostingFinder";
+import Services from "./pages/Services";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import CookiePolicy from "./pages/CookiePolicy";
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/website-backup-strategies" element={<WebsiteBackupStrategies />} />
           <Route path="/professional-email-hosting" element={<ProfessionalEmailHosting />} />
           <Route path="/hosting-finder" element={<HostingFinder />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
