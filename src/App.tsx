@@ -21,6 +21,7 @@ import HostingFinder from "./pages/HostingFinder";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Help from "./pages/Help";
+import Hosting from "./pages/Hosting";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import CookiePolicy from "./pages/CookiePolicy";
@@ -50,6 +51,7 @@ const App = () => (
           <Route path="/website-backup-strategies" element={<WebsiteBackupStrategies />} />
           <Route path="/professional-email-hosting" element={<ProfessionalEmailHosting />} />
           <Route path="/hosting-finder" element={<HostingFinder />} />
+          <Route path="/hosting" element={<Hosting />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
