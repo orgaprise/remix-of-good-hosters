@@ -220,7 +220,7 @@ const ProfessionalEmailHosting = () => {
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                <strong>Professional email hosting</strong> isn't just about appearances—though that matters 
+                <strong>Professional email hosting</strong> isn't just about appearances, though that matters 
                 too. It's about security, reliability, and having the tools you need to communicate 
                 effectively as your business grows. The good news? Setting up business email with a 
                 custom domain is easier and more affordable than most people realize.
@@ -308,7 +308,7 @@ const ProfessionalEmailHosting = () => {
                     <h4 className="font-semibold text-foreground mb-2">The Hidden Risk of Free Email</h4>
                     <p className="text-muted-foreground">
                       When you use a free email service for business, you're bound by their consumer 
-                      terms of service. If your account gets flagged or suspended—even incorrectly—you 
+                      terms of service. If your account gets flagged or suspended, even incorrectly, you 
                       could lose access to critical business communications with no recourse or support priority.
                     </p>
                   </div>
@@ -324,7 +324,7 @@ const ProfessionalEmailHosting = () => {
               
               <p className="text-muted-foreground mb-6">
                 You might wonder if the features justify the cost when Gmail and Outlook.com are free. 
-                Here's a detailed breakdown of what you're actually getting—and giving up—with each approach.
+                Here's a detailed breakdown of what you're actually getting (and giving up) with each approach.
               </p>
 
               <div className="overflow-x-auto mb-8">
@@ -394,8 +394,8 @@ const ProfessionalEmailHosting = () => {
               <p className="text-muted-foreground">
                 The bottom line: free email is designed for personal use. <strong>Professional email 
                 hosting</strong> is designed for businesses that need reliability, security, and the 
-                ability to scale. For most businesses, the cost—often less than a coffee per user per 
-                week—is trivial compared to the benefits.
+                ability to scale. For most businesses, the cost (often less than a coffee per user per 
+                week) is trivial compared to the benefits.
               </p>
             </section>
 
@@ -678,7 +678,7 @@ const ProfessionalEmailHosting = () => {
                       <h4 className="font-semibold text-foreground mb-2">Set Up Email Authentication (SPF, DKIM, DMARC)</h4>
                       <p className="text-muted-foreground text-sm mb-3">
                         These DNS records prove your emails are legitimate and prevent spoofing. They're 
-                        crucial for email deliverability—without them, your emails may land in spam folders.
+                        crucial for email deliverability. Without them, your emails may land in spam folders.
                       </p>
                       <ul className="text-muted-foreground text-sm space-y-1">
                         <li><strong>SPF:</strong> Lists servers allowed to send email for your domain</li>
@@ -714,7 +714,7 @@ const ProfessionalEmailHosting = () => {
                       <h4 className="font-semibold text-foreground mb-2">Configure Email Clients</h4>
                       <p className="text-muted-foreground text-sm">
                         Set up access on computers and phones. Most providers support automatic 
-                        configuration—just enter your email and password. For manual setup, you'll 
+                        configuration. Just enter your email and password. For manual setup, you'll 
                         need IMAP/SMTP settings (covered below).
                       </p>
                     </div>
@@ -729,7 +729,7 @@ const ProfessionalEmailHosting = () => {
                     <h4 className="font-semibold text-foreground mb-2">DNS Changes Take Time</h4>
                     <p className="text-muted-foreground">
                       After updating DNS records, changes can take 24-48 hours to propagate worldwide. 
-                      Don't panic if email doesn't work immediately—this delay is normal. During this 
+                      Don't panic if email doesn't work immediately. This delay is normal. During this 
                       time, some emails might still go to your old address.
                     </p>
                   </div>
@@ -745,7 +745,7 @@ const ProfessionalEmailHosting = () => {
               
               <p className="text-muted-foreground mb-6">
                 When configuring email clients manually, you'll need to choose between IMAP and POP3. 
-                For business use, the answer is almost always IMAP—but here's why.
+                For business use, the answer is almost always IMAP. Here's why.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -869,7 +869,7 @@ const ProfessionalEmailHosting = () => {
                   <h4 className="font-semibold text-foreground mb-2">2. Use Provider Migration Tools</h4>
                   <p className="text-muted-foreground text-sm">
                     Google Workspace and Microsoft 365 both offer built-in migration tools that can 
-                    pull emails directly from your old provider—often with minimal manual work required.
+                    pull emails directly from your old provider, often with minimal manual work required.
                   </p>
                 </div>
 
@@ -912,7 +912,7 @@ const ProfessionalEmailHosting = () => {
               </h2>
               
               <p className="text-muted-foreground mb-6">
-                Professional email hosting includes security features that free email doesn't—but you 
+                Professional email hosting includes security features that free email doesn't, but you 
                 need to enable and configure them properly. Here are the must-have settings.
               </p>
 
@@ -922,7 +922,7 @@ const ProfessionalEmailHosting = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Enable Two-Factor Authentication (2FA)</h4>
                     <p className="text-muted-foreground text-sm">
-                      Require 2FA for all users—no exceptions. This single setting prevents the vast 
+                      Require 2FA for all users, no exceptions. This single setting prevents the vast 
                       majority of account compromises, even if passwords are phished or leaked.
                     </p>
                   </div>
@@ -999,7 +999,7 @@ const ProfessionalEmailHosting = () => {
                 <div className="bg-card border border-border rounded-xl p-6">
                   <h4 className="font-semibold text-foreground mb-2">What's the difference between IMAP and POP3?</h4>
                   <p className="text-muted-foreground">
-                    IMAP syncs emails across all your devices—check email on your phone, and it shows 
+                    IMAP syncs emails across all your devices. Check email on your phone, and it shows 
                     as read on your computer too. POP3 downloads emails to one device only. For 
                     business use, IMAP is almost always the right choice.
                   </p>

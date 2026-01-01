@@ -214,7 +214,7 @@ const WebsiteBackupStrategies = () => {
                 Here's a scenario that keeps business owners up at night: You wake up to find your website completely 
                 wiped out. Maybe it was a hacking attack. Maybe a botched plugin update. Or perhaps your hosting 
                 provider had a catastrophic failure. Whatever the cause, years of content, customer data, and 
-                careful configuration—gone in an instant.
+                careful configuration, gone in an instant.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">

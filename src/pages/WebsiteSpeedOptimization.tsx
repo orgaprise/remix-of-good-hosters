@@ -761,7 +761,7 @@ const WebsiteSpeedOptimization = () => {
                   <div>
                     <h4 className="font-bold text-foreground mb-2">Third-Party Scripts Are the Silent Killer</h4>
                     <p className="text-muted-foreground">
-                      Analytics, chat widgets, ad networks—each third-party script adds weight and blocking time you can't control. Audit these regularly. Remove what you don't actually use. Load the rest asynchronously.
+                      Analytics, chat widgets, ad networks: each third-party script adds weight and blocking time you can't control. Audit these regularly. Remove what you don't actually use. Load the rest asynchronously.
                     </p>
                   </div>
                 </div>
@@ -776,7 +776,7 @@ const WebsiteSpeedOptimization = () => {
               </h2>
 
               <p className="text-lg leading-relaxed mb-6">
-                Time to First Byte (TTFB) measures how quickly your server responds to a request. It's the foundation of all other speed metrics—if your server is slow, nothing else matters.
+                Time to First Byte (TTFB) measures how quickly your server responds to a request. It's the foundation of all other speed metrics: if your server is slow, nothing else matters.
               </p>
 
               <p className="text-lg leading-relaxed mb-6">
