@@ -19,13 +19,13 @@ const TopBar = () => {
 
           {/* Right side - Quick links */}
           <div className="flex items-center gap-6">
-            <a 
-              href="#" 
+            <Link 
+              to="/help" 
               className="flex items-center gap-1.5 hover:text-accent transition-colors"
             >
               <HelpCircle className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">Help Center</span>
-            </a>
+            </Link>
             <Link 
               to="/about" 
               className="flex items-center gap-1.5 hover:text-accent transition-colors"
