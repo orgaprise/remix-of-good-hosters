@@ -109,7 +109,7 @@ const BlogArticle = () => {
         <meta property="og:url" content="https://goodhosters.com/best-web-hosting-2026" />
         <meta property="article:published_time" content="2025-12-28" />
         <meta property="article:modified_time" content="2025-12-30" />
-        <meta property="article:author" content="Alex Mitchell" />
+        <meta property="article:author" content="Mallory Keegan" />
         <meta property="article:section" content="Web Hosting" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Top 10 Web Hosting Providers for 2026" />
@@ -1037,14 +1037,16 @@ const BlogArticle = () => {
           {/* Author Bio */}
           <div className="max-w-4xl mx-auto mt-12 p-6 bg-muted/30 rounded-xl border border-border">
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center text-primary-foreground text-xl font-bold shrink-0">
-                AM
-              </div>
+              <img 
+                src={authorMalloryKeegan} 
+                alt="Mallory Keegan" 
+                className="w-16 h-16 rounded-full object-cover shrink-0"
+              />
               <div>
-                <p className="font-semibold text-foreground text-lg">Alex Mitchell</p>
-                <p className="text-muted-foreground text-sm mb-3">Senior Tech Reviewer</p>
+                <p className="font-semibold text-foreground text-lg">Mallory Keegan</p>
+                <p className="text-muted-foreground text-sm mb-3">Web Hosting Reviewer</p>
                 <p className="text-muted-foreground text-sm">
-                  Alex has been reviewing web hosting, cloud infrastructure, and developer tools for over 12 years. Previously a systems administrator, he brings hands-on experience to every review. When not testing servers, he's probably complaining about server response times to anyone who'll listen.
+                  Web hosting enthusiast who tests providers and breaks down features, pricing, and real world speed.
                 </p>
               </div>
             </div>
