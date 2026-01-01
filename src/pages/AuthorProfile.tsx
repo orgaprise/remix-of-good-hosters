@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Newsletter from '@/components/Newsletter';
-import { Calendar, Clock, ArrowRight, Twitter, Linkedin, Globe } from 'lucide-react';
+import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import authorMalloryKeegan from '@/assets/author-mallory-keegan.webp';
 
@@ -115,10 +115,7 @@ const AuthorProfile = () => {
       "url": "https://goodhosters.com"
     },
     "description": "Web hosting expert and technical writer specializing in hosting reviews, performance analysis, and security best practices. Has tested 50+ hosting providers.",
-    "sameAs": [
-      "https://twitter.com/mallorykeegan",
-      "https://linkedin.com/in/mallorykeegan"
-    ]
+    "sameAs": []
   };
 
   const breadcrumbSchema = {
@@ -231,36 +228,6 @@ const AuthorProfile = () => {
                   </div>
                 </div>
 
-                {/* Social Links */}
-                <div className="flex items-center gap-3">
-                  <a 
-                    href="https://twitter.com/mallorykeegan" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-2.5 rounded-lg bg-card border border-border hover:bg-accent hover:text-accent-foreground transition-colors"
-                    aria-label="Follow Mallory on Twitter"
-                  >
-                    <Twitter className="w-5 h-5" />
-                  </a>
-                  <a 
-                    href="https://linkedin.com/in/mallorykeegan" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-2.5 rounded-lg bg-card border border-border hover:bg-accent hover:text-accent-foreground transition-colors"
-                    aria-label="Connect with Mallory on LinkedIn"
-                  >
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                  <a 
-                    href="https://goodhosters.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-2.5 rounded-lg bg-card border border-border hover:bg-accent hover:text-accent-foreground transition-colors"
-                    aria-label="Visit Good Hosters website"
-                  >
-                    <Globe className="w-5 h-5" />
-                  </a>
-                </div>
               </div>
             </div>
           </div>
