@@ -16,6 +16,7 @@ const blogPosts = [
     date: "Dec 28, 2026",
     readTime: "7 min read",
     image: blogDomains,
+    imageAlt: "Domain registration process flowchart showing TLD selection, availability check, registrar comparison, and DNS configuration steps",
     slug: "/domain-registration-guide"
   },
   {
@@ -27,6 +28,7 @@ const blogPosts = [
     date: "Dec 25, 2026",
     readTime: "6 min read",
     image: blogBackup,
+    imageAlt: "Website backup strategy diagram illustrating 3-2-1 backup rule with local storage, cloud backup, and offsite disaster recovery options",
     slug: "/website-backup-strategies"
   },
   {
@@ -38,6 +40,7 @@ const blogPosts = [
     date: "Dec 22, 2026",
     readTime: "5 min read",
     image: blogEmail,
+    imageAlt: "Professional business email setup interface showing custom domain configuration, mailbox management, and security settings",
     slug: "/professional-email-hosting"
   }
 ];
@@ -89,7 +92,7 @@ const BlogSection = () => {
                 <figure className="relative h-48 overflow-hidden">
                   <OptimizedImage
                     src={post.image}
-                    alt={`${post.title} - ${post.category} guide`}
+                    alt={post.imageAlt}
                     className="w-full h-full transition-transform duration-500 group-hover:scale-110"
                     objectFit="cover"
                   />

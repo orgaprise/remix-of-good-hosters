@@ -13,6 +13,7 @@ const blogPosts = [
     date: "Dec 28, 2026",
     readTime: "8 min",
     image: blogHostingComparison,
+    imageAlt: "Web hosting providers comparison chart showing ratings, pricing, features, and performance benchmarks for top 10 hosts in 2026",
     featured: true,
     slug: "/best-web-hosting-2026"
   },
@@ -24,6 +25,7 @@ const blogPosts = [
     date: "Dec 25, 2026",
     readTime: "6 min",
     image: blogCloudHosting,
+    imageAlt: "Cloud hosting vs shared hosting architecture diagram comparing scalability, resource allocation, and server infrastructure",
     featured: false,
     slug: "/cloud-vs-shared-hosting"
   }
@@ -42,7 +44,7 @@ const HeroBlogCards = () => {
           <div className="absolute inset-0">
             <OptimizedImage
               src={featuredPost.image}
-              alt={`${featuredPost.title} - Featured hosting comparison article`}
+              alt={featuredPost.imageAlt}
               className="w-full h-full transition-transform duration-500 group-hover:scale-105"
               priority={true}
               objectFit="cover"
@@ -82,7 +84,7 @@ const HeroBlogCards = () => {
               <figure className="relative h-48 lg:h-56 flex-shrink-0 overflow-hidden">
                 <OptimizedImage
                   src={post.image}
-                  alt={`${post.title} - ${post.category} article thumbnail`}
+                  alt={post.imageAlt}
                   className="w-full h-full transition-transform duration-500 group-hover:scale-105"
                   objectFit="cover"
                 />

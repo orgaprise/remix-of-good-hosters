@@ -228,7 +228,7 @@ const WebHostingSecurityGuide = () => {
             <div className="flex items-center gap-4 pb-6 border-b border-border">
               <img 
                 src={authorMalloryKeegan} 
-                alt="Mallory Keegan" 
+                alt="Mallory Keegan - Web hosting expert and technical writer specializing in hosting reviews and guides" 
                 className="w-12 h-12 rounded-full object-cover"
               />
               <div>
