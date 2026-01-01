@@ -12,7 +12,7 @@ const footerLinks = {
   resources: [
     { label: "Blog", href: "/blog" },
     { label: "Guides", href: "/website-speed-optimization-guide" },
-    { label: "Tutorials", href: "/ssl-certificates-guide" },
+    { label: "Sitemap", href: "/sitemap.xml", external: true },
     { label: "FAQ", href: "/faq" },
   ],
   company: [
@@ -98,9 +98,15 @@ const Footer = () => {
               <ul className="space-y-2.5">
                 {footerLinks.resources.map((link) => (
                   <li key={link.label}>
-                    <Link to={link.href} className="text-muted-foreground hover:text-accent text-sm transition-colors duration-200">
-                      {link.label}
-                    </Link>
+                    {'external' in link && link.external ? (
+                      <a href={link.href} className="text-muted-foreground hover:text-accent text-sm transition-colors duration-200">
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link to={link.href} className="text-muted-foreground hover:text-accent text-sm transition-colors duration-200">
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
