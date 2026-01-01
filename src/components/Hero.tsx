@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Zap, Award, Sparkles, CheckCircle, Users, Star } from "lucide-react";
 import HeroBlogCards from "./HeroBlogCards";
@@ -65,10 +66,12 @@ const Hero = ({ onFindHostClick }: HeroProps) => {
                 variant="accent" 
                 size="xl" 
                 className="w-full group"
-                onClick={onFindHostClick}
+                asChild
               >
-                Pick Your Hosting Plan
-                <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                <Link to="/hosting-finder">
+                  Pick Your Hosting Plan
+                  <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
               </Button>
             </div>
 
