@@ -6,13 +6,30 @@ import { useToast } from "@/hooks/use-toast";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
+  const [honeypot, setHoneypot] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formLoadTime] = useState(() => Date.now());
   const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
+
+    // Spam protection: honeypot check
+    if (honeypot) {
+      setIsSubmitted(true);
+      setTimeout(() => setIsSubmitted(false), 3000);
+      return;
+    }
+
+    // Spam protection: time-based check (reject if submitted in less than 2 seconds)
+    const timeSinceLoad = Date.now() - formLoadTime;
+    if (timeSinceLoad < 2000) {
+      setIsSubmitted(true);
+      setTimeout(() => setIsSubmitted(false), 3000);
+      return;
+    }
 
     setIsSubmitting(true);
 
@@ -100,6 +117,16 @@ const Newsletter = () => {
               {/* Right Form */}
               <div className="bg-muted/30 rounded-2xl p-6 border border-border/50">
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {/* Honeypot field - hidden from users, bots will fill it */}
+                  <input
+                    type="text"
+                    name="website"
+                    value={honeypot}
+                    onChange={(e) => setHoneypot(e.target.value)}
+                    className="hidden"
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
                   <div className="relative">
                     <Input
                       type="email"
