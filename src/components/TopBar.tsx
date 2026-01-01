@@ -1,4 +1,4 @@
-import { Mail, Phone, HelpCircle, MapPin } from "lucide-react";
+import { Mail, HelpCircle, Info } from "lucide-react";
 
 const TopBar = () => {
   return (
@@ -13,13 +13,6 @@ const TopBar = () => {
             >
               <Mail className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">support@goodhosters.com</span>
-            </a>
-            <a 
-              href="tel:+1234567890" 
-              className="flex items-center gap-1.5 hover:text-accent transition-colors"
-            >
-              <Phone className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">+1 (234) 567-890</span>
             </a>
           </div>
 
@@ -36,8 +29,8 @@ const TopBar = () => {
               href="#" 
               className="flex items-center gap-1.5 hover:text-accent transition-colors"
             >
-              <MapPin className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Find Us</span>
+              <Info className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">About Us</span>
             </a>
           </div>
         </div>
