@@ -6,6 +6,8 @@ import ImagePlaceholder from '@/components/ImagePlaceholder';
 import OptimizedImage from '@/components/OptimizedImage';
 import blogSecurity from '@/assets/blog-security.webp';
 import authorMalloryKeegan from '@/assets/author-mallory-keegan.webp';
+import malwareDetectionWorkflow from '@/assets/malware-detection-workflow.webp';
+import ddosAttackMitigation from '@/assets/ddos-attack-mitigation.webp';
 import { 
   Shield, 
   Lock, 
@@ -606,12 +608,19 @@ const WebHostingSecurityGuide = () => {
                 Attackers overwhelm your server with traffic from thousands of compromised devices. Your server can't distinguish legitimate visitors from attack traffic, so it either crashes or becomes so slow it's unusable. Modern attacks can generate hundreds of gigabits per second—far exceeding what any single server can handle.
               </p>
 
-              <div className="not-prose mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: DDoS Attack Flow and Mitigation (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="not-prose mb-8">
+                <div className="rounded-xl overflow-hidden border border-border">
+                  <OptimizedImage 
+                    src={ddosAttackMitigation}
+                    alt="DDoS Attack Flow and Mitigation Steps - showing botnet activation, amplification attack, flooding, service disruption and mitigation through detection, filtering, rate limiting, and blacklisting"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  DDoS attack flow and mitigation process
+                </figcaption>
+              </figure>
 
               <h3 className="text-xl font-bold mb-4">DDoS Protection Tiers</h3>
 
@@ -773,12 +782,19 @@ const WebHostingSecurityGuide = () => {
                 For most sites, host-included <strong>malware scanning and removal</strong> from quality providers like SiteGround or Kinsta is sufficient. E-commerce sites handling payment data should consider layering Sucuri on top for additional protection and their excellent breach response team.
               </p>
 
-              <div className="not-prose mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: Malware Detection & Response Workflow (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="not-prose mb-8">
+                <div className="rounded-xl overflow-hidden border border-border">
+                  <OptimizedImage 
+                    src={malwareDetectionWorkflow}
+                    alt="Malware Detection and Response Workflow - showing isolate infected system, analyze malware, remove malware, and monitor network steps"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Malware detection and response workflow
+                </figcaption>
+              </figure>
             </section>
 
             {/* Automatic Backups */}
