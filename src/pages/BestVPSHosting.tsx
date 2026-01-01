@@ -5,6 +5,9 @@ import Newsletter from '@/components/Newsletter';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import OptimizedImage from '@/components/OptimizedImage';
 import blogVps from '@/assets/highlighted-vps-hosting.webp';
+import vpsManagedVsUnmanaged from '@/assets/vps-managed-vs-unmanaged.webp';
+import vpsPricingTiers from '@/assets/vps-pricing-tiers.webp';
+import vpsProviderComparison from '@/assets/vps-provider-comparison.webp';
 import { 
   Server, 
   Cpu, 
@@ -616,12 +619,19 @@ const BestVPSHosting = () => {
                 </p>
               </div>
 
-              <div className="not-prose mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: Managed vs Unmanaged VPS Comparison (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="not-prose mb-8">
+                <div className="rounded-xl overflow-hidden border border-border">
+                  <OptimizedImage 
+                    src={vpsManagedVsUnmanaged}
+                    alt="Managed vs Unmanaged VPS Comparison - showing key differences in support, management, and security responsibilities"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Key differences between managed and unmanaged VPS hosting
+                </figcaption>
+              </figure>
             </section>
 
             {/* Key Features */}
@@ -1124,12 +1134,19 @@ const BestVPSHosting = () => {
                 </div>
               </div>
 
-              <div className="not-prose mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: VPS Provider Comparison Chart (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="not-prose mb-8">
+                <div className="rounded-xl overflow-hidden border border-border">
+                  <OptimizedImage 
+                    src={vpsProviderComparison}
+                    alt="VPS Provider Comparison Chart - comparing DigitalOcean, Vultr, Linode, AWS Lightsail, and Hostinger"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  VPS provider comparison: monthly cost, RAM, storage, CPU, support, and ratings
+                </figcaption>
+              </figure>
             </section>
 
             {/* Pricing Breakdown */}
@@ -1210,12 +1227,19 @@ const BestVPSHosting = () => {
                 </p>
               </div>
 
-              <div className="not-prose mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: VPS Pricing Tiers Breakdown (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="not-prose mb-8">
+                <div className="rounded-xl overflow-hidden border border-border">
+                  <OptimizedImage 
+                    src={vpsPricingTiers}
+                    alt="VPS Pricing Tiers Breakdown - Basic, Standard, Advanced, and Premium tiers with specs and pricing"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  VPS pricing tiers breakdown: from entry-level to high-traffic enterprise solutions
+                </figcaption>
+              </figure>
             </section>
 
             {/* WordPress VPS */}
