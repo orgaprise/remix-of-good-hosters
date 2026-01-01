@@ -132,14 +132,28 @@ const WebsiteBackupStrategies = () => {
   return (
     <>
       <Helmet>
-        <title>Website Backup Strategies: Protect Your Business Data | Good Hosters</title>
-        <meta name="description" content="Learn essential website backup strategies to protect your business data. Covers automated backups, cloud solutions, disaster recovery, and best practices for 2026." />
-        <meta name="keywords" content="website backup strategies, website backup solutions, business website backup, automated website backups, cloud backup for websites, website disaster recovery" />
+        <title>Website Backup Strategies: Protect Your Business Data (2026) | GoodHosters</title>
+        <meta name="description" content="Master website backup strategies with our 2026 guide. Learn the 3-2-1 backup rule, automated backup solutions, disaster recovery planning, and protect your business from data loss." />
+        <meta name="keywords" content="website backup strategies, website backup solutions, 3-2-1 backup rule, automated website backups, cloud backup for websites, website disaster recovery, WordPress backup, business data protection" />
         <link rel="canonical" href="https://goodhosters.com/website-backup-strategies" />
-        <meta property="og:title" content="Website Backup Strategies: Protect Your Business Data" />
-        <meta property="og:description" content="Learn essential website backup strategies to protect your business data. Covers automated backups, cloud solutions, and disaster recovery." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta property="og:title" content="Website Backup Strategies: Protect Your Business Data (2026)" />
+        <meta property="og:description" content="Complete guide to website backup strategies. Learn the 3-2-1 rule, automated backups, and disaster recovery to protect your business." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/website-backup-strategies" />
+        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:site_name" content="GoodHosters" />
+        <meta property="article:published_time" content="2026-01-15" />
+        <meta property="article:modified_time" content="2026-01-15" />
+        <meta property="article:author" content="GoodHosters" />
+        <meta property="article:section" content="Data Protection" />
+        <meta property="article:tag" content="backup" />
+        <meta property="article:tag" content="disaster recovery" />
+        <meta property="article:tag" content="data protection" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Website Backup Strategies: The Complete 2026 Guide" />
+        <meta name="twitter:description" content="Protect your business with proven backup strategies. Learn the 3-2-1 rule and disaster recovery best practices." />
+        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

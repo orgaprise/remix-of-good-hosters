@@ -157,21 +157,28 @@ const WebHostingSecurityGuide = () => {
   return (
     <>
       <Helmet>
-        <title>Essential Web Hosting Security Features: What Every Site Needs (2026)</title>
-        <meta name="description" content="Complete guide to web hosting security features: SSL certificates, DDoS protection, firewalls, malware scanning, backups, and 2FA. Expert analysis of what your website actually needs in 2026." />
-        <meta name="keywords" content="web hosting security features, essential hosting security features, website hosting security, secure web hosting, SSL certificate hosting, DDoS protection hosting, firewall protection for hosting, malware scanning and removal, automatic backups hosting" />
+        <title>Web Hosting Security Features: Complete 2026 Guide | GoodHosters</title>
+        <meta name="description" content="Essential web hosting security guide for 2026. Learn about SSL certificates, WAF firewalls, DDoS protection, malware scanning, backups, and 2FA. Expert analysis of security features your website needs." />
+        <meta name="keywords" content="web hosting security features, secure web hosting, SSL certificate hosting, DDoS protection, WAF firewall, malware scanning, automatic backups, website security 2026, hosting security checklist" />
         <link rel="canonical" href="https://goodhosters.com/web-hosting-security-guide" />
-        <meta property="og:title" content="Essential Web Hosting Security Features: 2026 Guide" />
-        <meta property="og:description" content="Expert guide to web hosting security. Learn which security features matter and which hosts offer the best protection." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta property="og:title" content="Web Hosting Security Features: Complete 2026 Guide" />
+        <meta property="og:description" content="Expert guide to web hosting security. SSL, DDoS protection, WAF, malware scanning, and more." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/web-hosting-security-guide" />
+        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-28" />
         <meta property="article:modified_time" content="2025-12-30" />
         <meta property="article:author" content="Alex Mitchell" />
-        <meta property="article:section" content="Web Hosting Security" />
+        <meta property="article:section" content="Security" />
+        <meta property="article:tag" content="security" />
+        <meta property="article:tag" content="SSL" />
+        <meta property="article:tag" content="DDoS protection" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Web Hosting Security Features: Complete Guide" />
-        <meta name="twitter:description" content="Everything you need to know about securing your website through your hosting provider." />
+        <meta name="twitter:title" content="Web Hosting Security: Essential Features Guide" />
+        <meta name="twitter:description" content="Complete guide to securing your website through your hosting provider." />
+        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>

@@ -150,21 +150,28 @@ const ManagedVsUnmanagedWordPress = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Managed vs Unmanaged WordPress Hosting: Complete 2026 Guide | GoodHosters</title>
-        <meta name="description" content="Expert comparison of managed vs unmanaged WordPress hosting. Learn the differences in performance, security, cost, and support to make the right choice for your website." />
-        <meta name="keywords" content="managed vs unmanaged WordPress hosting, what is managed WordPress hosting, managed WordPress hosting benefits, unmanaged WordPress hosting explained, WordPress hosting for beginners" />
+        <title>Managed vs Unmanaged WordPress Hosting: Complete 2026 Comparison | GoodHosters</title>
+        <meta name="description" content="Expert comparison of managed vs unmanaged WordPress hosting for 2026. Compare performance, security, cost, and support. Find out which hosting type suits your WordPress site best." />
+        <meta name="keywords" content="managed vs unmanaged WordPress hosting, managed WordPress hosting, WordPress hosting comparison, best WordPress hosting 2026, WP Engine vs Cloudways, WordPress performance hosting" />
         <link rel="canonical" href="https://goodhosters.com/managed-vs-unmanaged-wordpress-hosting" />
-        <meta property="og:title" content="Managed vs Unmanaged WordPress Hosting: Which Should You Choose?" />
-        <meta property="og:description" content="Complete guide comparing managed and unmanaged WordPress hosting options. Expert analysis of costs, performance, and best use cases." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta property="og:title" content="Managed vs Unmanaged WordPress Hosting: 2026 Comparison" />
+        <meta property="og:description" content="Expert analysis of managed vs unmanaged WordPress hosting. Performance, security, and cost comparison." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/managed-vs-unmanaged-wordpress-hosting" />
+        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-26" />
         <meta property="article:modified_time" content="2025-12-30" />
         <meta property="article:author" content="Sarah Mitchell" />
-        <meta property="article:section" content="WordPress Hosting" />
+        <meta property="article:section" content="WordPress" />
+        <meta property="article:tag" content="WordPress hosting" />
+        <meta property="article:tag" content="managed hosting" />
+        <meta property="article:tag" content="unmanaged hosting" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Managed vs Unmanaged WordPress Hosting Explained" />
-        <meta name="twitter:description" content="Expert guide to choosing between managed and unmanaged WordPress hosting in 2026." />
+        <meta name="twitter:title" content="Managed vs Unmanaged WordPress Hosting" />
+        <meta name="twitter:description" content="Complete guide to choosing between managed and unmanaged WordPress hosting." />
+        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
