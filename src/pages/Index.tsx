@@ -130,7 +130,7 @@ const Index = () => {
           })}
         </script>
         
-        {/* WebSite Schema - Enhanced with SearchAction */}
+        {/* WebSite Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -142,14 +142,6 @@ const Index = () => {
             "publisher": {
               "@id": "https://goodhosters.com/#organization"
             },
-            "potentialAction": [{
-              "@type": "SearchAction",
-              "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://goodhosters.com/search?q={search_term_string}"
-              },
-              "query-input": "required name=search_term_string"
-            }],
             "inLanguage": "en-US"
           })}
         </script>
@@ -227,12 +219,12 @@ const Index = () => {
             "itemListOrder": "https://schema.org/ItemListOrderDescending",
             "numberOfItems": 6,
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Hostinger", "url": "https://goodhosters.com/reviews/hostinger" },
-              { "@type": "ListItem", "position": 2, "name": "Bluehost", "url": "https://goodhosters.com/reviews/bluehost" },
-              { "@type": "ListItem", "position": 3, "name": "SiteGround", "url": "https://goodhosters.com/reviews/siteground" },
-              { "@type": "ListItem", "position": 4, "name": "Cloudways", "url": "https://goodhosters.com/reviews/cloudways" },
-              { "@type": "ListItem", "position": 5, "name": "A2 Hosting", "url": "https://goodhosters.com/reviews/a2-hosting" },
-              { "@type": "ListItem", "position": 6, "name": "DigitalOcean", "url": "https://goodhosters.com/reviews/digitalocean" }
+              { "@type": "ListItem", "position": 1, "name": "Hostinger", "url": "https://goodhosters.com/best-web-hosting-2026#hostinger" },
+              { "@type": "ListItem", "position": 2, "name": "Bluehost", "url": "https://goodhosters.com/best-web-hosting-2026#bluehost" },
+              { "@type": "ListItem", "position": 3, "name": "SiteGround", "url": "https://goodhosters.com/best-web-hosting-2026#siteground" },
+              { "@type": "ListItem", "position": 4, "name": "Cloudways", "url": "https://goodhosters.com/best-web-hosting-2026#cloudways" },
+              { "@type": "ListItem", "position": 5, "name": "A2 Hosting", "url": "https://goodhosters.com/best-web-hosting-2026#a2-hosting" },
+              { "@type": "ListItem", "position": 6, "name": "DigitalOcean", "url": "https://goodhosters.com/best-web-hosting-2026#digitalocean" }
             ]
           })}
         </script>
