@@ -152,7 +152,7 @@ const BlogArticle = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-              After testing 47 hosting providers over 18 months, here's my honest breakdown of which services actually deliver—and which ones are just marketing hype.
+              After testing 47 hosting providers over 18 months, here's my honest breakdown of which services actually deliver, and which ones are just marketing hype.
             </p>
 
             <div className="flex items-center gap-4 pb-6 border-b border-border">
@@ -207,7 +207,7 @@ const BlogArticle = () => {
               </p>
               
               <p className="leading-relaxed">
-                I've spent the better part of two years running synthetic benchmarks, deploying identical WordPress installations across providers, and yes—deliberately breaking things to test support response times. The hosting landscape has shifted dramatically since 2024, with cloud-native solutions becoming the new baseline and traditional shared hosting finally getting the infrastructure upgrades it desperately needed. If you're still unsure about which type suits you best, check out our detailed guide on <Link to={internalLinks.cloudVsShared} className="text-primary hover:underline font-medium">Cloud vs Shared Hosting</Link>.
+                I've spent the better part of two years running synthetic benchmarks, deploying identical WordPress installations across providers, and yes, deliberately breaking things to test support response times. The hosting landscape has shifted dramatically since 2024, with cloud-native solutions becoming the new baseline and traditional shared hosting finally getting the infrastructure upgrades it desperately needed. If you're still unsure about which type suits you best, check out our detailed guide on <Link to={internalLinks.cloudVsShared} className="text-primary hover:underline font-medium">Cloud vs Shared Hosting</Link>.
               </p>
 
               <div className="bg-primary/5 border-l-4 border-primary p-4 rounded-r-lg my-6">
@@ -561,7 +561,7 @@ const BlogArticle = () => {
                 </div>
 
                 <p className="text-muted-foreground mb-4">
-                  Liquid Web is what you turn to when downtime isn't just inconvenient—it's expensive. Their 100% uptime SLA isn't marketing fluff; they'll actually credit you 1000% of any downtime.
+                  Liquid Web is what you turn to when downtime isn't just inconvenient, it's expensive. Their 100% uptime SLA isn't marketing fluff; they'll actually credit you 1000% of any downtime.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-4 mb-4">
@@ -793,7 +793,7 @@ const BlogArticle = () => {
               {/* Performance chart */}
               <figure className="mt-8">
                 <figcaption className="text-center text-base font-semibold text-foreground mb-3">
-                  Performance Benchmark Results — TTFB by Provider
+                  Performance Benchmark Results: TTFB by Provider
                 </figcaption>
                 <div className="rounded-lg overflow-hidden border border-border bg-white">
                   <OptimizedImage 
@@ -815,7 +815,7 @@ const BlogArticle = () => {
               <h2 className="text-2xl md:text-3xl font-bold mb-6">How to Choose the Right Hosting Provider</h2>
               
               <p className="leading-relaxed">
-                After reviewing dozens of best hosting services in 2026, I've noticed that people often choose based on price alone—and regret it later. Here's a framework that actually works:
+                After reviewing dozens of best hosting services in 2026, I've noticed that people often choose based on price alone and regret it later. Here's a framework that actually works:
               </p>
 
               {/* Decision flowchart */}
@@ -876,7 +876,7 @@ const BlogArticle = () => {
                   <li>• Ignoring server location relative to your audience</li>
                   <li>• Skipping backup verification until it's too late</li>
                   <li>• Underestimating the value of quality support</li>
-                  <li>• Neglecting security features — see our <Link to={internalLinks.securityFeatures} className="underline hover:no-underline">security essentials guide</Link></li>
+                  <li>• Neglecting security features. See our <Link to={internalLinks.securityFeatures} className="underline hover:no-underline">security essentials guide</Link></li>
                 </ul>
               </div>
             </section>
@@ -889,15 +889,15 @@ const BlogArticle = () => {
                 {[
                   {
                     q: "What is the best web hosting provider in 2026?",
-                    a: "Based on our extensive testing, Cloudways leads for raw performance, Hostinger offers the best value, and SiteGround excels specifically for WordPress. The 'best' depends on your specific needs—a small blog has different requirements than an e-commerce store."
+                    a: "Based on our extensive testing, Cloudways leads for raw performance, Hostinger offers the best value, and SiteGround excels specifically for WordPress. The 'best' depends on your specific needs. A small blog has different requirements than an e-commerce store."
                   },
                   {
                     q: "How much should I budget for web hosting in 2026?",
-                    a: "Quality shared hosting starts at $2-5/month on promotional terms. VPS hosting ranges $20-50/month, and managed cloud hosting typically costs $30-100/month. Avoid anything under $2/month—the tradeoffs in performance and support aren't worth the savings."
+                    a: "Quality shared hosting starts at $2-5/month on promotional terms. VPS hosting ranges $20-50/month, and managed cloud hosting typically costs $30-100/month. Avoid anything under $2/month because the tradeoffs in performance and support aren't worth the savings."
                   },
                   {
                     q: "Is shared hosting still viable in 2026?",
-                    a: "Absolutely. Modern shared hosting with NVMe storage and LiteSpeed servers delivers excellent performance for sites under 50,000 monthly visitors. The technology has improved dramatically—you're not sharing a server with 500 other sites like in 2015."
+                    a: "Absolutely. Modern shared hosting with NVMe storage and LiteSpeed servers delivers excellent performance for sites under 50,000 monthly visitors. The technology has improved dramatically, and you're not sharing a server with 500 other sites like in 2015."
                   },
                   {
                     q: "Should I choose a host based on WordPress recommendations?",
@@ -933,7 +933,7 @@ const BlogArticle = () => {
               </p>
 
               <p className="leading-relaxed">
-                The hosting landscape in 2026 is genuinely competitive. Even the "budget" options have upped their game significantly. But don't get paralyzed by choice—pick a provider that matches your current needs with room to grow, and you'll be fine.
+                The hosting landscape in 2026 is genuinely competitive. Even the "budget" options have upped their game significantly. But don't get paralyzed by choice. Pick a provider that matches your current needs with room to grow, and you'll be fine.
               </p>
 
               <div className="my-8 p-6 bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl border border-primary/20 not-prose">
