@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
 import blogSsl from "@/assets/highlighted-ssl-certificates.webp";
+import httpVsHttps from "@/assets/http-vs-https-comparison.webp";
+import sslCertificateTypes from "@/assets/ssl-certificate-types.webp";
+import sslInstallationFlowchart from "@/assets/ssl-installation-flowchart.webp";
 
 const SSLCertificatesGuide = () => {
   const articleSchema = {
@@ -479,12 +482,19 @@ const SSLCertificatesGuide = () => {
                 </div>
               </div>
 
-              <div className="mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: HTTP vs HTTPS - Security, Trust & SEO Impact (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="mb-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={httpVsHttps}
+                    alt="HTTP vs HTTPS comparison showing encryption, authentication, security status, and SEO impact differences"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  HTTP vs HTTPS: Key differences in security, trust, and SEO rankings
+                </figcaption>
+              </figure>
             </section>
 
             {/* SSL Certificate Types */}
@@ -543,12 +553,19 @@ const SSLCertificatesGuide = () => {
                 </table>
               </div>
 
-              <div className="mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: SSL Certificate Types Comparison - DV vs OV vs EV (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="mb-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={sslCertificateTypes}
+                    alt="SSL certificate types comparison - Domain Validation (DV), Organization Validation (OV), and Extended Validation (EV) with features and security levels"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Comparison of SSL certificate types: DV, OV, and EV validation levels
+                </figcaption>
+              </figure>
 
               <h3 className="font-display text-xl font-bold text-foreground mb-4">Breaking Down Each Type</h3>
 
@@ -809,12 +826,19 @@ const SSLCertificatesGuide = () => {
                 </div>
               </div>
 
-              <div className="mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: SSL Installation Process Flowchart (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="mb-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={sslInstallationFlowchart}
+                    alt="SSL installation process flowchart showing steps from CSR generation to web server configuration"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  SSL installation process: From CSR generation to server configuration
+                </figcaption>
+              </figure>
             </section>
 
             {/* Hosting with Free SSL */}
