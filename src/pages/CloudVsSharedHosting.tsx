@@ -8,6 +8,7 @@ import blogCloudHosting from '@/assets/blog-cloud-hosting.webp';
 import cloudVsSharedArchitecture from '@/assets/cloud-vs-shared-architecture.webp';
 import cloudVsSharedResponseTime from '@/assets/cloud-vs-shared-response-time.webp';
 import performanceComparisonTrafficLoad from '@/assets/performance-comparison-traffic-load.webp';
+import authorMalloryKeegan from '@/assets/author-mallory-keegan.webp';
 import { 
   Cloud, 
   Server, 
@@ -54,9 +55,9 @@ const CloudVsSharedHosting = () => {
     "image": "https://goodhosters.com/images/cloud-vs-shared-hosting.webp",
     "author": {
       "@type": "Person",
-      "name": "Alex Mitchell",
-      "jobTitle": "Senior Tech Reviewer",
-      "url": "https://goodhosters.com/authors/alex-mitchell"
+      "name": "Mallory Keegan",
+      "jobTitle": "Web Hosting Reviewer",
+      "url": "https://goodhosters.com/authors/mallory-keegan"
     },
     "publisher": {
       "@type": "Organization",
@@ -138,7 +139,7 @@ const CloudVsSharedHosting = () => {
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-28" />
         <meta property="article:modified_time" content="2025-12-30" />
-        <meta property="article:author" content="Alex Mitchell" />
+        <meta property="article:author" content="Mallory Keegan" />
         <meta property="article:section" content="Web Hosting" />
         <meta property="article:tag" content="cloud hosting" />
         <meta property="article:tag" content="shared hosting" />
@@ -191,12 +192,14 @@ const CloudVsSharedHosting = () => {
             </p>
 
             <div className="flex items-center gap-4 pb-6 border-b border-border">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center text-primary-foreground font-bold">
-                AM
-              </div>
+              <img 
+                src={authorMalloryKeegan} 
+                alt="Mallory Keegan" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
               <div>
-                <p className="font-semibold text-foreground" itemProp="author">Alex Mitchell</p>
-                <p className="text-sm text-muted-foreground">Senior Tech Reviewer • 12 years in web infrastructure</p>
+                <p className="font-semibold text-foreground" itemProp="author">Mallory Keegan</p>
+                <p className="text-sm text-muted-foreground">Web hosting enthusiast who tests providers and breaks down features, pricing, and real world speed</p>
               </div>
             </div>
           </header>

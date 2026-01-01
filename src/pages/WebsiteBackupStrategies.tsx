@@ -18,8 +18,10 @@ const WebsiteBackupStrategies = () => {
     "description": "Learn essential website backup strategies to protect your business data. Covers automated backups, cloud solutions, disaster recovery, and best practices for 2026.",
     "image": "https://goodhosters.com/images/website-backup-strategies.webp",
     "author": {
-      "@type": "Organization",
-      "name": "Good Hosters"
+      "@type": "Person",
+      "name": "Mallory Keegan",
+      "jobTitle": "Web Hosting Reviewer",
+      "url": "https://goodhosters.com/authors/mallory-keegan"
     },
     "publisher": {
       "@type": "Organization",
@@ -145,7 +147,7 @@ const WebsiteBackupStrategies = () => {
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2026-01-15" />
         <meta property="article:modified_time" content="2026-01-15" />
-        <meta property="article:author" content="GoodHosters" />
+        <meta property="article:author" content="Mallory Keegan" />
         <meta property="article:section" content="Data Protection" />
         <meta property="article:tag" content="backup" />
         <meta property="article:tag" content="disaster recovery" />

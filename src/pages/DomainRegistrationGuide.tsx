@@ -19,8 +19,9 @@ const DomainRegistrationGuide = () => {
     "image": "https://goodhosters.com/images/domain-registration-guide-2026.webp",
     "author": {
       "@type": "Person",
-      "name": "Alex Rivera",
-      "url": "https://goodhosters.com/authors/alex-rivera"
+      "name": "Mallory Keegan",
+      "jobTitle": "Web Hosting Reviewer",
+      "url": "https://goodhosters.com/authors/mallory-keegan"
     },
     "publisher": {
       "@type": "Organization",
@@ -166,7 +167,7 @@ const DomainRegistrationGuide = () => {
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-20" />
         <meta property="article:modified_time" content="2025-12-30" />
-        <meta property="article:author" content="Alex Rivera" />
+        <meta property="article:author" content="Mallory Keegan" />
         <meta property="article:section" content="Domains" />
         <meta property="article:tag" content="domains" />
         <meta property="article:tag" content="registrar" />
@@ -222,7 +223,7 @@ const DomainRegistrationGuide = () => {
             <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground pb-8 border-b border-border">
               <div className="flex items-center gap-2">
                 <User className="w-4 h-4" />
-                <span>Alex Rivera</span>
+                <span>Mallory Keegan</span>
               </div>
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />

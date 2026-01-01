@@ -20,8 +20,9 @@ const ManagedVsUnmanagedWordPress = () => {
     "image": "https://goodhosters.com/images/managed-vs-unmanaged-wordpress.webp",
     "author": {
       "@type": "Person",
-      "name": "Sarah Mitchell",
-      "url": "https://goodhosters.com/authors/sarah-mitchell"
+      "name": "Mallory Keegan",
+      "jobTitle": "Web Hosting Reviewer",
+      "url": "https://goodhosters.com/authors/mallory-keegan"
     },
     "publisher": {
       "@type": "Organization",
@@ -163,7 +164,7 @@ const ManagedVsUnmanagedWordPress = () => {
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-26" />
         <meta property="article:modified_time" content="2025-12-30" />
-        <meta property="article:author" content="Sarah Mitchell" />
+        <meta property="article:author" content="Mallory Keegan" />
         <meta property="article:section" content="WordPress" />
         <meta property="article:tag" content="WordPress hosting" />
         <meta property="article:tag" content="managed hosting" />
@@ -220,7 +221,7 @@ const ManagedVsUnmanagedWordPress = () => {
             <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground pb-8 border-b border-border">
               <div className="flex items-center gap-2">
                 <User className="w-4 h-4" />
-                <span>Sarah Mitchell</span>
+                <span>Mallory Keegan</span>
               </div>
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
