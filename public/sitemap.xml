@@ -7,9 +7,11 @@
     http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
     http://www.google.com/schemas/sitemap-image/1.1
     http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+  
+  <!-- Main Pages -->
   <url>
     <loc>https://goodhosters.com/</loc>
-    <lastmod>2024-12-30</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -18,124 +20,10 @@
     </image:image>
   </url>
   <url>
-    <loc>https://goodhosters.com/reviews/hostinger</loc>
-    <lastmod>2024-12-30</lastmod>
+    <loc>https://goodhosters.com/hosting</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/reviews/bluehost</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/reviews/siteground</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/reviews/cloudways</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/reviews/a2-hosting</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/reviews/digitalocean</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/hosting/shared</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/hosting/vps</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/hosting/cloud</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/hosting/wordpress</loc>
-    <lastmod>2024-12-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/best-web-hosting-2026</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/cloud-vs-shared-hosting</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/web-hosting-security-guide</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/best-vps-hosting-2026</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/managed-vs-unmanaged-wordpress-hosting</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/website-speed-optimization-guide</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/ssl-certificates-guide</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/domain-registration-guide</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/website-backup-strategies</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://goodhosters.com/professional-email-hosting</loc>
-    <lastmod>2026-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goodhosters.com/services</loc>
@@ -147,7 +35,7 @@
     <loc>https://goodhosters.com/blog</loc>
     <lastmod>2026-01-01</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://goodhosters.com/hosting-finder</loc>
@@ -157,37 +45,107 @@
   </url>
   <url>
     <loc>https://goodhosters.com/about</loc>
-    <lastmod>2024-12-30</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goodhosters.com/help</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://goodhosters.com/contact</loc>
-    <lastmod>2024-12-30</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <!-- Blog Articles -->
+  <url>
+    <loc>https://goodhosters.com/best-web-hosting-2026</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodhosters.com/cloud-vs-shared-hosting</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodhosters.com/web-hosting-security-guide</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodhosters.com/best-vps-hosting-2026</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodhosters.com/managed-vs-unmanaged-wordpress-hosting</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodhosters.com/website-speed-optimization-guide</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodhosters.com/ssl-certificates-guide</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodhosters.com/domain-registration-guide</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodhosters.com/website-backup-strategies</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodhosters.com/professional-email-hosting</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legal Pages -->
   <url>
     <loc>https://goodhosters.com/privacy-policy</loc>
-    <lastmod>2025-12-31</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://goodhosters.com/terms-of-service</loc>
-    <lastmod>2025-12-31</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://goodhosters.com/cookie-policy</loc>
-    <lastmod>2025-12-31</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://goodhosters.com/disclosure</loc>
-    <lastmod>2025-12-31</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
