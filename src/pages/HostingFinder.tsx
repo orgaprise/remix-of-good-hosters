@@ -23,9 +23,7 @@ import {
   Gauge,
   Shield,
   Database,
-  Cpu,
   HardDrive,
-  Cloud,
   Building2,
   Briefcase,
   Palette,
@@ -41,7 +39,11 @@ import {
   BarChart3,
   ExternalLink,
   Star,
-  Award
+  Award,
+  Lightbulb,
+  Target,
+  CircleDollarSign,
+  Cpu
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
@@ -71,6 +73,7 @@ const questions = {
     question: "What's the main purpose of your website?",
     subtitle: "Help us understand your primary goal",
     multiSelect: false,
+    tip: "Your website's purpose determines the type of hosting you need. E-commerce sites need more resources than simple blogs.",
     options: [
       { value: "personal", label: "Personal / Hobby", icon: Palette, description: "Blog, portfolio, or personal project" },
       { value: "business", label: "Business / Professional", icon: Briefcase, description: "Company website, services showcase" },
@@ -84,6 +87,7 @@ const questions = {
     question: "What type of content will dominate your site?",
     subtitle: "This helps us recommend the right storage and bandwidth",
     multiSelect: false,
+    tip: "Video and image-heavy sites need more bandwidth and storage. Text-based sites can run efficiently on basic plans.",
     options: [
       { value: "text", label: "Mostly Text & Articles", icon: FileText, description: "Blogs, news, documentation" },
       { value: "images", label: "Image-Heavy", icon: Palette, description: "Photography, galleries, portfolios" },
@@ -97,6 +101,7 @@ const questions = {
     question: "Which platform or technology will you use?",
     subtitle: "Choose the CMS or framework for your site",
     multiSelect: false,
+    tip: "WordPress powers 40% of the web and has specialized hosting. Custom apps may need VPS or cloud hosting.",
     options: [
       { value: "wordpress", label: "WordPress", description: "Most popular CMS, easy to use" },
       { value: "woocommerce", label: "WooCommerce", description: "WordPress + E-commerce" },
@@ -115,6 +120,7 @@ const questions = {
     question: "Which features are essential for you?",
     subtitle: "Select all that apply to your project",
     multiSelect: true,
+    tip: "SSL is essential for security and SEO. Backups protect against data loss. CDN improves global loading speeds.",
     options: [
       { value: "ssl", label: "Free SSL Certificate", icon: Lock, description: "HTTPS security" },
       { value: "email", label: "Professional Email", icon: Mail, description: "Custom domain emails" },
@@ -132,6 +138,7 @@ const questions = {
     question: "What's your expected monthly traffic?",
     subtitle: "Estimate your visitor numbers",
     multiSelect: false,
+    tip: "Start with what you need now. Most hosts make it easy to upgrade as you grow.",
     options: [
       { value: "starter", label: "Just Starting Out", icon: Rocket, description: "Less than 5,000 visitors/month" },
       { value: "small", label: "Small but Growing", icon: TrendingUp, description: "5,000 - 25,000 visitors/month" },
@@ -145,6 +152,7 @@ const questions = {
     question: "What's your growth expectation?",
     subtitle: "Plan for scalability",
     multiSelect: false,
+    tip: "Cloud hosting offers the best scalability. Shared hosting is fine for stable, smaller sites.",
     options: [
       { value: "stable", label: "Steady & Stable", icon: BarChart3, description: "Consistent traffic, minimal growth" },
       { value: "moderate", label: "Moderate Growth", icon: TrendingUp, description: "10-30% growth per year" },
@@ -156,6 +164,7 @@ const questions = {
     question: "How important is security for your site?",
     subtitle: "Based on the sensitivity of your data",
     multiSelect: false,
+    tip: "E-commerce sites handling payments need PCI compliance. All sites benefit from malware scanning and firewalls.",
     options: [
       { value: "basic", label: "Basic Protection", icon: Shield, description: "Standard SSL and firewall" },
       { value: "enhanced", label: "Enhanced Security", icon: Lock, description: "Malware scanning, DDoS protection" },
@@ -167,6 +176,7 @@ const questions = {
     question: "What level of support do you need?",
     subtitle: "Choose based on your technical confidence",
     multiSelect: false,
+    tip: "24/7 support is valuable for business-critical sites. Self-managed options are cheaper but require technical skills.",
     options: [
       { value: "self", label: "Self-Service is Fine", icon: Code, description: "Documentation and forums" },
       { value: "email", label: "Email / Ticket Support", icon: Mail, description: "Response within 24 hours" },
@@ -178,6 +188,7 @@ const questions = {
     question: "What's your technical experience level?",
     subtitle: "Be honest - this helps us recommend the right solution",
     multiSelect: false,
+    tip: "Beginners benefit from managed hosting with easy control panels. Developers may prefer VPS with full control.",
     options: [
       { value: "beginner", label: "Complete Beginner", icon: Users, description: "Never managed hosting before" },
       { value: "basic", label: "Basic Knowledge", icon: Globe, description: "Can follow tutorials, use cPanel" },
@@ -189,6 +200,7 @@ const questions = {
     question: "Where is your target audience located?",
     subtitle: "Server location affects loading speed",
     multiSelect: false,
+    tip: "Choose a server location closest to your audience. For global audiences, a CDN is essential.",
     options: [
       { value: "us", label: "United States", icon: MapPin, description: "North American audience" },
       { value: "europe", label: "Europe", icon: MapPin, description: "European audience" },
@@ -202,6 +214,7 @@ const questions = {
     question: "What's your monthly hosting budget?",
     subtitle: "We'll find the best value in your range",
     multiSelect: false,
+    tip: "Quality hosting starts around $3-5/month. Investing in good hosting saves money on fixes and lost customers.",
     options: [
       { value: "minimal", label: "Minimal Budget", icon: DollarSign, description: "$0 - $5/month" },
       { value: "economy", label: "Economy", icon: DollarSign, description: "$5 - $15/month" },
@@ -215,6 +228,7 @@ const questions = {
     question: "When do you need to launch?",
     subtitle: "Some setups take longer than others",
     multiSelect: false,
+    tip: "Most shared hosting is ready instantly. VPS and custom setups may need a few days for configuration.",
     options: [
       { value: "urgent", label: "ASAP", icon: Zap, description: "Within the next week" },
       { value: "soon", label: "Within a Month", icon: Clock, description: "1-4 weeks" },
@@ -225,6 +239,40 @@ const questions = {
 };
 
 const stepOrder: Step[] = ['purpose', 'type', 'platform', 'features', 'traffic', 'growth', 'security', 'support', 'experience', 'location', 'budget', 'timeline', 'email', 'result'];
+
+// Expert tips for the left panel
+const expertTips = [
+  {
+    icon: Shield,
+    title: "Security First",
+    description: "Always choose a host with free SSL, automated backups, and malware protection."
+  },
+  {
+    icon: Gauge,
+    title: "Speed Matters",
+    description: "A 1-second delay in page load can reduce conversions by 7%. Choose fast servers."
+  },
+  {
+    icon: TrendingUp,
+    title: "Plan for Growth",
+    description: "Pick a host that makes it easy to upgrade as your traffic increases."
+  },
+  {
+    icon: HeadphonesIcon,
+    title: "Support Quality",
+    description: "24/7 expert support can save you hours of frustration when issues arise."
+  },
+  {
+    icon: CircleDollarSign,
+    title: "True Cost",
+    description: "Watch for renewal prices - introductory rates often increase significantly."
+  },
+  {
+    icon: Cpu,
+    title: "Resource Allocation",
+    description: "VPS hosting guarantees resources. Shared hosting can slow during peak times."
+  }
+];
 
 interface Recommendation {
   name: string;
@@ -239,7 +287,6 @@ interface Recommendation {
 }
 
 const getRecommendation = (answers: Answers): Recommendation => {
-  // Enterprise-level needs
   if (answers.traffic === 'enterprise' || answers.budget === 'enterprise' || answers.security === 'enterprise') {
     return {
       name: "Cloudways",
@@ -254,12 +301,11 @@ const getRecommendation = (answers: Answers): Recommendation => {
     };
   }
 
-  // E-commerce focused
   if (answers.purpose === 'ecommerce' || answers.platform === 'woocommerce' || answers.platform === 'magento') {
     if (answers.budget === 'premium' || answers.traffic === 'high') {
       return {
         name: "Cloudways",
-        description: "High-performance managed cloud hosting perfect for demanding e-commerce stores with heavy traffic.",
+        description: "High-performance managed cloud hosting perfect for demanding e-commerce stores.",
         price: "From $14/mo",
         features: ["Optimized for WooCommerce/Magento", "Free SSL & CDN", "Auto-scaling", "Advanced Caching", "24/7 Support"],
         pros: ["Excellent performance", "Scalable infrastructure", "Great for high-traffic stores"],
@@ -271,7 +317,7 @@ const getRecommendation = (answers: Answers): Recommendation => {
     }
     return {
       name: "SiteGround",
-      description: "Excellent WooCommerce hosting with top-tier support, security, and e-commerce optimizations.",
+      description: "Excellent WooCommerce hosting with top-tier support and e-commerce optimizations.",
       price: "From $3.99/mo",
       features: ["WooCommerce Pre-installed", "Free SSL & CDN", "Daily Backups", "Free Site Migration", "24/7 Priority Support"],
       pros: ["Outstanding support", "E-commerce optimized", "Easy to use"],
@@ -282,7 +328,6 @@ const getRecommendation = (answers: Answers): Recommendation => {
     };
   }
 
-  // Developer / Web App focus
   if (answers.purpose === 'webapp' || answers.experience === 'advanced' || answers.platform === 'node' || answers.platform === 'python') {
     if (answers.traffic === 'high' || answers.traffic === 'enterprise') {
       return {
@@ -310,7 +355,6 @@ const getRecommendation = (answers: Answers): Recommendation => {
     };
   }
 
-  // Speed priority
   if (answers.features.includes('cdn') || answers.location === 'global') {
     return {
       name: "A2 Hosting",
@@ -325,7 +369,6 @@ const getRecommendation = (answers: Answers): Recommendation => {
     };
   }
 
-  // Premium support needed
   if (answers.support === 'live' || answers.support === 'managed') {
     return {
       name: "SiteGround",
@@ -340,7 +383,6 @@ const getRecommendation = (answers: Answers): Recommendation => {
     };
   }
 
-  // WordPress-specific
   if (answers.platform === 'wordpress') {
     if (answers.support === 'managed' || answers.experience === 'beginner') {
       return {
@@ -357,7 +399,6 @@ const getRecommendation = (answers: Answers): Recommendation => {
     }
   }
 
-  // Budget-conscious
   if (answers.budget === 'minimal' || answers.budget === 'economy') {
     return {
       name: "Hostinger",
@@ -372,7 +413,6 @@ const getRecommendation = (answers: Answers): Recommendation => {
     };
   }
 
-  // Default recommendation
   return {
     name: "Hostinger",
     description: "Great all-around hosting with excellent value, solid performance, and user-friendly management.",
@@ -384,6 +424,75 @@ const getRecommendation = (answers: Answers): Recommendation => {
     rating: 4.5,
     badge: "Top Pick"
   };
+};
+
+// Left Panel Component
+const AdvicePanel = ({ currentStep, currentTip }: { currentStep: Step; currentTip: string }) => {
+  return (
+    <div className="hidden lg:flex flex-col h-full">
+      {/* Header */}
+      <div className="mb-8">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
+            <Target className="w-6 h-6 text-accent" />
+          </div>
+          <div>
+            <h2 className="font-display text-xl font-bold text-foreground">Hosting Finder</h2>
+            <p className="text-sm text-muted-foreground">Expert-guided recommendations</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Current Tip */}
+      <div className="bg-accent/5 border border-accent/20 rounded-xl p-5 mb-8">
+        <div className="flex items-start gap-3">
+          <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <Lightbulb className="w-4 h-4 text-accent" />
+          </div>
+          <div>
+            <h3 className="font-semibold text-foreground text-sm mb-1">Pro Tip</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">{currentTip}</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Expert Tips Grid */}
+      <div className="flex-1">
+        <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">Expert Insights</h3>
+        <div className="space-y-3">
+          {expertTips.slice(0, 4).map((tip, index) => (
+            <div key={index} className="flex items-start gap-3 p-3 rounded-lg hover:bg-secondary/50 transition-colors">
+              <div className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center flex-shrink-0">
+                <tip.icon className="w-4 h-4 text-accent" />
+              </div>
+              <div>
+                <h4 className="font-medium text-foreground text-sm">{tip.title}</h4>
+                <p className="text-xs text-muted-foreground mt-0.5">{tip.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Trust Badges */}
+      <div className="mt-auto pt-6 border-t border-border">
+        <div className="flex items-center gap-4 text-xs text-muted-foreground">
+          <div className="flex items-center gap-1.5">
+            <Shield className="w-4 h-4 text-accent" />
+            <span>Unbiased</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <Award className="w-4 h-4 text-accent" />
+            <span>50+ Hosts Analyzed</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <Users className="w-4 h-4 text-accent" />
+            <span>50K+ Users</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 const HostingFinder = () => {
@@ -485,7 +594,7 @@ const HostingFinder = () => {
     setStep('purpose');
   };
 
-  // Result screen
+  // Result screen - full width
   if (step === 'result') {
     const rec = getRecommendation(answers);
     return (
@@ -498,7 +607,6 @@ const HostingFinder = () => {
         <Header />
         <main className="min-h-screen bg-gradient-to-br from-secondary via-background to-accent/5 pt-8 pb-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-            {/* Success Header */}
             <div className="text-center mb-12 animate-fade-up">
               <div className="w-20 h-20 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-accent" />
@@ -507,11 +615,10 @@ const HostingFinder = () => {
                 Your Perfect Match Found!
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Based on your answers, we've analyzed 50+ hosting providers to find the best fit for your needs.
+                Based on your answers, we've analyzed 50+ hosting providers to find the best fit.
               </p>
             </div>
 
-            {/* Recommendation Card */}
             <div className="bg-card rounded-2xl border border-border shadow-xl overflow-hidden animate-fade-up-delay-1">
               {rec.badge && (
                 <div className="bg-gradient-to-r from-accent to-brand-coral px-6 py-3">
@@ -544,7 +651,6 @@ const HostingFinder = () => {
                   </div>
                 </div>
 
-                {/* Features Grid */}
                 <div className="grid md:grid-cols-2 gap-4 mb-8">
                   {rec.features.map((feature, i) => (
                     <div key={i} className="flex items-center gap-3 bg-secondary/50 rounded-lg p-3">
@@ -554,7 +660,6 @@ const HostingFinder = () => {
                   ))}
                 </div>
 
-                {/* Pros and Cons */}
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
                   <div>
                     <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
@@ -586,7 +691,6 @@ const HostingFinder = () => {
                   </div>
                 </div>
 
-                {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button variant="accent" size="xl" className="flex-1 group">
                     Get This Deal
@@ -605,7 +709,6 @@ const HostingFinder = () => {
               </div>
             </div>
 
-            {/* Compare Link */}
             <div className="text-center mt-8 animate-fade-up-delay-2">
               <Link to="/blog" className="text-accent hover:underline inline-flex items-center gap-2">
                 Compare all hosting providers
@@ -619,7 +722,12 @@ const HostingFinder = () => {
     );
   }
 
-  // Email step
+  const currentQuestion = questions[step as keyof typeof questions];
+  const isMultiSelect = currentQuestion?.multiSelect;
+  const selectedFeatures = answers.features || [];
+  const currentTip = currentQuestion?.tip || "Take your time to answer each question accurately for the best recommendation.";
+
+  // Email step - split layout
   if (step === 'email') {
     return (
       <>
@@ -629,75 +737,83 @@ const HostingFinder = () => {
         />
         <TopBar />
         <Header />
-        <main className="min-h-screen bg-gradient-to-br from-secondary via-background to-accent/5 pt-8 pb-20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
-            {/* Progress */}
-            <div className="mb-8">
-              <div className="flex items-center justify-between mb-4">
-                <button onClick={goToPrevStep} className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-                  <ArrowLeft className="w-5 h-5" />
-                  Back
-                </button>
-                <span className="text-sm text-muted-foreground font-medium">
-                  Step {currentStepIndex + 1} of {totalSteps}
-                </span>
+        <main className="min-h-screen bg-gradient-to-br from-secondary via-background to-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 min-h-[calc(100vh-200px)]">
+              {/* Left Panel */}
+              <div className="lg:col-span-2 lg:sticky lg:top-24 lg:self-start">
+                <AdvicePanel currentStep={step} currentTip="We'll send you exclusive deals and detailed comparisons. No spam, ever." />
               </div>
-              <div className="h-2 bg-muted rounded-full overflow-hidden">
-                <div 
-                  className="h-full bg-gradient-to-r from-accent to-brand-coral rounded-full transition-all duration-500"
-                  style={{ width: `${((currentStepIndex + 1) / totalSteps) * 100}%` }}
-                />
-              </div>
-            </div>
 
-            {/* Email Form Card */}
-            <div className="bg-card rounded-2xl border border-border shadow-xl p-8 md:p-10 animate-fade-up">
-              <div className="text-center mb-8">
-                <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center mx-auto mb-6">
-                  <Mail className="w-8 h-8 text-accent" />
+              {/* Right Panel - Email Form */}
+              <div className="lg:col-span-3">
+                <div className="mb-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <button onClick={goToPrevStep} className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                      <ArrowLeft className="w-5 h-5" />
+                      Back
+                    </button>
+                    <span className="text-sm text-muted-foreground font-medium">
+                      Step {currentStepIndex + 1} of {totalSteps}
+                    </span>
+                  </div>
+                  <div className="h-2 bg-muted rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-gradient-to-r from-accent to-brand-coral rounded-full transition-all duration-500"
+                      style={{ width: `${((currentStepIndex + 1) / totalSteps) * 100}%` }}
+                    />
+                  </div>
                 </div>
-                <h1 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-3">
-                  Where should we send your results?
-                </h1>
-                <p className="text-muted-foreground">
-                  Get your personalized hosting recommendation and exclusive deals delivered to your inbox.
-                </p>
-              </div>
 
-              <form onSubmit={handleEmailSubmit} className="space-y-6">
-                <div>
-                  <Input
-                    type="email"
-                    placeholder="Enter your email address"
-                    value={answers.email}
-                    onChange={(e) => {
-                      setAnswers(prev => ({ ...prev, email: e.target.value }));
-                      setEmailError('');
-                    }}
-                    className={`h-14 text-lg ${emailError ? 'border-destructive' : ''}`}
-                  />
-                  {emailError && (
-                    <p className="text-sm text-destructive mt-2">{emailError}</p>
-                  )}
+                <div className="bg-card rounded-2xl border border-border shadow-xl p-8 md:p-10 animate-fade-up">
+                  <div className="text-center mb-8">
+                    <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center mx-auto mb-6">
+                      <Mail className="w-8 h-8 text-accent" />
+                    </div>
+                    <h1 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-3">
+                      Where should we send your results?
+                    </h1>
+                    <p className="text-muted-foreground">
+                      Get your personalized recommendation and exclusive deals.
+                    </p>
+                  </div>
+
+                  <form onSubmit={handleEmailSubmit} className="space-y-6">
+                    <div>
+                      <Input
+                        type="email"
+                        placeholder="Enter your email address"
+                        value={answers.email}
+                        onChange={(e) => {
+                          setAnswers(prev => ({ ...prev, email: e.target.value }));
+                          setEmailError('');
+                        }}
+                        className={`h-14 text-lg ${emailError ? 'border-destructive' : ''}`}
+                      />
+                      {emailError && (
+                        <p className="text-sm text-destructive mt-2">{emailError}</p>
+                      )}
+                    </div>
+                    <Button type="submit" variant="accent" size="xl" className="w-full group">
+                      Get My Recommendation
+                      <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                    </Button>
+                  </form>
+
+                  <div className="mt-6 text-center">
+                    <button 
+                      onClick={skipEmail}
+                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                    >
+                      Skip for now, show me results
+                    </button>
+                  </div>
+
+                  <p className="text-xs text-center text-muted-foreground mt-6">
+                    No spam. Unsubscribe anytime. We respect your privacy.
+                  </p>
                 </div>
-                <Button type="submit" variant="accent" size="xl" className="w-full group">
-                  Get My Recommendation
-                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </form>
-
-              <div className="mt-6 text-center">
-                <button 
-                  onClick={skipEmail}
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
-                >
-                  Skip for now, show me results
-                </button>
               </div>
-
-              <p className="text-xs text-center text-muted-foreground mt-6">
-                No spam. Unsubscribe anytime. We respect your privacy.
-              </p>
             </div>
           </div>
         </main>
@@ -706,11 +822,7 @@ const HostingFinder = () => {
     );
   }
 
-  // Question steps
-  const currentQuestion = questions[step as keyof typeof questions];
-  const isMultiSelect = currentQuestion?.multiSelect;
-  const selectedFeatures = answers.features || [];
-
+  // Question steps - split layout
   return (
     <>
       <SEO 
@@ -719,124 +831,142 @@ const HostingFinder = () => {
       />
       <TopBar />
       <Header />
-      <main className="min-h-screen bg-gradient-to-br from-secondary via-background to-accent/5 pt-8 pb-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
-          {/* Progress */}
-          <div className="mb-8">
-            <div className="flex items-center justify-between mb-4">
-              {currentStepIndex > 0 ? (
-                <button onClick={goToPrevStep} className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-                  <ArrowLeft className="w-5 h-5" />
-                  Back
-                </button>
-              ) : (
-                <Link to="/" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-                  <ArrowLeft className="w-5 h-5" />
-                  Home
-                </Link>
-              )}
-              <span className="text-sm text-muted-foreground font-medium">
-                Step {currentStepIndex + 1} of {totalSteps}
-              </span>
-            </div>
-            <div className="h-2 bg-muted rounded-full overflow-hidden">
-              <div 
-                className="h-full bg-gradient-to-r from-accent to-brand-coral rounded-full transition-all duration-500"
-                style={{ width: `${((currentStepIndex + 1) / totalSteps) * 100}%` }}
-              />
-            </div>
-          </div>
-
-          {/* Question Card */}
-          <div className="bg-card rounded-2xl border border-border shadow-xl p-8 md:p-10 animate-fade-up">
-            <div className="mb-8">
-              <h1 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">
-                {currentQuestion.question}
-              </h1>
-              {currentQuestion.subtitle && (
-                <p className="text-muted-foreground">{currentQuestion.subtitle}</p>
-              )}
-              {isMultiSelect && (
-                <p className="text-sm text-accent mt-2 font-medium">Select all that apply</p>
-              )}
+      <main className="min-h-screen bg-gradient-to-br from-secondary via-background to-accent/5">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 min-h-[calc(100vh-200px)]">
+            {/* Left Panel - Advice */}
+            <div className="lg:col-span-2 lg:sticky lg:top-24 lg:self-start">
+              <AdvicePanel currentStep={step} currentTip={currentTip} />
             </div>
 
-            {/* Options Grid */}
-            <div className={`grid gap-3 ${currentQuestion.options.length > 6 ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
-              {currentQuestion.options.map((option) => {
-                const isSelected = isMultiSelect 
-                  ? selectedFeatures.includes(option.value)
-                  : answers[step as keyof Answers] === option.value;
-                
-                return (
-                  <button
-                    key={option.value}
-                    onClick={() => handleSelect(step as keyof Answers, option.value)}
-                    className={`flex items-center gap-4 w-full p-4 rounded-xl border-2 transition-all duration-200 text-left group ${
-                      isSelected 
-                        ? 'border-accent bg-accent/10' 
-                        : 'border-border bg-background hover:border-accent/50 hover:bg-accent/5'
-                    }`}
+            {/* Right Panel - Quiz */}
+            <div className="lg:col-span-3">
+              {/* Progress */}
+              <div className="mb-6">
+                <div className="flex items-center justify-between mb-4">
+                  {currentStepIndex > 0 ? (
+                    <button onClick={goToPrevStep} className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                      <ArrowLeft className="w-5 h-5" />
+                      Back
+                    </button>
+                  ) : (
+                    <Link to="/" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                      <ArrowLeft className="w-5 h-5" />
+                      Home
+                    </Link>
+                  )}
+                  <span className="text-sm text-muted-foreground font-medium">
+                    Step {currentStepIndex + 1} of {totalSteps}
+                  </span>
+                </div>
+                <div className="h-2 bg-muted rounded-full overflow-hidden">
+                  <div 
+                    className="h-full bg-gradient-to-r from-accent to-brand-coral rounded-full transition-all duration-500"
+                    style={{ width: `${((currentStepIndex + 1) / totalSteps) * 100}%` }}
+                  />
+                </div>
+              </div>
+
+              {/* Question Card */}
+              <div className="bg-card rounded-2xl border border-border shadow-xl p-6 md:p-8 animate-fade-up">
+                <div className="mb-6">
+                  <h1 className="font-display text-xl md:text-2xl font-bold text-foreground mb-2">
+                    {currentQuestion.question}
+                  </h1>
+                  {currentQuestion.subtitle && (
+                    <p className="text-muted-foreground text-sm">{currentQuestion.subtitle}</p>
+                  )}
+                  {isMultiSelect && (
+                    <p className="text-sm text-accent mt-2 font-medium">Select all that apply</p>
+                  )}
+                </div>
+
+                {/* Mobile Tip */}
+                <div className="lg:hidden bg-accent/5 border border-accent/20 rounded-lg p-4 mb-6">
+                  <div className="flex items-start gap-2">
+                    <Lightbulb className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                    <p className="text-xs text-muted-foreground">{currentTip}</p>
+                  </div>
+                </div>
+
+                {/* Options Grid */}
+                <div className={`grid gap-2.5 ${currentQuestion.options.length > 6 ? 'md:grid-cols-2' : 'grid-cols-1'}`}>
+                  {currentQuestion.options.map((option) => {
+                    const isSelected = isMultiSelect 
+                      ? selectedFeatures.includes(option.value)
+                      : answers[step as keyof Answers] === option.value;
+                    
+                    return (
+                      <button
+                        key={option.value}
+                        onClick={() => handleSelect(step as keyof Answers, option.value)}
+                        className={`flex items-center gap-3 w-full p-3.5 rounded-xl border-2 transition-all duration-200 text-left group ${
+                          isSelected 
+                            ? 'border-accent bg-accent/10' 
+                            : 'border-border bg-background hover:border-accent/50 hover:bg-accent/5'
+                        }`}
+                      >
+                        {'icon' in option && option.icon && (
+                          <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors ${
+                            isSelected ? 'bg-accent/20' : 'bg-accent/10 group-hover:bg-accent/15'
+                          }`}>
+                            <option.icon className="w-5 h-5 text-accent" />
+                          </div>
+                        )}
+                        <div className="flex-1 min-w-0">
+                          <span className={`font-medium block text-sm ${isSelected ? 'text-accent' : 'text-foreground'}`}>
+                            {option.label}
+                          </span>
+                          {'description' in option && option.description && (
+                            <span className="text-xs text-muted-foreground">{option.description}</span>
+                          )}
+                        </div>
+                        {isMultiSelect ? (
+                          <div className={`w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
+                            isSelected ? 'border-accent bg-accent' : 'border-muted-foreground/30'
+                          }`}>
+                            {isSelected && <CheckCircle className="w-3 h-3 text-accent-foreground" />}
+                          </div>
+                        ) : (
+                          <ArrowRight className={`w-4 h-4 flex-shrink-0 transition-all ${
+                            isSelected ? 'text-accent' : 'text-muted-foreground group-hover:text-accent group-hover:translate-x-1'
+                          }`} />
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Continue button for multi-select */}
+                {isMultiSelect && (
+                  <Button 
+                    variant="accent" 
+                    size="lg" 
+                    className="w-full mt-6 group"
+                    onClick={handleMultiSelectContinue}
+                    disabled={selectedFeatures.length === 0}
                   >
-                    {'icon' in option && option.icon && (
-                      <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors ${
-                        isSelected ? 'bg-accent/20' : 'bg-accent/10 group-hover:bg-accent/15'
-                      }`}>
-                        <option.icon className={`w-6 h-6 ${isSelected ? 'text-accent' : 'text-accent'}`} />
-                      </div>
-                    )}
-                    <div className="flex-1 min-w-0">
-                      <span className={`font-semibold block ${isSelected ? 'text-accent' : 'text-foreground'}`}>
-                        {option.label}
-                      </span>
-                      {'description' in option && option.description && (
-                        <span className="text-sm text-muted-foreground">{option.description}</span>
-                      )}
-                    </div>
-                    {isMultiSelect ? (
-                      <div className={`w-6 h-6 rounded-md border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                        isSelected ? 'border-accent bg-accent' : 'border-muted-foreground/30'
-                      }`}>
-                        {isSelected && <CheckCircle className="w-4 h-4 text-accent-foreground" />}
-                      </div>
-                    ) : (
-                      <ArrowRight className={`w-5 h-5 flex-shrink-0 transition-all ${
-                        isSelected ? 'text-accent' : 'text-muted-foreground group-hover:text-accent group-hover:translate-x-1'
-                      }`} />
-                    )}
-                  </button>
-                );
-              })}
-            </div>
+                    Continue
+                    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                )}
+              </div>
 
-            {/* Continue button for multi-select */}
-            {isMultiSelect && (
-              <Button 
-                variant="accent" 
-                size="xl" 
-                className="w-full mt-6 group"
-                onClick={handleMultiSelectContinue}
-                disabled={selectedFeatures.length === 0}
-              >
-                Continue
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </Button>
-            )}
-          </div>
-
-          {/* Trust indicators */}
-          <div className="flex flex-wrap justify-center gap-4 mt-8 text-sm text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <Shield className="w-4 h-4 text-accent" />
-              <span>Unbiased recommendations</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Zap className="w-4 h-4 text-accent" />
-              <span>Takes 2 minutes</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Award className="w-4 h-4 text-accent" />
-              <span>50+ providers analyzed</span>
+              {/* Mobile Trust indicators */}
+              <div className="lg:hidden flex flex-wrap justify-center gap-4 mt-6 text-xs text-muted-foreground">
+                <div className="flex items-center gap-1.5">
+                  <Shield className="w-3.5 h-3.5 text-accent" />
+                  <span>Unbiased</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <Zap className="w-3.5 h-3.5 text-accent" />
+                  <span>2 min</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <Award className="w-3.5 h-3.5 text-accent" />
+                  <span>50+ Providers</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
