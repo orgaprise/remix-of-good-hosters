@@ -161,7 +161,7 @@ const ManagedVsUnmanagedWordPress = () => {
         <meta property="og:description" content="Expert analysis of managed vs unmanaged WordPress hosting. Performance, security, and cost comparison." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/managed-vs-unmanaged-wordpress-hosting" />
-        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:image" content="https://goodhosters.com/og-images/og-managed-vs-unmanaged-wordpress.png" />
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-26" />
         <meta property="article:modified_time" content="2025-12-30" />
@@ -173,7 +173,7 @@ const ManagedVsUnmanagedWordPress = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Managed vs Unmanaged WordPress Hosting" />
         <meta name="twitter:description" content="Complete guide to choosing between managed and unmanaged WordPress hosting." />
-        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
+        <meta name="twitter:image" content="https://goodhosters.com/og-images/og-managed-vs-unmanaged-wordpress.png" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>

@@ -159,7 +159,7 @@ const WebsiteSpeedOptimization = () => {
         <meta property="og:description" content="Complete guide to website speed. Core Web Vitals, image optimization, caching, and CDN setup." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/website-speed-optimization-guide" />
-        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta property="og:image" content="https://goodhosters.com/og-images/og-website-speed-optimization.png" />
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-24" />
         <meta property="article:modified_time" content="2025-12-30" />
@@ -171,7 +171,7 @@ const WebsiteSpeedOptimization = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Website Speed Optimization: Complete Guide" />
         <meta name="twitter:description" content="Achieve blazing fast load times and perfect Core Web Vitals scores." />
-        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
+        <meta name="twitter:image" content="https://goodhosters.com/og-images/og-website-speed-optimization.png" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
