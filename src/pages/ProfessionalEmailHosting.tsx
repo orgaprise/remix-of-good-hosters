@@ -17,8 +17,10 @@ const ProfessionalEmailHosting = () => {
     "headline": "Professional Email Hosting: Setup Your Business Email Today",
     "description": "Complete guide to professional email hosting for businesses. Compare Google Workspace vs Microsoft 365, learn setup steps, and choose the best email hosting provider for 2026.",
     "author": {
-      "@type": "Organization",
-      "name": "GoodHosters"
+      "@type": "Person",
+      "name": "Mallory Keegan",
+      "jobTitle": "Web Hosting Reviewer",
+      "url": "https://goodhosters.com/authors/mallory-keegan"
     },
     "publisher": {
       "@type": "Organization",
@@ -144,7 +146,7 @@ const ProfessionalEmailHosting = () => {
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2026-01-15" />
         <meta property="article:modified_time" content="2026-01-15" />
-        <meta property="article:author" content="GoodHosters" />
+        <meta property="article:author" content="Mallory Keegan" />
         <meta property="article:section" content="Email" />
         <meta property="article:tag" content="email hosting" />
         <meta property="article:tag" content="Google Workspace" />

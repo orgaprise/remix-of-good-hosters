@@ -8,7 +8,8 @@ import blogVps from '@/assets/highlighted-vps-hosting.webp';
 import vpsManagedVsUnmanaged from '@/assets/vps-managed-vs-unmanaged.webp';
 import vpsPricingTiers from '@/assets/vps-pricing-tiers.webp';
 import vpsProviderComparison from '@/assets/vps-provider-comparison.webp';
-import { 
+import authorMalloryKeegan from '@/assets/author-mallory-keegan.webp';
+import {
   Server, 
   Cpu, 
   HardDrive, 
@@ -63,9 +64,9 @@ const BestVPSHosting = () => {
     "image": "https://goodhosters.com/images/best-vps-hosting-2026.webp",
     "author": {
       "@type": "Person",
-      "name": "Alex Mitchell",
-      "jobTitle": "Senior Tech Reviewer",
-      "url": "https://goodhosters.com/authors/alex-mitchell"
+      "name": "Mallory Keegan",
+      "jobTitle": "Web Hosting Reviewer",
+      "url": "https://goodhosters.com/authors/mallory-keegan"
     },
     "publisher": {
       "@type": "Organization",
@@ -160,7 +161,7 @@ const BestVPSHosting = () => {
         <meta property="og:site_name" content="GoodHosters" />
         <meta property="article:published_time" content="2025-12-28" />
         <meta property="article:modified_time" content="2025-12-30" />
-        <meta property="article:author" content="Alex Mitchell" />
+        <meta property="article:author" content="Mallory Keegan" />
         <meta property="article:section" content="VPS Hosting" />
         <meta property="article:tag" content="VPS hosting" />
         <meta property="article:tag" content="DigitalOcean" />
@@ -213,12 +214,14 @@ const BestVPSHosting = () => {
             </p>
 
             <div className="flex items-center gap-4 pb-6 border-b border-border">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center text-primary-foreground font-bold">
-                AM
-              </div>
+              <img 
+                src={authorMalloryKeegan} 
+                alt="Mallory Keegan" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
               <div>
-                <p className="font-semibold text-foreground" itemProp="author">Alex Mitchell</p>
-                <p className="text-sm text-muted-foreground">Senior Tech Reviewer • DevOps Engineer • 12 years in web infrastructure</p>
+                <p className="font-semibold text-foreground" itemProp="author">Mallory Keegan</p>
+                <p className="text-sm text-muted-foreground">Web hosting enthusiast who tests providers and breaks down features, pricing, and real world speed</p>
               </div>
             </div>
           </header>

@@ -5,6 +5,7 @@ import Newsletter from '@/components/Newsletter';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import OptimizedImage from '@/components/OptimizedImage';
 import blogHostingComparison from '@/assets/blog-hosting-comparison.webp';
+import authorMalloryKeegan from '@/assets/author-mallory-keegan.webp';
 import hostingMarketEvolution from '@/assets/hosting-market-evolution.webp';
 import performanceBenchmark from '@/assets/performance-benchmark-ttfb.webp';
 import cloudwaysDashboard from '@/assets/cloudways-dashboard.webp';
@@ -44,9 +45,9 @@ const BlogArticle = () => {
     "image": "https://goodhosters.com/images/best-hosting-2026.webp",
     "author": {
       "@type": "Person",
-      "name": "Alex Mitchell",
-      "jobTitle": "Senior Tech Reviewer",
-      "url": "https://goodhosters.com/authors/alex-mitchell"
+      "name": "Mallory Keegan",
+      "jobTitle": "Web Hosting Reviewer",
+      "url": "https://goodhosters.com/authors/mallory-keegan"
     },
     "publisher": {
       "@type": "Organization",
@@ -156,12 +157,14 @@ const BlogArticle = () => {
             </p>
 
             <div className="flex items-center gap-4 pb-6 border-b border-border">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center text-primary-foreground font-bold">
-                AM
-              </div>
+              <img 
+                src={authorMalloryKeegan} 
+                alt="Mallory Keegan" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
               <div>
-                <p className="font-semibold text-foreground" itemProp="author">Alex Mitchell</p>
-                <p className="text-sm text-muted-foreground">Senior Tech Reviewer • 12 years in web infrastructure</p>
+                <p className="font-semibold text-foreground" itemProp="author">Mallory Keegan</p>
+                <p className="text-sm text-muted-foreground">Web hosting enthusiast who tests providers and breaks down features, pricing, and real world speed</p>
               </div>
             </div>
           </header>
