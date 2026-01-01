@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import OptimizedImage from "@/components/OptimizedImage";
 import blogSpeed from "@/assets/highlighted-speed-optimization.webp";
+import imageOptimizationWorkflow from "@/assets/image-optimization-workflow.webp";
+import cachingArchitecture from "@/assets/caching-architecture.webp";
 
 const WebsiteSpeedOptimization = () => {
   const articleSchema = {
@@ -554,12 +556,19 @@ const WebsiteSpeedOptimization = () => {
                 </table>
               </div>
 
-              <div className="mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: Image Optimization Workflow - Before & After Comparison (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="mb-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={imageOptimizationWorkflow}
+                    alt="Image optimization workflow showing before and after comparison - 2MB unoptimized image reduced to 500KB optimized for web use"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Before vs After: Image optimization reduces file size by 75% while maintaining quality
+                </figcaption>
+              </figure>
             </section>
 
             {/* Caching Strategies */}
@@ -628,12 +637,19 @@ const WebsiteSpeedOptimization = () => {
                 </div>
               </div>
 
-              <div className="mb-8">
-                <ImagePlaceholder 
-                  title="Diagram: Multi-Layer Caching Architecture (800x400)"
-                  aspectRatio="video"
-                />
-              </div>
+              <figure className="mb-8">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={cachingArchitecture}
+                    alt="Multi-layer caching architecture diagram showing browser cache, CDN cache, and reverse proxy cache connecting to main server"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-center text-sm text-muted-foreground mt-3">
+                  Multi-layer caching: Browser, CDN, and reverse proxy caches working together
+                </figcaption>
+              </figure>
             </section>
 
             {/* CDN Deep Dive */}
