@@ -5,6 +5,8 @@ import Newsletter from '@/components/Newsletter';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import OptimizedImage from '@/components/OptimizedImage';
 import blogCloudHosting from '@/assets/blog-cloud-hosting.webp';
+import cloudVsSharedArchitecture from '@/assets/cloud-vs-shared-architecture.webp';
+import cloudVsSharedResponseTime from '@/assets/cloud-vs-shared-response-time.webp';
 import { 
   Cloud, 
   Server, 
@@ -346,13 +348,20 @@ const CloudVsSharedHosting = () => {
               </div>
 
               {/* Architecture Diagram */}
-              <div className="my-8 not-prose">
-                <ImagePlaceholder 
-                  title="Diagram: Shared vs Cloud Hosting Architecture (900x500)"
-                  aspectRatio="video"
-                />
-                <p className="text-sm text-muted-foreground text-center mt-2">Visual comparison of shared hosting (single server) vs cloud hosting (distributed network)</p>
-              </div>
+              <figure className="my-8 not-prose">
+                <div className="rounded-xl overflow-hidden">
+                  <OptimizedImage 
+                    src={cloudVsSharedArchitecture}
+                    alt="Shared vs Cloud Hosting Architecture diagram showing the difference between single server shared hosting and distributed cloud hosting infrastructure"
+                    aspectRatio="16/9"
+                    className="w-full"
+                    objectFit="cover"
+                  />
+                </div>
+                <figcaption className="text-sm text-muted-foreground text-center mt-3">
+                  Visual comparison of shared hosting (single server) vs cloud hosting (distributed network)
+                </figcaption>
+              </figure>
             </section>
 
             {/* Key Differences Section */}
@@ -396,6 +405,22 @@ const CloudVsSharedHosting = () => {
                   <p className="text-sm text-muted-foreground mt-3 italic">
                     <strong>Winner:</strong> Cloud hosting—2-3x faster on average in our <strong>shared hosting vs cloud hosting performance</strong> tests.
                   </p>
+                  
+                  {/* Performance Chart */}
+                  <figure className="mt-6">
+                    <div className="rounded-xl overflow-hidden">
+                      <OptimizedImage 
+                        src={cloudVsSharedResponseTime}
+                        alt="Response Time Under Increasing Load chart comparing Cloud Hosting vs Shared Hosting performance"
+                        aspectRatio="16/9"
+                        className="w-full"
+                        objectFit="cover"
+                      />
+                    </div>
+                    <figcaption className="text-sm text-muted-foreground text-center mt-3">
+                      Response time comparison under increasing load: Cloud vs Shared Hosting
+                    </figcaption>
+                  </figure>
                 </div>
 
                 {/* 2. Reliability */}
