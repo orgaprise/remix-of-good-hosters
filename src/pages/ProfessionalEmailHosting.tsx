@@ -139,9 +139,9 @@ const ProfessionalEmailHosting = () => {
         <meta property="og:description" content="Complete guide to professional email hosting for businesses. Compare providers, learn setup steps, and get your business email running today." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://goodhosters.com/professional-email-hosting" />
-        <meta property="og:image" content="https://goodhosters.com/android-chrome-512x512.png" />
+        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://goodhosters.com/android-chrome-512x512.png" />
+        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

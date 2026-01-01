@@ -215,9 +215,11 @@ const Blog = () => {
         <meta property="og:description" content="Explore our comprehensive library of web hosting articles covering providers, security, performance, and more." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://goodhosters.com/blog" />
+        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Web Hosting Blog - Expert Guides & Reviews" />
         <meta name="twitter:description" content="Expert articles on web hosting, security, performance optimization, and more." />
+        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(blogListSchema)}
         </script>

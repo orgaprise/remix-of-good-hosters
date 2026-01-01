@@ -11,13 +11,13 @@ const Disclosure = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://hostingadvice.pro"
+        "item": "https://goodhosters.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Affiliate Disclosure",
-        "item": "https://hostingadvice.pro/disclosure"
+        "item": "https://goodhosters.com/disclosure"
       }
     ]
   };
@@ -25,13 +25,20 @@ const Disclosure = () => {
   return (
     <>
       <Helmet>
-        <title>Affiliate Disclosure | HostingAdvice.pro</title>
+        <title>Affiliate Disclosure | GoodHosters</title>
         <meta 
           name="description" 
           content="Learn about our affiliate relationships and how we maintain transparency in our hosting reviews and recommendations." 
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://hostingadvice.pro/disclosure" />
+        <link rel="canonical" href="https://goodhosters.com/disclosure" />
+        <meta property="og:title" content="Affiliate Disclosure | GoodHosters" />
+        <meta property="og:description" content="Learn about our affiliate relationships and how we maintain transparency in our hosting reviews." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://goodhosters.com/disclosure" />
+        <meta property="og:image" content="https://goodhosters.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://goodhosters.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
         </script>
@@ -70,7 +77,7 @@ const Disclosure = () => {
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-foreground mb-4">Our Commitment to Transparency</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                At HostingAdvice.pro, we believe in complete transparency with our readers. This disclosure page 
+                At GoodHosters, we believe in complete transparency with our readers. This disclosure page 
                 explains how we earn revenue and how our affiliate relationships work, ensuring you can make 
                 informed decisions about the recommendations we provide.
               </p>
@@ -99,7 +106,7 @@ const Disclosure = () => {
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-foreground mb-4">How We Make Money</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                HostingAdvice.pro generates revenue through the following methods:
+                GoodHosters generates revenue through the following methods:
               </p>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-4">
                 <li>
