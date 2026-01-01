@@ -7,6 +7,7 @@ import OptimizedImage from '@/components/OptimizedImage';
 import blogCloudHosting from '@/assets/blog-cloud-hosting.webp';
 import cloudVsSharedArchitecture from '@/assets/cloud-vs-shared-architecture.webp';
 import cloudVsSharedResponseTime from '@/assets/cloud-vs-shared-response-time.webp';
+import performanceComparisonTrafficLoad from '@/assets/performance-comparison-traffic-load.webp';
 import { 
   Cloud, 
   Server, 
@@ -663,14 +664,20 @@ const CloudVsSharedHosting = () => {
                 </p>
               </div>
 
-              {/* Performance Graph Placeholder */}
-              <div className="my-8 not-prose">
-                <ImagePlaceholder 
-                  title="Chart: Response Time Under Increasing Load - Cloud vs Shared (900x500)"
-                  aspectRatio="video"
-                />
-                <p className="text-sm text-muted-foreground text-center mt-2">Performance comparison under simulated traffic load (50 to 500 concurrent users)</p>
-              </div>
+              {/* Performance Graph */}
+              <figure className="my-8 not-prose">
+                <div className="rounded-xl overflow-hidden bg-muted/30">
+                  <OptimizedImage 
+                    src={performanceComparisonTrafficLoad}
+                    alt="Performance comparison under simulated traffic load - Cloud vs Shared Hosting"
+                    className="w-full"
+                    objectFit="contain"
+                  />
+                </div>
+                <figcaption className="text-sm text-muted-foreground text-center mt-3">
+                  Performance comparison under simulated traffic load (50 to 300 concurrent users)
+                </figcaption>
+              </figure>
             </section>
 
             {/* Pricing Deep Dive */}
