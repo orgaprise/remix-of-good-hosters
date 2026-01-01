@@ -20,6 +20,7 @@ import Contact from "./pages/Contact";
 import HostingFinder from "./pages/HostingFinder";
 import Services from "./pages/Services";
 import About from "./pages/About";
+import Help from "./pages/Help";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import CookiePolicy from "./pages/CookiePolicy";
@@ -51,6 +52,7 @@ const App = () => (
           <Route path="/hosting-finder" element={<HostingFinder />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
+          <Route path="/help" element={<Help />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
