@@ -173,13 +173,13 @@ const Blog = () => {
     "@type": "CollectionPage",
     "name": "Web Hosting Blog - Expert Guides & Reviews",
     "description": "Expert articles, guides, and reviews on web hosting, security, performance, and more.",
-    "url": "https://yourdomain.com/blog",
+    "url": "https://goodhosters.com/blog",
     "mainEntity": {
       "@type": "ItemList",
       "itemListElement": allArticles.map((article, index) => ({
         "@type": "ListItem",
         "position": index + 1,
-        "url": `https://yourdomain.com${article.slug}`,
+        "url": `https://goodhosters.com${article.slug}`,
         "name": article.title
       }))
     }
@@ -193,13 +193,13 @@ const Blog = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://yourdomain.com"
+        "item": "https://goodhosters.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://yourdomain.com/blog"
+        "item": "https://goodhosters.com/blog"
       }
     ]
   };
@@ -210,11 +210,11 @@ const Blog = () => {
         <title>Web Hosting Blog - Expert Guides, Reviews & Tutorials | 2026</title>
         <meta name="description" content="Explore our comprehensive library of web hosting articles. Expert guides on hosting providers, security, performance optimization, WordPress, VPS, and more." />
         <meta name="keywords" content="web hosting blog, hosting guides, hosting reviews, website security, VPS hosting, WordPress hosting, SSL certificates" />
-        <link rel="canonical" href="https://yourdomain.com/blog" />
+        <link rel="canonical" href="https://goodhosters.com/blog" />
         <meta property="og:title" content="Web Hosting Blog - Expert Guides & Reviews" />
         <meta property="og:description" content="Explore our comprehensive library of web hosting articles covering providers, security, performance, and more." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/blog" />
+        <meta property="og:url" content="https://goodhosters.com/blog" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Web Hosting Blog - Expert Guides & Reviews" />
         <meta name="twitter:description" content="Expert articles on web hosting, security, performance optimization, and more." />

@@ -114,6 +114,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://goodhosters.com/services</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodhosters.com/blog</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goodhosters.com/hosting-finder</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://goodhosters.com/about</loc>
     <lastmod>2024-12-30</lastmod>
     <changefreq>monthly</changefreq>

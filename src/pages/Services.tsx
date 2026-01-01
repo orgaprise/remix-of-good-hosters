@@ -138,6 +138,30 @@ const Services = () => {
     { name: "Services", url: "/services" }
   ];
 
+  const servicesSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Web Hosting Advisory",
+    "provider": {
+      "@type": "Organization",
+      "name": "Good Hosters",
+      "url": "https://goodhosters.com"
+    },
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Web Hosting Services",
+      "itemListElement": services.map((service, index) => ({
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": service.title,
+          "description": service.description
+        }
+      }))
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
@@ -145,7 +169,11 @@ const Services = () => {
         description="Professional web hosting services including hosting analysis, migration support, speed optimization, security hardening, and expert consulting. Get personalized recommendations today."
         canonicalUrl="https://goodhosters.com/services"
         breadcrumbs={breadcrumbs}
-      />
+      >
+        <script type="application/ld+json">
+          {JSON.stringify(servicesSchema)}
+        </script>
+      </SEO>
 
       <TopBar />
       <Header />
