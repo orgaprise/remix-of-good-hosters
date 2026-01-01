@@ -12,6 +12,15 @@ import wordpressHostingFlowchart from "@/assets/wordpress-hosting-flowchart.webp
 import wordpressSecurityLayers from "@/assets/wordpress-security-layers.webp";
 import authorMalloryKeegan from "@/assets/author-mallory-keegan.webp";
 
+// Internal article links for cross-linking
+const internalLinks = {
+  bestHosting2026: "/best-web-hosting-2026",
+  speedOptimization: "/website-speed-optimization-guide",
+  securityGuide: "/web-hosting-security-guide",
+  backupStrategies: "/website-backup-strategies",
+  vpsHosting: "/best-vps-hosting-2026",
+};
+
 const ManagedVsUnmanagedWordPress = () => {
   const articleSchema = {
     "@context": "https://schema.org",

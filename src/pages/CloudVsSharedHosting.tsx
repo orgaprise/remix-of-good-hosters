@@ -31,10 +31,13 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-// Internal article links
+// Internal article links - expanded for better topical authority
 const internalLinks = {
   bestHosting2026: "/best-web-hosting-2026",
   securityGuide: "/web-hosting-security-guide",
+  vpsHosting: "/best-vps-hosting-2026",
+  speedOptimization: "/website-speed-optimization-guide",
+  wordpressHosting: "/managed-vs-unmanaged-wordpress-hosting",
 };
 
 // Affiliate links
@@ -1151,6 +1154,26 @@ const CloudVsSharedHosting = () => {
                     Web Hosting Security Essentials
                   </p>
                   <p className="text-sm text-muted-foreground mt-1">Protect your site from common threats</p>
+                </Link>
+                <Link 
+                  to={internalLinks.vpsHosting}
+                  className="p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors group"
+                >
+                  <p className="text-sm text-primary mb-1">VPS Guide</p>
+                  <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                    Best VPS Hosting Providers 2026
+                  </p>
+                  <p className="text-sm text-muted-foreground mt-1">When you need more power than shared hosting</p>
+                </Link>
+                <Link 
+                  to={internalLinks.speedOptimization}
+                  className="p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors group"
+                >
+                  <p className="text-sm text-primary mb-1">Performance</p>
+                  <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                    Website Speed Optimization Guide
+                  </p>
+                  <p className="text-sm text-muted-foreground mt-1">Maximize performance on any hosting type</p>
                 </Link>
               </div>
             </section>

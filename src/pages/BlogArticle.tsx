@@ -16,10 +16,13 @@ import testingLabServer from '@/assets/testing-lab-server.webp';
 import { Star, Check, X, Trophy, Zap, Shield, Clock, DollarSign, Server, Headphones, ExternalLink, ArrowRight, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-// Internal article links
+// Internal article links - expanded for better topical authority
 const internalLinks = {
   cloudVsShared: "/cloud-vs-shared-hosting",
   securityFeatures: "/web-hosting-security-guide",
+  vpsHosting: "/best-vps-hosting-2026",
+  wordpressHosting: "/managed-vs-unmanaged-wordpress-hosting",
+  speedOptimization: "/website-speed-optimization-guide",
 };
 
 // Affiliate links - Replace with your actual referral URLs
@@ -1011,7 +1014,7 @@ const BlogArticle = () => {
                   Cloud vs Shared Hosting: Which is Right for You?
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Understanding the key differences between cloud and shared hosting can save you money and headaches. Here's what you need to know.
+                  Understanding the key differences between cloud and shared hosting.
                 </p>
                 <span className="text-sm text-primary font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   Read article <ArrowRight className="w-4 h-4" />
@@ -1027,7 +1030,39 @@ const BlogArticle = () => {
                   Essential Security Features for Web Hosting
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Don't compromise on security for your business. Learn which hosting security features are must-haves in 2026.
+                  Which hosting security features are must-haves in 2026.
+                </p>
+                <span className="text-sm text-primary font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Read article <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+
+              <Link 
+                to={internalLinks.vpsHosting}
+                className="group p-5 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-200 hover:shadow-lg"
+              >
+                <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">VPS</span>
+                <h3 className="text-lg font-semibold text-foreground mt-3 mb-2 group-hover:text-primary transition-colors">
+                  Best VPS Hosting Providers 2026
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Complete guide to choosing the right VPS for your needs.
+                </p>
+                <span className="text-sm text-primary font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Read article <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+
+              <Link 
+                to={internalLinks.wordpressHosting}
+                className="group p-5 bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-200 hover:shadow-lg"
+              >
+                <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">WordPress</span>
+                <h3 className="text-lg font-semibold text-foreground mt-3 mb-2 group-hover:text-primary transition-colors">
+                  Managed vs Unmanaged WordPress Hosting
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Understand the differences and choose the right option.
                 </p>
                 <span className="text-sm text-primary font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   Read article <ArrowRight className="w-4 h-4" />

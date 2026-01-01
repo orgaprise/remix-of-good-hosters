@@ -34,10 +34,13 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-// Internal article links
+// Internal article links - expanded for better topical authority
 const internalLinks = {
   bestHosting2026: "/best-web-hosting-2026",
   cloudVsShared: "/cloud-vs-shared-hosting",
+  sslCertificates: "/ssl-certificates-guide",
+  backupStrategies: "/website-backup-strategies",
+  vpsHosting: "/best-vps-hosting-2026",
 };
 
 // Affiliate links
@@ -1620,6 +1623,44 @@ const WebHostingSecurityGuide = () => {
                       </h3>
                       <p className="text-sm text-muted-foreground mt-1">
                         Security differences between cloud and shared hosting explained.
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link 
+                  to={internalLinks.sslCertificates}
+                  className="p-5 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors group"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 bg-primary/10 rounded-lg">
+                      <Lock className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                        SSL Certificates: Why HTTPS Matters
+                      </h3>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Complete guide to SSL encryption for your website.
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link 
+                  to={internalLinks.backupStrategies}
+                  className="p-5 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors group"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 bg-primary/10 rounded-lg">
+                      <Database className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                        Website Backup Strategies
+                      </h3>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Protect your data with automated backup solutions.
                       </p>
                     </div>
                   </div>
